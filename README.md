@@ -47,6 +47,17 @@ Generates deployable static output in `/public/`:
 
 Vercel deploys from the `public/` output directory (see `vercel.json`).
 
+## Supabase (Partner Form)
+
+To persist partner applications:
+
+1. Create a Supabase project
+2. Run `supabase/schema.sql` in the SQL Editor
+3. Set Vercel env vars (see `.env.example`): `SUPABASE_URL`, `SUPABASE_ANON_KEY`
+4. Redeploy — the build injects config into `public/assets/js/form-config.js`
+
+Without Supabase, the form shows a success message in demo mode (no data saved).
+
 ## SEO
 
 Every page includes:

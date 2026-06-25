@@ -1,19 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0f14"/>
-      <stop offset="100%" stop-color="#162028"/>
+      <stop offset="0%" stop-color="#f8fafb"/>
+      <stop offset="100%" stop-color="#eef6ff"/>
     </linearGradient>
     <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00c896"/>
-      <stop offset="100%" stop-color="#3d9eff"/>
+      <stop offset="0%" stop-color="#00966a"/>
+      <stop offset="100%" stop-color="#0077e6"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
   <circle cx="200" cy="315" r="80" fill="none" stroke="url(#accent)" stroke-width="8"/>
   <path d="M140 315 L200 255 L260 315 L200 375 Z" fill="url(#accent)"/>
-  <text x="320" y="290" font-family="system-ui,sans-serif" font-size="64" font-weight="700" fill="#e8eef4">EnergieMIND Network</text>
-  <text x="320" y="360" font-family="system-ui,sans-serif" font-size="32" fill="#8fa3b8">Partner / Pilot / Infrastructure Network</text>
-  <rect x="320" y="400" width="320" height="56" rx="12" fill="#00c896"/>
-  <text x="480" y="438" text-anchor="middle" font-family="system-ui,sans-serif" font-size="24" font-weight="600" fill="#041510">Apply as Pilot Partner</text>
+  <text x="320" y="290" font-family="DM Sans, system-ui, sans-serif" font-size="64" font-weight="700" fill="#0f1c2e">EnergieMIND Network</text>
+  <text x="320" y="360" font-family="DM Sans, system-ui, sans-serif" font-size="32" fill="#5a7189">Partner / Pilot / Infrastructure Network</text>
+  <rect x="320" y="400" width="340" height="56" rx="12" fill="url(#accent)"/>
+  <text x="490" y="438" text-anchor="middle" font-family="DM Sans, system-ui, sans-serif" font-size="24" font-weight="600" fill="#ffffff">Apply as Pilot Partner</text>
 </svg>

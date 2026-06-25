@@ -18,20 +18,80 @@
     });
   }
 
+  function showMessage(id, show) {
+    var el = document.getElementById(id);
+    if (el) el.hidden = !show;
+  }
+
+  function submitToSupabase(data) {
+    var cfg = window.ENM_FORM_CONFIG || {};
+    if (!cfg.supabaseUrl || !cfg.supabaseAnonKey) return Promise.resolve(false);
+
+    return fetch(cfg.supabaseUrl.replace(/\/$/, '') + '/rest/v1/' + (cfg.table || 'partner_applications'), {
+      method: 'POST',
+      headers: {
+        apikey: cfg.supabaseAnonKey,
+        Authorization: 'Bearer ' + cfg.supabaseAnonKey,
+        'Content-Type': 'application/json',
+        Prefer: 'return=minimal',
+      },
+      body: JSON.stringify(data),
+    }).then(function (res) {
+      if (!res.ok) throw new Error('Submit failed');
+      return true;
+    });
+  }
+
   var form = document.getElementById('partner-form');
   if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+      showMessage('form-success', false);
+      showMessage('form-error', false);
+
       if (!form.checkValidity()) {
         form.reportValidity();
         return;
       }
-      var success = document.getElementById('form-success');
-      if (success) {
-        success.hidden = false;
-        form.reset();
-        success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+      var btn = form.querySelector('button[type="submit"]');
+      var originalText = btn ? btn.textContent : '';
+      if (btn) {
+        btn.disabled = true;
+        btn.textContent = btn.getAttribute('data-loading') || '…';
       }
+
+      var payload = {
+        name: form.name.value.trim(),
+        organization: form.organization.value.trim(),
+        email: form.email.value.trim(),
+        phone: form.phone.value.trim() || null,
+        country: form.country.value.trim(),
+        site_type: form.site_type.value,
+        capacity: form.capacity.value.trim() || null,
+        message: form.message.value.trim(),
+        language: document.documentElement.lang || 'en',
+        source: 'energiemind.network',
+      };
+
+      submitToSupabase(payload)
+        .then(function (sent) {
+          showMessage('form-success', true);
+          form.reset();
+          document.getElementById('form-success').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          if (!sent && window.ENM_FORM_CONFIG && !window.ENM_FORM_CONFIG.supabaseUrl) {
+            /* offline/demo mode — still show success */
+          }
+        })
+        .catch(function () {
+          showMessage('form-error', true);
+        })
+        .finally(function () {
+          if (btn) {
+            btn.disabled = false;
+            btn.textContent = originalText;
+          }
+        });
     });
   }
 

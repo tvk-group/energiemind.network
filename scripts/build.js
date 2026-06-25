@@ -65,6 +65,17 @@ function navLinks(t) {
     .join('\n            ');
 }
 
+const SECTION_ICONS = {
+  'partner-network': '◈',
+  'pilot-sites': '◎',
+  'mining-heat': '♨',
+  'solar-mining': '☀',
+  'commercial-buildings': '▣',
+  'greenhouses': '❖',
+  'farms': '⌂',
+  'data-centers': '⬡',
+};
+
 function sectionBlock(section, reverse = false) {
   const items = section.items
     .map((item) => {
@@ -82,6 +93,7 @@ function sectionBlock(section, reverse = false) {
   return `<section id="${section.id}" class="section ${reverse ? 'section-alt' : ''}" aria-labelledby="${section.id}-title">
       <div class="container">
         <header class="section-header">
+          <span class="section-icon" aria-hidden="true">${SECTION_ICONS[section.id] || '◆'}</span>
           <h2 id="${section.id}-title">${esc(section.title)}</h2>
           <p class="section-subtitle">${esc(section.subtitle)}</p>
         </header>
@@ -157,8 +169,9 @@ function formBlock(t) {
             <textarea id="message" name="message" rows="5" required placeholder="${esc(t.form.fields.messagePlaceholder)}"></textarea>
           </div>
           <p class="form-disclaimer">${esc(t.form.disclaimer)}</p>
-          <button type="submit" class="btn btn-primary btn-lg">${esc(t.form.submit)}</button>
+          <button type="submit" class="btn btn-primary btn-lg" data-loading="${esc(t.form.submitting || '…')}">${esc(t.form.submit)}</button>
           <p class="form-success" id="form-success" hidden>${esc(t.form.success)}</p>
+          <p class="form-error" id="form-error" hidden>${esc(t.form.error || 'Something went wrong. Please try again or email partners@energiemind.network.')}</p>
         </form>`;
 }
 
@@ -245,6 +258,7 @@ function jsonLd(t, lang, canonical) {
 
 function buildPage(lang, t) {
   const canonical = `${DOMAIN}/${lang.code}/`;
+  const homeUrl = `/${lang.code}/`;
   const ogImage = `${DOMAIN}/assets/images/og-default.svg`;
   const stats = t.hero.stats
     .map((s) => `<div class="stat"><span class="stat-value">${esc(s.value)}</span><span class="stat-label">${esc(s.label)}</span></div>`)
@@ -281,6 +295,9 @@ ${languages.filter((l) => l.code !== lang.code).map((l) => `  <meta property="og
   <meta name="twitter:title" content="${esc(t.meta.twitterTitle)}" />
   <meta name="twitter:description" content="${esc(t.meta.twitterDescription)}" />
   <meta name="twitter:image" content="${ogImage}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet" />
   <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.svg" />
   <link rel="stylesheet" href="/assets/css/style.css" />
@@ -290,8 +307,8 @@ ${languages.filter((l) => l.code !== lang.code).map((l) => `  <meta property="og
   <a class="skip-link" href="#main">${esc(t.skipLink)}</a>
   <header class="site-header" role="banner">
     <div class="container header-inner">
-      <a href="${canonical}" class="logo" aria-label="${esc(t.brand)}">
-        <img src="/assets/images/logo.svg" alt="${esc(t.brand)}" width="180" height="40" />
+      <a href="${homeUrl}" class="logo" aria-label="${esc(t.brand)}" title="${esc(t.brand)}">
+        <img src="/assets/images/logo.svg" alt="${esc(t.brand)}" width="200" height="44" />
       </a>
       <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="${esc(t.menuToggle)}">
         <span></span><span></span><span></span>
@@ -309,7 +326,7 @@ ${languages.filter((l) => l.code !== lang.code).map((l) => `  <meta property="og
   </header>
 
   <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
+    <section id="top" class="hero" aria-labelledby="hero-title">
       <div class="hero-bg"></div>
       <div class="container hero-content">
         <span class="hero-badge">${esc(t.hero.badge)}</span>
@@ -362,7 +379,9 @@ ${languages.filter((l) => l.code !== lang.code).map((l) => `  <meta property="og
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <img src="/assets/images/logo.svg" alt="${esc(t.brand)}" width="160" height="36" />
+        <a href="${homeUrl}" class="footer-logo" aria-label="${esc(t.brand)}">
+          <img src="/assets/images/logo-light.svg" alt="${esc(t.brand)}" width="180" height="40" />
+        </a>
         <p>${esc(t.footer.about)}</p>
       </div>
       <nav class="footer-nav" aria-label="Footer">
@@ -388,6 +407,7 @@ ${languages.filter((l) => l.code !== lang.code).map((l) => `  <meta property="og
     </div>
   </footer>
 
+  <script src="/assets/js/form-config.js" defer></script>
   <script src="/assets/js/main.js" defer></script>
 </body>
 </html>`;
@@ -461,6 +481,15 @@ function buildRootRedirect() {
 </html>`;
 }
 
+function buildFormConfig() {
+  const config = {
+    supabaseUrl: process.env.SUPABASE_URL || '',
+    supabaseAnonKey: process.env.SUPABASE_ANON_KEY || '',
+    table: process.env.SUPABASE_TABLE || 'partner_applications',
+  };
+  return `window.ENM_FORM_CONFIG = ${JSON.stringify(config)};\n`;
+}
+
 function ensureDir(dir) {
   fs.mkdirSync(dir, { recursive: true });
 }
@@ -482,6 +511,7 @@ function main() {
   ensureDir(OUT);
 
   copyDir(path.join(ROOT, 'assets'), path.join(OUT, 'assets'));
+  fs.writeFileSync(path.join(OUT, 'assets', 'js', 'form-config.js'), buildFormConfig(), 'utf8');
   console.log('  ✓ /assets/');
 
   for (const lang of languages) {
