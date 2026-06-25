@@ -47,6 +47,31 @@ Generates deployable static output in `/public/`:
 
 Vercel deploys from the `public/` output directory (see `vercel.json`).
 
+## Supabase Integration
+
+Uses `@supabase/supabase-js` and `@supabase/ssr`.
+
+| Path | Purpose |
+|------|---------|
+| `utils/supabase/client.js` | Browser client helper |
+| `utils/supabase/server.js` | Server client helpers |
+| `utils/supabase/middleware.js` | Session refresh helper (for future Edge/Auth) |
+| `lib/supabase.js` | Service-role client for API routes |
+| `public/assets/js/supabase-client.js` | Bundled browser SDK (built at `npm run build`) |
+
+### Environment variables
+
+Copy `.env.example` → `.env.local` for local builds. Set the same in Vercel:
+
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` — public form inserts
+- `SUPABASE_SERVICE_ROLE_KEY` — admin API only (server)
+- `ADMIN_PASSWORD` — `/admin/` login
+
+Run `supabase/schema.sql` in your Supabase SQL Editor first.
+
+> **Note:** This is a static site (not Next.js). There is no `page.tsx` or Next middleware — the partner form uses the bundled Supabase browser client; admin uses Vercel serverless API routes.
+
 ## Supabase (Partner Form)
 
 To persist partner applications:
@@ -57,6 +82,16 @@ To persist partner applications:
 4. Redeploy — the build injects config into `public/assets/js/form-config.js`
 
 Without Supabase, the form shows a success message in demo mode (no data saved).
+
+## Admin Dashboard
+
+Partner applications admin: **`/admin/`**
+
+- Password-protected (set `ADMIN_PASSWORD` in Vercel)
+- Lists all submissions from Supabase (requires `SUPABASE_SERVICE_ROLE_KEY`)
+- Filter, search, view details, update status (new → reviewing → approved → declined)
+
+See `.env.example` for required environment variables.
 
 ## SEO
 

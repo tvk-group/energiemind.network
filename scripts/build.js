@@ -3,6 +3,10 @@
 
 const fs = require('fs');
 const path = require('path');
+const esbuild = require('esbuild');
+
+require('dotenv').config({ path: path.join(__dirname, '..', '.env.local') });
+require('dotenv').config({ path: path.join(__dirname, '..', '.env') });
 
 const ROOT = path.resolve(__dirname, '..');
 const OUT = path.join(ROOT, 'public');
@@ -76,7 +80,7 @@ const SECTION_ICONS = {
   'data-centers': '⬡',
 };
 
-function sectionBlock(section, reverse = false) {
+function sectionBlock(section, reverse = false, toneIndex = 0) {
   const items = section.items
     .map((item) => {
       const link = item.link
@@ -90,7 +94,7 @@ function sectionBlock(section, reverse = false) {
     })
     .join('\n          ');
 
-  return `<section id="${section.id}" class="section ${reverse ? 'section-alt' : ''}" aria-labelledby="${section.id}-title">
+  return `<section id="${section.id}" class="section section-tone-${toneIndex % 4} ${reverse ? 'section-alt' : ''}" aria-labelledby="${section.id}-title">
       <div class="container">
         <header class="section-header">
           <span class="section-icon" aria-hidden="true">${SECTION_ICONS[section.id] || '◆'}</span>
@@ -265,7 +269,7 @@ function buildPage(lang, t) {
     .join('\n          ');
 
   const sections = Object.values(t.sections);
-  const sectionHtml = sections.map((s, i) => sectionBlock(s, i % 2 === 1)).join('\n\n    ');
+  const sectionHtml = sections.map((s, i) => sectionBlock(s, i % 2 === 1, i)).join('\n\n    ');
 
   return `<!DOCTYPE html>
 <html lang="${lang.hreflang}" dir="${lang.dir}">
@@ -308,7 +312,7 @@ ${languages.filter((l) => l.code !== lang.code).map((l) => `  <meta property="og
   <header class="site-header" role="banner">
     <div class="container header-inner">
       <a href="${homeUrl}" class="logo" aria-label="${esc(t.brand)}" title="${esc(t.brand)}">
-        <img src="/assets/images/logo.svg" alt="${esc(t.brand)}" width="200" height="44" />
+        <img src="/assets/images/logo-light.svg" alt="${esc(t.brand)}" width="200" height="44" />
       </a>
       <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="${esc(t.menuToggle)}">
         <span></span><span></span><span></span>
@@ -344,7 +348,7 @@ ${languages.filter((l) => l.code !== lang.code).map((l) => `  <meta property="og
 
     ${sectionHtml}
 
-    <section id="enm-notice" class="section enm-section" aria-labelledby="enm-title">
+    <section id="enm-notice" class="section section-tone-2 enm-section" aria-labelledby="enm-title">
       <div class="container">
         <div class="enm-card">
           <h2 id="enm-title">${esc(t.enm.title)}</h2>
@@ -353,7 +357,7 @@ ${languages.filter((l) => l.code !== lang.code).map((l) => `  <meta property="og
       </div>
     </section>
 
-    <section id="application" class="section section-alt" aria-labelledby="application-title">
+    <section id="application" class="section section-tone-3 section-alt" aria-labelledby="application-title">
       <div class="container">
         <header class="section-header">
           <h2 id="application-title">${esc(t.form.title)}</h2>
@@ -363,7 +367,7 @@ ${languages.filter((l) => l.code !== lang.code).map((l) => `  <meta property="og
       </div>
     </section>
 
-    <section id="faq" class="section" aria-labelledby="faq-title" itemscope itemtype="https://schema.org/FAQPage">
+    <section id="faq" class="section section-tone-0" aria-labelledby="faq-title" itemscope itemtype="https://schema.org/FAQPage">
       <div class="container">
         <header class="section-header">
           <h2 id="faq-title">${esc(t.faq.title)}</h2>
@@ -407,6 +411,7 @@ ${languages.filter((l) => l.code !== lang.code).map((l) => `  <meta property="og
     </div>
   </footer>
 
+  <script src="/assets/js/supabase-client.js" defer></script>
   <script src="/assets/js/form-config.js" defer></script>
   <script src="/assets/js/main.js" defer></script>
 </body>
@@ -462,6 +467,10 @@ User-agent: Baiduspider
 Allow: /
 
 Sitemap: ${DOMAIN}/sitemap-index.xml
+
+# Admin dashboard — noindex
+User-agent: *
+Disallow: /admin/
 `;
 }
 
@@ -483,11 +492,27 @@ function buildRootRedirect() {
 
 function buildFormConfig() {
   const config = {
-    supabaseUrl: process.env.SUPABASE_URL || '',
-    supabaseAnonKey: process.env.SUPABASE_ANON_KEY || '',
+    supabaseUrl:
+      process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL || '',
+    supabaseKey:
+      process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ||
+      process.env.SUPABASE_ANON_KEY ||
+      '',
     table: process.env.SUPABASE_TABLE || 'partner_applications',
   };
   return `window.ENM_FORM_CONFIG = ${JSON.stringify(config)};\n`;
+}
+
+function bundleSupabaseClient() {
+  esbuild.buildSync({
+    entryPoints: [path.join(ROOT, 'utils/supabase/browser-entry.js')],
+    outfile: path.join(OUT, 'assets/js/supabase-client.js'),
+    bundle: true,
+    format: 'iife',
+    globalName: 'ENMSupabase',
+    platform: 'browser',
+    minify: true,
+  });
 }
 
 function ensureDir(dir) {
@@ -511,8 +536,9 @@ function main() {
   ensureDir(OUT);
 
   copyDir(path.join(ROOT, 'assets'), path.join(OUT, 'assets'));
+  bundleSupabaseClient();
   fs.writeFileSync(path.join(OUT, 'assets', 'js', 'form-config.js'), buildFormConfig(), 'utf8');
-  console.log('  ✓ /assets/');
+  console.log('  ✓ /assets/ (+ supabase-client.js)');
 
   for (const lang of languages) {
     const t = loadTranslation(lang.code);
@@ -534,6 +560,10 @@ function main() {
   fs.writeFileSync(path.join(OUT, 'sitemap-index.xml'), buildSitemapIndex(), 'utf8');
   fs.writeFileSync(path.join(OUT, 'robots.txt'), buildRobots(), 'utf8');
   fs.writeFileSync(path.join(OUT, 'index.html'), buildRootRedirect(), 'utf8');
+
+  ensureDir(path.join(OUT, 'admin'));
+  fs.copyFileSync(path.join(ROOT, 'admin', 'index.html'), path.join(OUT, 'admin', 'index.html'));
+  console.log('  ✓ /admin/index.html');
 
   console.log('  ✓ sitemaps, robots.txt, root redirect → public/');
   console.log('Done.');

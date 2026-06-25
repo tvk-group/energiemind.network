@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Partner Applications — EnergieMIND Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/assets/css/admin.css" />
+</head>
+<body>
+  <div id="login-screen" class="login-screen">
+    <div class="login-card">
+      <a href="/en/" class="login-logo">
+        <img src="/assets/images/logo-light.svg" alt="EnergieMIND Network" width="200" height="44" />
+      </a>
+      <h1>Partner Applications</h1>
+      <p class="login-sub">EnergieMIND Network admin dashboard</p>
+      <form id="login-form">
+        <label for="admin-password">Admin password</label>
+        <input type="password" id="admin-password" name="password" required autocomplete="current-password" placeholder="Enter admin password" />
+        <p id="login-error" class="login-error" hidden></p>
+        <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+      </form>
+      <p class="login-hint"><a href="/en/">← Back to website</a></p>
+    </div>
+  </div>
+
+  <div id="dashboard" class="dashboard" hidden>
+    <header class="admin-header">
+      <div class="admin-header-inner">
+        <div class="admin-brand">
+          <a href="/en/"><img src="/assets/images/logo-light.svg" alt="EnergieMIND" width="160" height="36" /></a>
+          <span class="admin-badge">Admin</span>
+        </div>
+        <div class="admin-actions">
+          <button type="button" id="refresh-btn" class="btn btn-secondary btn-sm">Refresh</button>
+          <button type="button" id="logout-btn" class="btn btn-outline btn-sm">Sign out</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="admin-main">
+      <div class="admin-container">
+        <header class="dash-header">
+          <h1>Partner Applications</h1>
+          <p>Review and manage pilot partner submissions from energiemind.network</p>
+        </header>
+
+        <div class="stats-grid" id="stats-grid">
+          <div class="stat-card"><span class="stat-num" id="stat-total">—</span><span class="stat-lbl">Total</span></div>
+          <div class="stat-card stat-new"><span class="stat-num" id="stat-new">—</span><span class="stat-lbl">New</span></div>
+          <div class="stat-card stat-review"><span class="stat-num" id="stat-review">—</span><span class="stat-lbl">Reviewing</span></div>
+          <div class="stat-card stat-approved"><span class="stat-num" id="stat-approved">—</span><span class="stat-lbl">Approved</span></div>
+        </div>
+
+        <div class="toolbar">
+          <label for="filter-status" class="sr-only">Filter by status</label>
+          <select id="filter-status">
+            <option value="">All statuses</option>
+            <option value="new">New</option>
+            <option value="reviewing">Reviewing</option>
+            <option value="approved">Approved</option>
+            <option value="declined">Declined</option>
+          </select>
+          <input type="search" id="search-input" placeholder="Search name, org, email, country…" />
+        </div>
+
+        <p id="load-error" class="load-error" hidden></p>
+
+        <div class="table-wrap">
+          <table class="apps-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Organization</th>
+                <th>Site type</th>
+                <th>Country</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="apps-body">
+              <tr><td colspan="7" class="empty-row">Loading…</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <dialog id="detail-modal" class="detail-modal">
+    <form method="dialog" class="detail-inner">
+      <header class="detail-header">
+        <h2 id="detail-title">Application</h2>
+        <button type="button" class="modal-close" id="modal-close" aria-label="Close">×</button>
+      </header>
+      <div id="detail-body" class="detail-body"></div>
+      <footer class="detail-footer">
+        <label for="detail-status">Status</label>
+        <select id="detail-status">
+          <option value="new">New</option>
+          <option value="reviewing">Reviewing</option>
+          <option value="approved">Approved</option>
+          <option value="declined">Declined</option>
+        </select>
+        <button type="button" id="save-status" class="btn btn-primary">Save status</button>
+      </footer>
+    </form>
+  </dialog>
+
+  <script src="/assets/js/admin.js" defer></script>
+</body>
+</html>
