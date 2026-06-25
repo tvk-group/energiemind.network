@@ -29,13 +29,25 @@
   }
 
   function showLogin() {
-    if (loginScreen) loginScreen.hidden = false;
-    if (dashboard) dashboard.hidden = true;
+    if (loginScreen) {
+      loginScreen.hidden = false;
+      loginScreen.removeAttribute('aria-hidden');
+    }
+    if (dashboard) {
+      dashboard.hidden = true;
+      dashboard.setAttribute('aria-hidden', 'true');
+    }
   }
 
   function showDashboard() {
-    if (loginScreen) loginScreen.hidden = true;
-    if (dashboard) dashboard.hidden = false;
+    if (loginScreen) {
+      loginScreen.hidden = true;
+      loginScreen.setAttribute('aria-hidden', 'true');
+    }
+    if (dashboard) {
+      dashboard.hidden = false;
+      dashboard.removeAttribute('aria-hidden');
+    }
   }
 
   function fetchJson(url, options) {

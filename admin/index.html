@@ -19,10 +19,10 @@
       </a>
       <h1>Partner Applications</h1>
       <p class="login-sub">EnergieMIND Network admin dashboard</p>
-      <form id="login-form">
+      <form id="login-form" action="#" method="post" autocomplete="on">
         <label for="admin-password">Admin password</label>
         <input type="password" id="admin-password" name="password" required autocomplete="current-password" placeholder="Enter admin password" />
-        <p id="login-error" class="login-error" hidden></p>
+        <p id="login-error" class="login-error" hidden role="alert"></p>
         <button type="submit" id="login-btn" class="btn btn-primary btn-block">Sign in</button>
       </form>
       <p class="login-hint">Password is set in Vercel as <code>ADMIN_PASSWORD</code> (not your Supabase password).</p>
@@ -114,6 +114,12 @@
     </form>
   </dialog>
 
+  <script>
+    /* Prevent native form navigation if admin.js fails to load */
+    document.getElementById('login-form')?.addEventListener('submit', function (e) {
+      e.preventDefault();
+    }, { capture: true });
+  </script>
   <script src="/assets/js/admin.js" defer></script>
 </body>
 </html>
