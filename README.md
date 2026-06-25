@@ -85,7 +85,7 @@ Without Supabase, the form shows a success message in demo mode (no data saved).
 
 ## Admin Dashboard
 
-Partner applications admin: **`/admin/`**
+Partner applications admin: **`/admin/`** or **`/partner-admin/`**
 
 - Password-protected (set `ADMIN_PASSWORD` in Vercel)
 - Lists all submissions from Supabase (requires `SUPABASE_SERVICE_ROLE_KEY`)
