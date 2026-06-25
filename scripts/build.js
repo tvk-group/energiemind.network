@@ -471,6 +471,7 @@ Sitemap: ${DOMAIN}/sitemap-index.xml
 # Admin dashboard — noindex
 User-agent: *
 Disallow: /admin/
+Disallow: /partner-admin/
 `;
 }
 
@@ -562,8 +563,18 @@ function main() {
   fs.writeFileSync(path.join(OUT, 'index.html'), buildRootRedirect(), 'utf8');
 
   ensureDir(path.join(OUT, 'admin'));
-  fs.copyFileSync(path.join(ROOT, 'admin', 'index.html'), path.join(OUT, 'admin', 'index.html'));
+  ensureDir(path.join(OUT, 'partner-admin'));
+  const adminSrc = path.join(ROOT, 'admin', 'index.html');
+  fs.copyFileSync(adminSrc, path.join(OUT, 'admin', 'index.html'));
+  fs.copyFileSync(adminSrc, path.join(OUT, 'partner-admin', 'index.html'));
   console.log('  ✓ /admin/index.html');
+  console.log('  ✓ /partner-admin/index.html');
+
+  const adminBuilt = path.join(OUT, 'admin', 'index.html');
+  if (!fs.existsSync(adminBuilt)) {
+    console.error('FATAL: admin page missing from build output');
+    process.exit(1);
+  }
 
   console.log('  ✓ sitemaps, robots.txt, root redirect → public/');
   console.log('Done.');
