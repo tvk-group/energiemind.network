@@ -166,7 +166,13 @@
       .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, data: d }; }); })
       .then(function (res) {
         if (!res.ok) {
-          loginError.textContent = res.data.error || 'Login failed';
+          if (res.status === 503) {
+            loginError.textContent = 'Admin not configured. Set ADMIN_PASSWORD in Vercel → Settings → Environment Variables, then redeploy.';
+          } else if (res.status === 401) {
+            loginError.textContent = res.data.error || 'Wrong password. It must match ADMIN_PASSWORD in Vercel (not your Supabase password).';
+          } else {
+            loginError.textContent = res.data.error || 'Login failed';
+          }
           loginError.hidden = false;
           return;
         }

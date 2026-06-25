@@ -23,9 +23,22 @@
     if (el) el.hidden = !show;
   }
 
-  function submitToSupabase(data) {
+  function submitViaApi(data) {
+    return fetch('/api/partner-application', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    }).then(function (res) {
+      return res.json().then(function (body) {
+        if (!res.ok) throw new Error(body.error || body.detail || 'Submit failed');
+        return true;
+      });
+    });
+  }
+
+  function submitViaSupabase(data) {
     var cfg = window.ENM_FORM_CONFIG || {};
-    if (!cfg.supabaseUrl || !cfg.supabaseKey) return Promise.resolve(false);
+    if (!cfg.supabaseUrl || !cfg.supabaseKey) return Promise.reject(new Error('No Supabase config'));
 
     if (window.ENMSupabase && window.ENMSupabase.insertPartnerApplication) {
       return window.ENMSupabase.insertPartnerApplication(
@@ -33,9 +46,8 @@
         cfg.supabaseKey,
         cfg.table || 'partner_applications',
         data
-      ).then(function () { return true; });
+      );
     }
-
     return Promise.reject(new Error('Supabase client not loaded'));
   }
 
@@ -71,10 +83,10 @@
         source: 'energiemind.network',
       };
 
-      var cfg = window.ENM_FORM_CONFIG || {};
-      var hasSupabase = cfg.supabaseUrl && cfg.supabaseKey;
-
-      (hasSupabase ? submitToSupabase(payload) : Promise.resolve(false))
+      submitViaApi(payload)
+        .catch(function () {
+          return submitViaSupabase(payload);
+        })
         .then(function () {
           showMessage('form-success', true);
           form.reset();

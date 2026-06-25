@@ -70,6 +70,14 @@ Copy `.env.example` → `.env.local` for local builds. Set the same in Vercel:
 
 Run `supabase/schema.sql` in your Supabase SQL Editor first.
 
+If the partner form fails, also run `supabase/fix-permissions.sql`.
+
+### Troubleshooting
+
+**Form error on submit:** Run `supabase/fix-permissions.sql` in Supabase. Ensure `SUPABASE_SERVICE_ROLE_KEY` is set in Vercel (form uses `/api/partner-application`).
+
+**Admin login fails:** Password must match `ADMIN_PASSWORD` in Vercel exactly — this is separate from your Supabase password. After changing it in Vercel, redeploy.
+
 > **Note:** This is a static site (not Next.js). There is no `page.tsx` or Next middleware — the partner form uses the bundled Supabase browser client; admin uses Vercel serverless API routes.
 
 ## Supabase (Partner Form)

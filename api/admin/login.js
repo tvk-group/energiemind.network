@@ -11,7 +11,9 @@ module.exports = async function handler(req, res) {
 
   const { password } = req.body || {};
   if (!password || password !== process.env.ADMIN_PASSWORD) {
-    return res.status(401).json({ error: 'Invalid password' });
+    return res.status(401).json({
+      error: 'Invalid password. This must match the ADMIN_PASSWORD value in your Vercel project settings.',
+    });
   }
 
   const token = createToken();

@@ -137,6 +137,12 @@ a:hover { color: var(--accent); }
   font-size: 0.875rem;
   color: var(--muted);
 }
+.login-hint code {
+  font-size: 0.8125rem;
+  background: rgba(255,255,255,0.06);
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+}
 
 /* Dashboard layout */
 .dashboard { min-height: 100vh; display: flex; flex-direction: column; }

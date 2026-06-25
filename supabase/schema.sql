@@ -1,5 +1,5 @@
 -- EnergieMIND Network — Partner Application submissions
--- Run in Supabase SQL Editor
+-- Run in Supabase SQL Editor (safe to re-run)
 
 create table if not exists public.partner_applications (
   id uuid primary key default gen_random_uuid(),
@@ -19,18 +19,27 @@ create table if not exists public.partner_applications (
 
 alter table public.partner_applications enable row level security;
 
--- Allow anonymous inserts from the public website (anon key)
+-- Table-level grants (required — RLS alone is not enough)
+grant usage on schema public to anon, authenticated, service_role;
+grant select, insert, update, delete on public.partner_applications to service_role;
+grant insert on public.partner_applications to anon, authenticated;
+
+-- Drop existing policies if re-running
+drop policy if exists "Allow public insert" on public.partner_applications;
+drop policy if exists "No public read" on public.partner_applications;
+
+-- Allow anonymous inserts from the public website
 create policy "Allow public insert"
   on public.partner_applications
   for insert
-  to anon
+  to anon, authenticated
   with check (true);
 
--- Restrict reads to authenticated service role / dashboard users only
+-- Block public reads (admin uses service role)
 create policy "No public read"
   on public.partner_applications
   for select
-  to anon
+  to anon, authenticated
   using (false);
 
 create index if not exists partner_applications_created_at_idx
