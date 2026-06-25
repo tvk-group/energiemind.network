@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "title": "EnergieMIND Network — Kumppani- ja pilotinfrastruktuuriverkosto",
+    "description": "Liity EnergieMIND Networkiin. Hotellit, maatilat, aurinkovoimalat, kasvihuoneet, louhintaisännät ja infrastruktuurioperaattorit voivat hakea pilottikumppaneiksi integroituja energia- ja lämpöohjelmia varten.",
+    "keywords": "EnergieMIND, kumppaniverkosto, pilottikohteet, louhinnan lämpöhyöty, aurinkolouhinta, kasvihuoneet, maatilat, datakeskukset, energiainfrastruktuuri",
+    "ogTitle": "EnergieMIND Network — Hae pilottikumppaniksi",
+    "ogDescription": "Yhdistä kohteesi EnergieMIND kumppani- ja pilotti-ekosysteemiin. Infrastruktuurioperaattorit ympäri maailmaa ovat tervetulleita.",
+    "twitterTitle": "EnergieMIND Network — Kumppani- ja pilotiohjelma",
+    "twitterDescription": "Hotellit, maatilat, aurinko, kasvihuoneet ja datakeskukset — liity EnergieMIND-infrastruktuuriverkostoon."
+  },
+  "brand": "EnergieMIND Network",
+  "tagline": "Kumppani / Pilotti / Infrastruktuuriverkosto",
+  "nav": {
+    "partnerNetwork": "Kumppaniverkosto",
+    "pilotSites": "Pilottikohteet",
+    "miningHeat": "Louhinnan lämpöhyöty",
+    "solarMining": "Aurinko + Louhinta",
+    "commercial": "Kaupalliset rakennukset",
+    "greenhouses": "Kasvihuoneet",
+    "farms": "Maatilat",
+    "dataCenters": "Datakeskukset",
+    "application": "Kumppanihakemus",
+    "faq": "UKK",
+    "apply": "Hae pilottikumppaniksi",
+    "language": "Kieli"
+  },
+  "hero": {
+    "badge": "Infrastruktuurikumppaniohjelma",
+    "title": "Vie hajautetun energiainfrastruktuurin tulevaisuutta eteenpäin",
+    "subtitle": "Hotellit, maatilat, aurinkovoimalat, kasvihuoneoperaattorit, louhintaisännät ja energiakumppanit liittyvät EnergieMIND Networkiin toteuttamaan pilottiohjelmia, jotka muuttavat laskentälämmön hyötyarvoksi.",
+    "cta": "Hae pilottikumppaniksi",
+    "secondary": "Tutustu pilottikohteisiin",
+    "stats": [
+      { "value": "25+", "label": "Kumppanikategoriat" },
+      { "value": "Global", "label": "Pilotin kattavuus" },
+      { "value": "Lämpö ensin", "label": "Hyötysuunnittelu" }
+    ]
+  },
+  "sections": {
+    "partnerNetwork": {
+      "id": "partner-network",
+      "title": "Kumppaniverkosto",
+      "subtitle": "Koordinoitu ekosysteemi infrastruktuurioperaattoreille",
+      "intro": "EnergieMIND Kumppaniverkosto yhdistää kohdeomistajat, energiakumppanit ja infrastruktuurioperaattorit, jotka haluavat toteuttaa todellisia pilottiohjelmia. Jäsenet saavat teknistä ohjausta, integraatiokehyksiä ja pääsyn laajempaan EnergieMIND-ekosysteemiin.",
+      "items": [
+        { "title": "Kohdeoperaattorit", "text": "Hotellit, kaupalliset rakennukset, maatilat ja kasvihuoneet, joilla on käytettävissä termistä tai sähköistä kapasiteettia.", "link": "#commercial-buildings" },
+        { "title": "Energiakumppanit", "text": "Aurinkoenergiakehittäjät, verkkoyhtiöt ja uusiutuvien omaisuuserien hallinnoijat, jotka etsivät laskentaan integroitua kuormaa.", "link": "#solar-mining" },
+        { "title": "Infrastruktuuri-isännät", "text": "Louhintaisännät, datakeskusoperaattorit ja colocation-palveluntarjoajat, joilla on lämmön talteenoton potentiaalia.", "link": "#data-centers" },
+        { "title": "Pilottikoordinaattorit", "text": "Alueelliset kumppanit, jotka hallinnoivat käyttöönottoa, vaatimustenmukaisuutta ja paikallista hyötyintegraatiota.", "link": "#pilot-sites" }
+      ],
+      "cta": "Aloita kumppanihakemuksesi"
+    },
+    "pilotSites": {
+      "id": "pilot-sites",
+      "title": "Pilottikohteet",
+      "subtitle": "Todellisia käyttöönottoja, mitattavia tuloksia",
+      "intro": "Pilottikohteet validoivat EnergieMIND-integraatiomallit ennen laajempaa käyttöönottoa. Jokainen pilotti dokumentoi energiavirrat, lämmön talteenoton suorituskyvyn ja operatiivisen talouden kumppanikategorialle.",
+      "items": [
+        { "title": "Kohteen arviointi", "text": "Termisen kuorman profilointi, sähkökapasiteetin tarkastelu ja integraation toteutettavuustutkimus." },
+        { "title": "Käyttöönottosuunnitelma", "text": "Vaiheittainen laitteistojen sijoittelu, seurantalaitteisto ja turvallisuusvaatimusten noudattaminen." },
+        { "title": "Suorituskykyraportointi", "text": "Kuukausittaiset energia-, lämpö- ja käyttöaikamittarit jaetaan verkostokumppaneille." },
+        { "title": "Skaalauspolku", "text": "Onnistuneet pilotit siirtyvät täyteen verkosto jäsenyyteen laajennetulla kapasiteetilla." }
+      ],
+      "cta": "Hae pilottikohteen statusta"
+    },
+    "miningHeat": {
+      "id": "mining-heat",
+      "title": "Louhinnan lämpöhyöty",
+      "subtitle": "Muunna laskennan hukkalämpö käyttökelpoiseksi termiseksi energiaksi",
+      "intro": "Louhinnan lämpöhyöty -ohjelmat keräävät ylimääräisen lämmön laskentainfrastruktuurista ja ohjaavat sen paikallisiin tai kaukolämpöjärjestelmiin. Hotellit, kasvihuoneet ja maatalouslaitokset hyötyvät edullisesta termisestä syötteestä samalla kun isännöivät tehokkaita laskentakuormia.",
+      "items": [
+        { "title": "Lämmön talteenotto", "text": "Nestekylmä- tai ilmakylmä talteenottojärjestelmät integroituna olemassa olevaan HVAC:hen." },
+        { "title": "Terminen ohjaus", "text": "Puskuritankit, lämmönvaihtimet ja jakelu kasvihuoneisiin, uima-altaisiin tai rakennussilmukoihin." },
+        { "title": "Kuorman tasapainotus", "text": "Laskennan aikataulutus sovitettuna termiseen kysyntäkäyrään maksimaalisen hyödyn saavuttamiseksi." },
+        { "title": "Seuranta", "text": "Reaaliaikaiset kojelaudat lämpötilalle, virtausnopeudelle ja energiansäästöille." }
+      ],
+      "cta": "Tutustu lämpöhyötyintegraatioon"
+    },
+    "solarMining": {
+      "id": "solar-mining",
+      "title": "Aurinko + Louhinta",
+      "subtitle": "Sovita uusiutuva tuotanto joustaviin laskentakuormiin",
+      "intro": "Aurinko + Louhinta -integraatiot yhdistävät vaihtelevan aurinkosähkötuotannon säädettävään laskentakysyntään. Ylimääräinen päiväaikainen tuotanto pyörittää louhinta- tai tekoälykuormia, kun lämpö talteen otetaan paikalliseen käyttöön.",
+      "items": [
+        { "title": "Rajoituksen vähentäminen", "text": "Käytä ylimääräistä aurinkoenergiaa verkkoon viennin sijaan negatiivisten hintojen aikana." },
+        { "title": "Hybridi dimensionointi", "text": "Oikea koko aurinkovoimaloille ja laskentakapasiteetille paikallisten kulutuskuvioiden mukaan." },
+        { "title": "Varastoinnin koordinointi", "text": "Akku-puskurit tasoittavat siirtymiä aurinkohuippujen ja peruskuorman välillä." },
+        { "title": "Tuottojen pinoaminen", "text": "Yhdistä energiansäästöt, lämpöhyötyarvo ja laskentatuotto." }
+      ],
+      "cta": "Yhdistä aurinkovoimalasi"
+    },
+    "commercial": {
+      "id": "commercial-buildings",
+      "title": "Kaupalliset rakennukset",
+      "subtitle": "Hotellit, toimistot ja monitoimirakennukset",
+      "intro": "Kaupalliset rakennukset, joilla on tasaista kuumavesi- ja tilalämmitystarvetta, ovat ihanteellisia pilotti-isäntiä. Katto- tai kellarilaskentamoduulit toimittavat lämpöä rakennussilmukoihin ja vähentävät perinteisen kattilan käyttöaikaa.",
+      "items": [
+        { "title": "Hotellit ja majoitus", "text": "Allaslämmitys, käyttövesi ja pesuloiden termiset silmukat." },
+        { "title": "Toimistokompleksit", "text": "Kausittainen tilalämmityksen täydennys ja käyttöveden esilämmitys." },
+        { "title": "Monitoimikäyttö", "text": "Yhdistetyt asuin- ja vähittäiskaupan termiset alueet jaettuun talteenottoon." },
+        { "title": "Retrofit-valmis", "text": "Modulaarinen integraatio ilman merkittäviä rakenteellisia muutoksia." }
+      ],
+      "cta": "Rekisteröi rakennuksesi"
+    },
+    "greenhouses": {
+      "id": "greenhouses",
+      "title": "Kasvihuoneet",
+      "subtitle": "Ympärivuotinen kasvatus talteenotetulla laskentalämmöllä",
+      "intro": "Kasvihuoneoperaattorit vähentävät propaani- ja maakaasukustannuksia integroimalla louhinnan lämmön talteenoton ilmastointijärjestelmiin. Vakaat juurialueen ja ympäristön lämpötilat parantavat satojen johdonmukaisuutta.",
+      "items": [
+        { "title": "Ilmastointi", "text": "Täydenlämmitys kylminä jaksoina ja yöllisten lämpötilojen laskujen aikana." },
+        { "title": "CO₂-rikastus", "text": "Valinnaiset integraatiopolut hallittuun ilmakehän hallintaan." },
+        { "title": "Kauden pidentäminen", "text": "Aikaisempi istutus ja pidemmät sadonkorjuuajat lauhkeilla alueilla." },
+        { "title": "Kustannusten vähentäminen", "text": "Alhaisemmat polttoainelaskut samalla kun isännöidään tuottoa tuottavaa laskentaa." }
+      ],
+      "cta": "Liity kasvihuonekumppaniksi"
+    },
+    "farms": {
+      "id": "farms",
+      "title": "Maatilat",
+      "subtitle": "Maatalouskohteet termisellä ja sähköisellä kapasiteetilla",
+      "intro": "Maatilat, joilla on navettalämmitystä, kuivausoperaatioita tai paikallista uusiutuvaa tuotantoa, voivat isännöidä EnergieMIND-pilottimoduuleja. Maatalouskumppanit hyötyvät monipuolistuneista tuloista ja alentuneista energiakustannuksista.",
+      "items": [
+        { "title": "Navetta- ja karjatalouslämmitys", "text": "Talteen otettu lämpö eläinten suojille ja rehun käsittelyalueille." },
+        { "title": "Sadon kuivaus", "text": "Matalalämpöinen terminen syöte viljan ja tuotteiden kuivaukseen." },
+        { "title": "Paikallinen aurinkoenergia", "text": "Yhdistä olemassa oleva aurinkovoima joustavaan laskentaan oman kulutuksen parantamiseksi." },
+        { "title": "Maaseutuverkon tuki", "text": "Tarjoa joustavaa kuormaa paikallisten jakeluverkkojen vakauttamiseksi." }
+      ],
+      "cta": "Hae maatilakumppaniksi"
+    },
+    "dataCenters": {
+      "id": "data-centers",
+      "title": "Datakeskukset",
+      "subtitle": "Colocation-, edge- ja louhintaisäntälaitokset",
+      "intro": "Datakeskus- ja louhintaisäntäoperaattorit, joilla on lämmön talteenottoinfrastruktuuri, voivat liittyä verkostoon tarjontapuolen kumppaneina. Laitokset tarjoavat laskentakapasiteettia ja vievät termistä energiaa viereisiin kumppaneihin.",
+      "items": [
+        { "title": "Colocation-isännät", "text": "Tarjoa lämpö palveluna naapurikaupallisille tai maatalouskohteille." },
+        { "title": "Edge-solmut", "text": "Kompaktit käyttöönotot kumppanikohteissa suoralla termisellä kytkentällä." },
+        { "title": "Louhintalaitokset", "text": "Olemassa olevat ASIC- tai GPU-farmit nestekylmäinfrastruktuurilla." },
+        { "title": "PUE-optimointi", "text": "Tehokas PUE-parannus, kun hukkalämpö hyödynnetään tuottavasti." }
+      ],
+      "cta": "Rekisteröi laitoksesi"
+    }
+  },
+  "enm": {
+    "title": "Tuleva ekosysteemihyöty",
+    "text": "ENM on suunniteltu tulevaisuuden ekosysteemihyötytokeniksi verkoston koordinointiin, kumppani-incentiiveihin ja hallintoon EnergieMIND-ekosysteemissä. Tokenin esimyyntiä ei ole. Kumppaniohjelmat keskittyvät infrastruktuurin käyttöönottoon ja mitattaviin energiatuloksiin."
+  },
+  "faq": {
+    "title": "Usein kysytyt kysymykset",
+    "subtitle": "Kumppaniverkoston ja pilotiohjelman tiedot",
+    "items": [
+      {
+        "q": "Kuka voi hakea pilottikumppaniksi?",
+        "a": "Hotellit, maatilat, aurinkovoimalat, kasvihuoneoperaattorit, louhintaisännät, kaupallisten rakennusten omistajat, datakeskusoperaattorit ja energiainfrastruktuurikumppanit, joilla on sopiva sähköinen tai terminen kapasiteetti, voivat hakea."
+      },
+      {
+        "q": "Mitä pilotiohjelma sisältää?",
+        "a": "Pilottikumppanit saavat kohteen arvioinnin, integraatiosuunnittelun, käyttöönottotuen, seurantakojelaudat ja pääsyn EnergieMIND kumppaniverkostoon tiedonjakoa ja skaalaussuunnittelua varten."
+      },
+      {
+        "q": "Onko verkostoon liittymisestä kustannuksia?",
+        "a": "Hakemus on maksuton. Pilotin ehdot vaihtelevat kohteen tyypin ja integraation laajuuden mukaan. Jokainen kumppanuus rakennetaan jaettujen energiansäästöjen, laskentatuottojen ja operatiivisten tulosten ympärille."
+      },
+      {
+        "q": "Miten louhinnan lämpöhyöty toimii?",
+        "a": "Laskentalaitteisto tuottaa lämpöä käytön aikana. Talteenottojärjestelmät keräävät tämän termisen energian ja ohjaavat sen rakennuslämmitykseen, kasvihuoneen ilmastointiin, allasjärjestelmiin tai teollisiin prosesseihin."
+      },
+      {
+        "q": "Voinko liittyä, jos minulla on vain aurinkoenergiatuotantoa?",
+        "a": "Kyllä. Aurinkovoimalan omistajat voivat integroida joustavia laskentakuormia parantaakseen omaa kulutustaan ja halutessaan lisätä lämmön talteenoton, jos terminen vastaanottaja on saatavilla lähistöllä."
+      },
+      {
+        "q": "Mikä on ENM:n rooli verkostossa?",
+        "a": "ENM on suunniteltu tulevaisuuden ekosysteemihyödyksi verkoston koordinointiin ja kumppani-incentiiveihin. Nykyinen painopiste on pilottikäyttöönotoissa ja infrastruktuurikumppanuuksissa, ei tokenmyynnissä."
+      },
+      {
+        "q": "Mitä alueita tuetaan?",
+        "a": "EnergieMIND Network hyväksyy hakemuksia maailmanlaajuisesti. Alueelliset pilottikoordinaattorit auttavat paikallisessa vaatimustenmukaisuudessa, verkkoyhteydessä ja hyötyintegraatiovaatimuksissa."
+      },
+      {
+        "q": "Kuinka kauan hakuprosessi kestää?",
+        "a": "Alustava tarkastelu tapahtuu tyypillisesti kahden viikon kuluessa. Kohteen arvioinnin ja pilotin suunnittelun aikataulut riippuvat projektin laajuudesta ja paikallisista lupavaatimuksista."
+      }
+    ]
+  },
+  "form": {
+    "title": "Kumppanihakemus",
+    "subtitle": "Hae pilottikumppaniksi EnergieMIND Networkiin",
+    "fields": {
+      "name": "Koko nimi",
+      "namePlaceholder": "Koko nimesi",
+      "organization": "Organisaatio",
+      "organizationPlaceholder": "Yrityksen tai kohteen nimi",
+      "email": "Sähköpostiosoite",
+      "emailPlaceholder": "you@organization.com",
+      "phone": "Puhelinnumero",
+      "phonePlaceholder": "+358 00 000 0000",
+      "country": "Maa / Alue",
+      "countryPlaceholder": "Maa, jossa kohde sijaitsee",
+      "siteType": "Kohteen tyyppi",
+      "siteTypeOptions": [
+        "Hotelli / Majoitus",
+        "Kaupallinen rakennus",
+        "Maatila / Maatalous",
+        "Kasvihuone",
+        "Aurinkovoimala",
+        "Louhintaisäntä / Datakeskus",
+        "Energiakumppani",
+        "Muu infrastruktuuri"
+      ],
+      "capacity": "Käytettävissä oleva kapasiteetti",
+      "capacityPlaceholder": "esim. 500 kW sähkö, 200 kW terminen",
+      "message": "Projektin kuvaus",
+      "messagePlaceholder": "Kuvaile kohteesi, tavoitteesi ja integraatio-kiinnostuksesi"
+    },
+    "submit": "Lähetä kumppanihakemus",
+    "disclaimer": "Lähettämällä tämän lomakkeen hyväksyt, että sinuun otetaan yhteyttä EnergieMIND kumppaniohjelmaan liittyen. Tietojasi käsitellään sovellettavien tietosuojasäädösten mukaisesti.",
+    "success": "Kiitos. Kumppanihakemuksesi on vastaanotettu. Tiimimme ottaa sinuun pian yhteyttä."
+  },
+  "footer": {
+    "about": "EnergieMIND Network yhdistää infrastruktuurioperaattoreita maailmanlaajuisesti energiaintegroidun laskennan ja lämmön talteenoton pilottikäyttöönottoihin.",
+    "links": {
+      "network": "Kumppaniverkosto",
+      "pilots": "Pilottikohteet",
+      "apply": "Hae nyt",
+      "faq": "UKK"
+    },
+    "legal": "© 2026 TVK Labs & Technologies LTD. All rights reserved.",
+    "privacy": "Tietosuojakäytäntö",
+    "terms": "Käyttöehdot",
+    "contact": "partners@energiemind.network"
+  },
+  "breadcrumbs": {
+    "home": "Etusivu",
+    "network": "Kumppaniverkosto"
+  },
+  "skipLink": "Siirry pääsisältöön",
+  "menuToggle": "Avaa valikko"
+}

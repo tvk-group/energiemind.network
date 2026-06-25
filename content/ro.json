@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "title": "EnergieMIND Network — Rețea de parteneri și infrastructură pilot",
+    "description": "Alătură-te EnergieMIND Network. Hoteluri, ferme, site-uri solare, sere, gazde de mining și operatori de infrastructură pot aplica ca parteneri pilot pentru programe integrate de energie și utilitate termică.",
+    "keywords": "EnergieMIND, rețea de parteneri, site-uri pilot, utilitate termică din mining, solar mining, sere, ferme, centre de date, infrastructură energetică",
+    "ogTitle": "EnergieMIND Network — Aplică ca partener pilot",
+    "ogDescription": "Conectează-ți site-ul la ecosistemul de parteneri și programe pilot EnergieMIND. Operatorii de infrastructură din întreaga lume sunt bineveniți.",
+    "twitterTitle": "EnergieMIND Network — Program de parteneri și pilot",
+    "twitterDescription": "Hoteluri, ferme, solar, sere și centre de date — alătură-te rețelei de infrastructură EnergieMIND."
+  },
+  "brand": "EnergieMIND Network",
+  "tagline": "Rețea de parteneri / pilot / infrastructură",
+  "nav": {
+    "partnerNetwork": "Rețea de parteneri",
+    "pilotSites": "Site-uri pilot",
+    "miningHeat": "Utilitate termică din mining",
+    "solarMining": "Solar + Mining",
+    "commercial": "Clădiri comerciale",
+    "greenhouses": "Sere",
+    "farms": "Ferme",
+    "dataCenters": "Centre de date",
+    "application": "Aplicație partener",
+    "faq": "Întrebări frecvente",
+    "apply": "Aplică ca partener pilot",
+    "language": "Limbă"
+  },
+  "hero": {
+    "badge": "Program de parteneri infrastructură",
+    "title": "Alimentează viitorul infrastructurii energetice distribuite",
+    "subtitle": "Hoteluri, ferme, site-uri solare, operatori de sere, gazde de mining și parteneri energetici se alătură EnergieMIND Network pentru a implementa programe pilot care transformă căldura de calcul în valoare utilitară.",
+    "cta": "Aplică ca partener pilot",
+    "secondary": "Explorează site-urile pilot",
+    "stats": [
+      { "value": "25+", "label": "Categorii de parteneri" },
+      { "value": "Global", "label": "Acoperire pilot" },
+      { "value": "Căldură-First", "label": "Design utilitar" }
+    ]
+  },
+  "sections": {
+    "partnerNetwork": {
+      "id": "partner-network",
+      "title": "Rețea de parteneri",
+      "subtitle": "Un ecosistem coordonat pentru operatorii de infrastructură",
+      "intro": "Rețeaua de parteneri EnergieMIND conectează proprietarii de site-uri, partenerii energetici și operatorii de infrastructură care doresc să implementeze programe pilot reale. Membrii primesc îndrumare tehnică, cadre de integrare și acces la ecosistemul EnergieMIND.",
+      "items": [
+        { "title": "Operatori de site-uri", "text": "Hoteluri, clădiri comerciale, ferme și sere cu capacitate termică sau electrică disponibilă.", "link": "#commercial-buildings" },
+        { "title": "Parteneri energetici", "text": "Dezvoltatori solari, operatori de rețea și manageri de active regenerabile care caută sarcini integrate cu calculul.", "link": "#solar-mining" },
+        { "title": "Gazde de infrastructură", "text": "Gazde de mining, operatori de centre de date și furnizori de colocation cu potențial de recuperare a căldurii.", "link": "#data-centers" },
+        { "title": "Coordonatori pilot", "text": "Parteneri regionali care gestionează onboarding-ul, conformitatea și integrarea cu utilitățile locale.", "link": "#pilot-sites" }
+      ],
+      "cta": "Începe aplicația de partener"
+    },
+    "pilotSites": {
+      "id": "pilot-sites",
+      "title": "Site-uri pilot",
+      "subtitle": "Implementări reale, rezultate măsurabile",
+      "intro": "Site-urile pilot validează modelele de integrare EnergieMIND înainte de extinderea la scară largă. Fiecare pilot documentează fluxurile de energie, performanța recuperării căldurii și economia operațională pentru categoria de partener.",
+      "items": [
+        { "title": "Evaluare site", "text": "Profilarea sarcinii termice, revizuirea capacității electrice și studiu de fezabilitate al integrării." },
+        { "title": "Plan de implementare", "text": "Plasare hardware în faze, instrumentație de monitorizare și conformitate de siguranță." },
+        { "title": "Raportare performanță", "text": "Metrici lunare de energie, căldură și uptime partajate cu partenerii rețelei." },
+        { "title": "Cale de scalare", "text": "Piloții reușiți trec la calitatea de membru complet al rețelei cu capacitate extinsă." }
+      ],
+      "cta": "Aplică pentru statut de site pilot"
+    },
+    "miningHeat": {
+      "id": "mining-heat",
+      "title": "Utilitate termică din mining",
+      "subtitle": "Transformă căldura reziduală de calcul în energie termică utilizabilă",
+      "intro": "Programele de utilitate termică din mining capturează căldura în exces din infrastructura de calcul și o direcționează către sisteme de încălzire la fața locului sau de termoficare. Hotelurile, serele și facilitățile agricole beneficiază de input termic cu cost redus, găzduind în același timp sarcini de calcul eficiente.",
+      "items": [
+        { "title": "Captare căldură", "text": "Sisteme de recuperare cu răcire lichidă sau aer integrate cu HVAC existent." },
+        { "title": "Rutare termică", "text": "Rezervoare tampon, schimbătoare de căldură și distribuție către sere, piscine sau bucle de clădire." },
+        { "title": "Echilibrare sarcină", "text": "Programare de calcul aliniată cu curbele de cerere termică pentru utilitate maximă." },
+        { "title": "Monitorizare", "text": "Panouri în timp real pentru temperatură, debit și economii de energie." }
+      ],
+      "cta": "Explorează integrarea utilității termice"
+    },
+    "solarMining": {
+      "id": "solar-mining",
+      "title": "Solar + Mining",
+      "subtitle": "Aliniază generarea regenerabilă cu sarcini de calcul flexibile",
+      "intro": "Integrările Solar + Mining potrivesc producția fotovoltaică intermitentă cu cererea de calcul dispatchabilă. Excedentul de generare diurnă alimentează sarcini de mining sau AI, iar căldura este recuperată pentru uz local.",
+      "items": [
+        { "title": "Reducerea curtailmentului", "text": "Folosește surplusul solar în loc de export în rețea în perioade cu prețuri negative." },
+        { "title": "Dimensionare hibridă", "text": "Dimensionează corect array-urile PV și capacitatea de calcul pentru tiparele locale de consum." },
+        { "title": "Coordonare stocare", "text": "Bufferele cu baterii netezesc tranzițiile între vârfurile solare și sarcina de bază." },
+        { "title": "Stivuire venituri", "text": "Combină economiile de energie, valoarea utilității termice și randamentul de calcul." }
+      ],
+      "cta": "Conectează-ți site-ul solar"
+    },
+    "commercial": {
+      "id": "commercial-buildings",
+      "title": "Clădiri comerciale",
+      "subtitle": "Hoteluri, birouri și proprietăți cu utilizare mixtă",
+      "intro": "Clădirile comerciale cu cerere constantă de apă caldă și încălzire spațială sunt gazde pilot ideale. Modulele de calcul pe acoperiș sau în subsol furnizează căldură buclelor clădirii, reducând timpul de funcționare al cazanelor convenționale.",
+      "items": [
+        { "title": "Hoteluri și ospitalitate", "text": "Încălzire piscină, apă caldă menajeră și bucle termice pentru spălătorie." },
+        { "title": "Complexuri de birouri", "text": "Supliment sezonier pentru încălzire spațială și pre-încălzire apă caldă menajeră." },
+        { "title": "Utilizare mixtă", "text": "Zone termice rezidențiale și comerciale combinate cu recuperare partajată." },
+        { "title": "Pregătit pentru retrofit", "text": "Integrare modulară fără modificări structurale majore." }
+      ],
+      "cta": "Înregistrează-ți clădirea"
+    },
+    "greenhouses": {
+      "id": "greenhouses",
+      "title": "Sere",
+      "subtitle": "Cultivare pe tot parcursul anului cu căldură de calcul recuperată",
+      "intro": "Operatorii de sere reduc costurile cu propanul și gazul natural integrând recuperarea căldurii din mining în sistemele de control climatic. Temperaturile stabile în zona rădăcinilor și ambiantă îmbunătățesc consistența randamentului.",
+      "items": [
+        { "title": "Control climatic", "text": "Încălzire suplimentară în perioade reci și la scăderi de temperatură pe timp de noapte." },
+        { "title": "Îmbogățire CO₂", "text": "Căi de integrare opționale pentru gestionarea atmosferei controlate." },
+        { "title": "Extindere sezon", "text": "Plantare mai timpurie și ferestre de recoltare mai lungi în regiunile temperate." },
+        { "title": "Reducere costuri", "text": "Facturi mai mici la combustibil, găzduind calcul generatoare de venituri." }
+      ],
+      "cta": "Alătură-te ca partener de seră"
+    },
+    "farms": {
+      "id": "farms",
+      "title": "Ferme",
+      "subtitle": "Site-uri agricole cu capacitate termică și electrică",
+      "intro": "Fermele cu încălzire de grajd, operațiuni de uscare sau generare regenerabilă la fața locului pot găzdui module pilot EnergieMIND. Partenerii agricoli beneficiază de venituri diversificate și cheltuieli energetice reduse.",
+      "items": [
+        { "title": "Încălzire grajd și animale", "text": "Căldură recuperată pentru adăposturi animale și zone de procesare furaje." },
+        { "title": "Uscare culturi", "text": "Input termic de joasă temperatură pentru uscarea cerealelor și produselor agricole." },
+        { "title": "Solar la fața locului", "text": "Asociază PV existent cu calcul flexibil pentru autoconsum." },
+        { "title": "Sprijin rețea rurală", "text": "Contribuie cu sarcină flexibilă la stabilizarea rețelelor locale de distribuție." }
+      ],
+      "cta": "Aplică ca partener agricol"
+    },
+    "dataCenters": {
+      "id": "data-centers",
+      "title": "Centre de date",
+      "subtitle": "Colocation, edge și facilități gazdă de mining",
+      "intro": "Operatorii de centre de date și gazde de mining cu infrastructură de recuperare a căldurii se pot alătura rețelei ca parteneri de pe partea ofertei. Facilitățile oferă capacitate de calcul, exportând energie termică către partenerii adiacenți.",
+      "items": [
+        { "title": "Gazde colocation", "text": "Oferă căldură ca serviciu site-urilor comerciale sau agricole vecine." },
+        { "title": "Noduri edge", "text": "Implementări compacte la locațiile partenerilor cu cuplare termică directă." },
+        { "title": "Facilități mining", "text": "Ferme ASIC sau GPU existente cu infrastructură de răcire lichidă." },
+        { "title": "Optimizare PUE", "text": "Îmbunătățire efectivă a PUE când căldura reziduală este folosită productiv." }
+      ],
+      "cta": "Înregistrează-ți facilitatea"
+    }
+  },
+  "enm": {
+    "title": "Utilitate viitoare a ecosistemului",
+    "text": "ENM este planificat ca un token de utilitate viitor al ecosistemului pentru coordonarea rețelei, stimulentele partenerilor și guvernanța în cadrul ecosistemului EnergieMIND. Nu există presale de token. Programele de parteneri se concentrează pe implementarea infrastructurii și pe rezultate energetice măsurabile."
+  },
+  "faq": {
+    "title": "Întrebări frecvente",
+    "subtitle": "Detalii despre rețeaua de parteneri și programul pilot",
+    "items": [
+      {
+        "q": "Cine poate aplica ca partener pilot?",
+        "a": "Pot aplica hoteluri, ferme, site-uri solare, operatori de sere, gazde de mining, proprietari de clădiri comerciale, operatori de centre de date și parteneri de infrastructură energetică cu capacitate electrică sau termică adecvată."
+      },
+      {
+        "q": "Ce include programul pilot?",
+        "a": "Partenerii pilot primesc evaluare de site, planificare de integrare, suport la implementare, panouri de monitorizare și acces la rețeaua de parteneri EnergieMIND pentru schimb de cunoștințe și planificare la scară."
+      },
+      {
+        "q": "Există un cost pentru a te alătura rețelei?",
+        "a": "Aplicația este gratuită. Termenii pilot variază în funcție de tipul site-ului și domeniul de integrare. Fiecare parteneriat este structurat în jurul economiilor comune de energie, veniturilor din calcul și rezultatelor operaționale."
+      },
+      {
+        "q": "Cum funcționează utilitatea termică din mining?",
+        "a": "Hardware-ul de calcul generează căldură în timpul funcționării. Sistemele de recuperare capturează această energie termică și o direcționează către încălzirea clădirilor, controlul climatic al serelor, sistemele de piscină sau procesele industriale."
+      },
+      {
+        "q": "Pot să mă alătur dacă am doar generare solară?",
+        "a": "Da. Proprietarii de site-uri solare pot integra sarcini de calcul flexibile pentru a îmbunătăți autoconsumul și, opțional, pot adăuga recuperarea căldurii dacă există un offtaker termic în apropiere."
+      },
+      {
+        "q": "Care este rolul ENM în rețea?",
+        "a": "ENM este conceput ca o utilitate viitoare a ecosistemului pentru coordonarea rețelei și stimulentele partenerilor. Focusul actual este pe implementările pilot și parteneriatele de infrastructură, nu pe vânzarea de tokeni."
+      },
+      {
+        "q": "Ce regiuni sunt acceptate?",
+        "a": "EnergieMIND Network acceptă aplicații la nivel global. Coordonatorii pilot regionali asistă cu conformitatea locală, conectarea la rețea și cerințele de integrare cu utilitățile."
+      },
+      {
+        "q": "Cât durează procesul de aplicare?",
+        "a": "Revizuirea inițială are loc de obicei în două săptămâni. Termenele pentru evaluarea site-ului și planificarea pilot depind de domeniul proiectului și de cerințele locale de autorizare."
+      }
+    ]
+  },
+  "form": {
+    "title": "Aplicație partener",
+    "subtitle": "Aplică ca partener pilot în EnergieMIND Network",
+    "fields": {
+      "name": "Nume complet",
+      "namePlaceholder": "Numele tău complet",
+      "organization": "Organizație",
+      "organizationPlaceholder": "Numele companiei sau site-ului",
+      "email": "Adresă de e-mail",
+      "emailPlaceholder": "you@organization.com",
+      "phone": "Număr de telefon",
+      "phonePlaceholder": "+1 000 000 0000",
+      "country": "Țară / regiune",
+      "countryPlaceholder": "Țara în care se află site-ul",
+      "siteType": "Tip site",
+      "siteTypeOptions": [
+        "Hotel / ospitalitate",
+        "Clădire comercială",
+        "Fermă / agricol",
+        "Seră",
+        "Site solar",
+        "Gazdă mining / centru de date",
+        "Partener energetic",
+        "Altă infrastructură"
+      ],
+      "capacity": "Capacitate disponibilă",
+      "capacityPlaceholder": "ex. 500 kW electric, 200 kW termic",
+      "message": "Descrierea proiectului",
+      "messagePlaceholder": "Descrie site-ul, obiectivele și interesul de integrare"
+    },
+    "submit": "Trimite aplicația de partener",
+    "disclaimer": "Prin trimiterea acestui formular, ești de acord să fii contactat în legătură cu programul de parteneri EnergieMIND. Datele tale sunt procesate conform reglementărilor aplicabile privind confidențialitatea.",
+    "success": "Mulțumim. Aplicația ta de partener a fost primită. Echipa noastră te va contacta în curând."
+  },
+  "footer": {
+    "about": "EnergieMIND Network conectează operatorii de infrastructură din întreaga lume pentru implementări pilot în calcul integrat energetic și recuperarea căldurii.",
+    "links": {
+      "network": "Rețea de parteneri",
+      "pilots": "Site-uri pilot",
+      "apply": "Aplică acum",
+      "faq": "Întrebări frecvente"
+    },
+    "legal": "© 2026 TVK Labs & Technologies LTD. Toate drepturile rezervate.",
+    "privacy": "Politica de confidențialitate",
+    "terms": "Termeni și condiții",
+    "contact": "partners@energiemind.network"
+  },
+  "breadcrumbs": {
+    "home": "Acasă",
+    "network": "Rețea de parteneri"
+  },
+  "skipLink": "Sari la conținutul principal",
+  "menuToggle": "Deschide meniul"
+}

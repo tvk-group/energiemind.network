@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <rect width="180" height="180" rx="32" fill="#0a0f14"/>
+  <circle cx="90" cy="90" r="56" fill="none" stroke="#00c896" stroke-width="6"/>
+  <path d="M56 90 L90 56 L124 90 L90 124 Z" fill="#00c896"/>
+  <text x="90" y="158" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" fill="#8fa3b8">EMN</text>
+</svg>

@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "title": "EnergieMIND Network — sieć partnerska i infrastruktury pilotażowej",
+    "description": "Dołącz do EnergieMIND Network. Hotele, farmy, lokalizacje solarne, szklarnie, hosty miningowe i operatorzy infrastruktury mogą aplikować jako partnerzy pilotażowi w programach zintegrowanej energii i ciepła użytkowego.",
+    "keywords": "EnergieMIND, sieć partnerska, lokalizacje pilotażowe, ciepło użytkowe z miningu, solar mining, szklarnie, farmy, centra danych, infrastruktura energetyczna",
+    "ogTitle": "EnergieMIND Network — Aplikuj jako partner pilotażowy",
+    "ogDescription": "Połącz swoją lokalizację z ekosystemem partnerskim i pilotażowym EnergieMIND. Operatorzy infrastruktury z całego świata są mile widziani.",
+    "twitterTitle": "EnergieMIND Network — Program partnerski i pilotażowy",
+    "twitterDescription": "Hotele, farmy, energia słoneczna, szklarnie i centra danych — dołącz do infrastrukturalnej sieci EnergieMIND."
+  },
+  "brand": "EnergieMIND Network",
+  "tagline": "Sieć partnerska / pilotażowa / infrastrukturalna",
+  "nav": {
+    "partnerNetwork": "Sieć partnerska",
+    "pilotSites": "Lokalizacje pilotażowe",
+    "miningHeat": "Ciepło użytkowe z miningu",
+    "solarMining": "Solar + Mining",
+    "commercial": "Budynki komercyjne",
+    "greenhouses": "Szklarnie",
+    "farms": "Farmy",
+    "dataCenters": "Centra danych",
+    "application": "Aplikacja partnerska",
+    "faq": "FAQ",
+    "apply": "Aplikuj jako partner pilotażowy",
+    "language": "Język"
+  },
+  "hero": {
+    "badge": "Program partnerów infrastrukturalnych",
+    "title": "Zasilaj przyszłość rozproszonej infrastruktury energetycznej",
+    "subtitle": "Hotele, farmy, lokalizacje solarne, operatorzy szklarni, hosty miningowe i partnerzy energetyczni dołączają do EnergieMIND Network, aby wdrażać programy pilotażowe przekształcające ciepło obliczeniowe w wartość użytkową.",
+    "cta": "Aplikuj jako partner pilotażowy",
+    "secondary": "Poznaj lokalizacje pilotażowe",
+    "stats": [
+      { "value": "25+", "label": "Kategorie partnerów" },
+      { "value": "Globalnie", "label": "Zasięg pilotażowy" },
+      { "value": "Ciepło na pierwszym miejscu", "label": "Projekt użytkowy" }
+    ]
+  },
+  "sections": {
+    "partnerNetwork": {
+      "id": "partner-network",
+      "title": "Sieć partnerska",
+      "subtitle": "Skoordynowany ekosystem dla operatorów infrastruktury",
+      "intro": "Sieć partnerska EnergieMIND łączy właścicieli lokalizacji, partnerów energetycznych i operatorów infrastruktury, którzy chcą wdrażać rzeczywiste programy pilotażowe. Członkowie otrzymują wsparcie techniczne, ramy integracji i dostęp do szerszego ekosystemu EnergieMIND.",
+      "items": [
+        { "title": "Operatorzy lokalizacji", "text": "Hotele, budynki komercyjne, farmy i szklarnie z dostępną mocą cieplną lub elektryczną.", "link": "#commercial-buildings" },
+        { "title": "Partnerzy energetyczni", "text": "Deweloperzy solarni, operatorzy sieci i zarządzający aktywami OZE poszukujący obciążeń zintegrowanych z obliczeniami.", "link": "#solar-mining" },
+        { "title": "Hosty infrastruktury", "text": "Hosty miningowe, operatorzy centrów danych i dostawcy colocation z potencjałem odzysku ciepła.", "link": "#data-centers" },
+        { "title": "Koordynatorzy pilotażu", "text": "Partnerzy regionalni zarządzający onboardingiem, zgodnością i lokalną integracją z mediami użytkowymi.", "link": "#pilot-sites" }
+      ],
+      "cta": "Rozpocznij aplikację partnerską"
+    },
+    "pilotSites": {
+      "id": "pilot-sites",
+      "title": "Lokalizacje pilotażowe",
+      "subtitle": "Rzeczywiste wdrożenia, mierzalne wyniki",
+      "intro": "Lokalizacje pilotażowe weryfikują modele integracji EnergieMIND przed szerszym wdrożeniem. Każdy pilot dokumentuje przepływy energii, wydajność odzysku ciepła i ekonomię operacyjną dla danej kategorii partnera.",
+      "items": [
+        { "title": "Ocena lokalizacji", "text": "Profilowanie obciążenia cieplnego, analiza mocy elektrycznej i studium wykonalności integracji." },
+        { "title": "Plan wdrożenia", "text": "Fazowe rozmieszczenie sprzętu, instrumentacja monitoringu i zgodność z wymogami bezpieczeństwa." },
+        { "title": "Raportowanie wyników", "text": "Miesięczne metryki energii, ciepła i czasu pracy udostępniane partnerom sieci." },
+        { "title": "Ścieżka skalowania", "text": "Udane piloty przechodzą do pełnego członkostwa w sieci z rozszerzoną mocą." }
+      ],
+      "cta": "Aplikuj o status lokalizacji pilotażowej"
+    },
+    "miningHeat": {
+      "id": "mining-heat",
+      "title": "Ciepło użytkowe z miningu",
+      "subtitle": "Przekształcanie odpadowego ciepła obliczeniowego w użyteczną energię cieplną",
+      "intro": "Programy ciepła użytkowego z miningu przechwytują nadmiarowe ciepło z infrastruktury obliczeniowej i kierują je do systemów grzewczych na miejscu lub do ciepłownictwa systemowego. Hotele, szklarnie i obiekty rolnicze korzystają z taniego ciepła, jednocześnie hostując wydajne obciążenia obliczeniowe.",
+      "items": [
+        { "title": "Przechwytywanie ciepła", "text": "Systemy odzysku z chłodzeniem cieczowym lub powietrznym zintegrowane z istniejącymi instalacjami HVAC." },
+        { "title": "Kierowanie ciepła", "text": "Zbiorniki buforowe, wymienniki ciepła i dystrybucja do szklarni, basenów lub pętli budynkowych." },
+        { "title": "Balansowanie obciążenia", "text": "Harmonogram obliczeń dopasowany do krzywych zapotrzebowania cieplnego dla maksymalnej użyteczności." },
+        { "title": "Monitoring", "text": "Panele w czasie rzeczywistym: temperatura, przepływ i oszczędności energii." }
+      ],
+      "cta": "Poznaj integrację ciepła użytkowego"
+    },
+    "solarMining": {
+      "id": "solar-mining",
+      "title": "Solar + Mining",
+      "subtitle": "Dopasowanie generacji OZE do elastycznych obciążeń obliczeniowych",
+      "intro": "Integracje Solar + Mining łączą przerywaną produkcję fotowoltaiczną z regulowanym popytem obliczeniowym. Nadwyżka energii w ciągu dnia zasila obciążenia miningowe lub AI, a ciepło jest odzyskiwane do użytku lokalnego.",
+      "items": [
+        { "title": "Redukcja ograniczeń produkcji", "text": "Wykorzystanie nadwyżki energii solarnej zamiast eksportu do sieci w okresach ujemnych cen." },
+        { "title": "Hybrydowe wymiarowanie mocy", "text": "Dobór mocy instalacji PV i obliczeniowej do lokalnych wzorców zużycia." },
+        { "title": "Koordynacja magazynowania", "text": "Bufor bateryjny wygładza przejścia między szczytami solarnej a obciążeniem bazowym." },
+        { "title": "Kumulacja przychodów", "text": "Połączenie oszczędności energii, wartości ciepła użytkowego i dochodu z obliczeń." }
+      ],
+      "cta": "Połącz swoją lokalizację solarną"
+    },
+    "commercial": {
+      "id": "commercial-buildings",
+      "title": "Budynki komercyjne",
+      "subtitle": "Hotele, biura i obiekty o mieszanym przeznaczeniu",
+      "intro": "Budynki komercyjne ze stałym zapotrzebowaniem na ciepłą wodę i ogrzewanie pomieszczeń są idealnymi hostami pilotażowymi. Moduły obliczeniowe na dachu lub w piwnicy dostarczają ciepło do pętli budynkowych, skracając czas pracy tradycyjnych kotłów.",
+      "items": [
+        { "title": "Hotele i branża hotelarska", "text": "Ogrzewanie basenów, c.w.u. i pętle cieplne pralni." },
+        { "title": "Kompleksy biurowe", "text": "Sezonowe uzupełnienie ogrzewania pomieszczeń i wstępne podgrzewanie c.w.u." },
+        { "title": "Mieszane przeznaczenie", "text": "Połączone strefy cieplne mieszkaniowe i handlowe ze wspólnym odzyskiem." },
+        { "title": "Gotowość do modernizacji", "text": "Modułowa integracja bez większych zmian konstrukcyjnych." }
+      ],
+      "cta": "Zarejestruj swój budynek"
+    },
+    "greenhouses": {
+      "id": "greenhouses",
+      "title": "Szklarnie",
+      "subtitle": "Uprawa przez cały rok z odzyskanym ciepłem obliczeniowym",
+      "intro": "Operatorzy szklarni obniżają koszty propanu i gazu ziemnego, integrując odzysk ciepła z miningu w systemy klimatyzacji. Stabilne temperatury strefy korzeniowej i otoczenia poprawiają spójność plonów.",
+      "items": [
+        { "title": "Kontrola klimatu", "text": "Dodatkowe ogrzewanie w okresach chłodnych i przy nocnych spadkach temperatury." },
+        { "title": "Wzbogacanie CO₂", "text": "Opcjonalne ścieżki integracji do zarządzania kontrolowaną atmosferą." },
+        { "title": "Przedłużenie sezonu", "text": "Wcześniejsze sadzenie i dłuższe okna zbiorów w regionach umiarkowanych." },
+        { "title": "Redukcja kosztów", "text": "Niższe rachunki za paliwo przy hostowaniu dochodowego obciążenia obliczeniowego." }
+      ],
+      "cta": "Dołącz jako partner szklarni"
+    },
+    "farms": {
+      "id": "farms",
+      "title": "Farmy",
+      "subtitle": "Lokalizacje rolnicze z mocą cieplną i elektryczną",
+      "intro": "Farmy z ogrzewaniem obór, operacjami suszenia lub lokalną generacją OZE mogą hostować pilotażowe moduły EnergieMIND. Partnerzy rolniczy korzystają z dywersyfikacji przychodów i niższych wydatków energetycznych.",
+      "items": [
+        { "title": "Ogrzewanie obór i hodowli", "text": "Odzyskane ciepło dla budynków inwentarskich i stref przetwórstwa pasz." },
+        { "title": "Suszenie plonów", "text": "Niskotemperaturowe ciepło do suszenia ziarna i produktów rolnych." },
+        { "title": "Solar na miejscu", "text": "Połączenie istniejącej instalacji PV z elastycznymi obliczeniami dla autokonsumpcji." },
+        { "title": "Wsparcie sieci wiejskiej", "text": "Elastyczne obciążenie stabilizujące lokalne sieci dystrybucyjne." }
+      ],
+      "cta": "Aplikuj jako partner rolny"
+    },
+    "dataCenters": {
+      "id": "data-centers",
+      "title": "Centra danych",
+      "subtitle": "Colocation, edge i obiekty hostów miningowych",
+      "intro": "Operatorzy centrów danych i hostów miningowych z infrastrukturą odzysku ciepła mogą dołączyć do sieci jako partnerzy po stronie podaży. Obiekty zapewniają moc obliczeniową, eksportując energię cieplną do sąsiednich partnerów.",
+      "items": [
+        { "title": "Hosty colocation", "text": "Oferowanie ciepła jako usługi sąsiednim lokalizacjom komercyjnym lub rolniczym." },
+        { "title": "Węzły edge", "text": "Kompaktowe wdrożenia u partnerów z bezpośrednim sprzężeniem cieplnym." },
+        { "title": "Obiekty miningowe", "text": "Istniejące farmy ASIC lub GPU z infrastrukturą chłodzenia cieczowego." },
+        { "title": "Optymalizacja PUE", "text": "Skuteczna poprawa PUE, gdy odpadowe ciepło jest produktywnie wykorzystywane." }
+      ],
+      "cta": "Zarejestruj swój obiekt"
+    }
+  },
+  "enm": {
+    "title": "Przyszła użyteczność ekosystemu",
+    "text": "ENM jest planowany jako przyszły token użyteczności ekosystemu do koordynacji sieci, zachęt partnerskich i zarządzania w ekosystemie EnergieMIND. Nie ma przedsprzedaży tokena. Programy partnerskie koncentrują się na wdrożeniu infrastruktury i mierzalnych wynikach energetycznych."
+  },
+  "faq": {
+    "title": "Najczęściej zadawane pytania",
+    "subtitle": "Szczegóły sieci partnerskiej i programu pilotażowego",
+    "items": [
+      {
+        "q": "Kto może aplikować jako partner pilotażowy?",
+        "a": "Mogą aplikować hotele, farmy, lokalizacje solarne, operatorzy szklarni, hosty miningowe, właściciele budynków komercyjnych, operatorzy centr danych i partnerzy infrastruktury energetycznej z odpowiednią mocą elektryczną lub cieplną."
+      },
+      {
+        "q": "Co obejmuje program pilotażowy?",
+        "a": "Partnerzy pilotażowi otrzymują ocenę lokalizacji, planowanie integracji, wsparcie wdrożenia, panele monitoringu i dostęp do sieci partnerskiej EnergieMIND w celu wymiany wiedzy i planowania skalowania."
+      },
+      {
+        "q": "Czy dołączenie do sieci jest płatne?",
+        "a": "Aplikacja jest bezpłatna. Warunki pilotażu zależą od typu lokalizacji i zakresu integracji. Każde partnerstwo opiera się na wspólnych oszczędnościach energii, przychodach z obliczeń i wynikach operacyjnych."
+      },
+      {
+        "q": "Jak działa ciepło użytkowe z miningu?",
+        "a": "Sprzęt obliczeniowy generuje ciepło podczas pracy. Systemy odzysku przechwytują tę energię cieplną i kierują ją do ogrzewania budynków, klimatyzacji szklarni, systemów basenowych lub procesów przemysłowych."
+      },
+      {
+        "q": "Czy mogę dołączyć, jeśli mam tylko generację solarną?",
+        "a": "Tak. Właściciele lokalizacji solarnych mogą integrować elastyczne obciążenia obliczeniowe, aby poprawić autokonsumpcję, a opcjonalnie dodać odzysk ciepła, jeśli w pobliżu jest odbiorca ciepła."
+      },
+      {
+        "q": "Jaka jest rola ENM w sieci?",
+        "a": "ENM jest postrzegany jako przyszła użyteczność ekosystemu do koordynacji sieci i zachęt partnerskich. Obecny nacisk kładziony jest na wdrożenia pilotażowe i partnerstwa infrastrukturalne, a nie na sprzedaż tokenów."
+      },
+      {
+        "q": "Jakie regiony są obsługiwane?",
+        "a": "EnergieMIND Network przyjmuje aplikacje globalnie. Regionalni koordynatorzy pilotażu pomagają w lokalnej zgodności, przyłączeniu do sieci i integracji z mediami użytkowymi."
+      },
+      {
+        "q": "Jak długo trwa proces aplikacji?",
+        "a": "Wstępna weryfikacja zwykle trwa do dwóch tygodni. Harmonogram oceny lokalizacji i planowania pilotażu zależy od zakresu projektu i lokalnych wymogów pozwoleń."
+      }
+    ]
+  },
+  "form": {
+    "title": "Aplikacja partnerska",
+    "subtitle": "Aplikuj jako partner pilotażowy w EnergieMIND Network",
+    "fields": {
+      "name": "Imię i nazwisko",
+      "namePlaceholder": "Twoje imię i nazwisko",
+      "organization": "Organizacja",
+      "organizationPlaceholder": "Nazwa firmy lub lokalizacji",
+      "email": "Adres e-mail",
+      "emailPlaceholder": "you@organization.com",
+      "phone": "Numer telefonu",
+      "phonePlaceholder": "+1 000 000 0000",
+      "country": "Kraj / region",
+      "countryPlaceholder": "Kraj, w którym znajduje się lokalizacja",
+      "siteType": "Typ lokalizacji",
+      "siteTypeOptions": [
+        "Hotel / branża hotelarska",
+        "Budynek komercyjny",
+        "Farma / rolnictwo",
+        "Szklarnia",
+        "Lokalizacja solarna",
+        "Host miningowy / centrum danych",
+        "Partner energetyczny",
+        "Inna infrastruktura"
+      ],
+      "capacity": "Dostępna moc",
+      "capacityPlaceholder": "np. 500 kW elektrycznej, 200 kW cieplnej",
+      "message": "Opis projektu",
+      "messagePlaceholder": "Opisz lokalizację, cele i zainteresowanie integracją"
+    },
+    "submit": "Wyślij aplikację partnerską",
+    "disclaimer": "Wysyłając ten formularz, wyrażasz zgodę na kontakt w sprawie programu partnerskiego EnergieMIND. Twoje dane są przetwarzane zgodnie z obowiązującymi przepisami o prywatności.",
+    "success": "Dziękujemy. Twoja aplikacja partnerska została odebrana. Nasz zespół skontaktuje się wkrótce."
+  },
+  "footer": {
+    "about": "EnergieMIND Network łączy operatorów infrastruktury na całym świecie w pilotażowych wdrożeniach obliczeń zintegrowanych z energią i odzyskiem ciepła.",
+    "links": {
+      "network": "Sieć partnerska",
+      "pilots": "Lokalizacje pilotażowe",
+      "apply": "Aplikuj teraz",
+      "faq": "FAQ"
+    },
+    "legal": "© 2026 TVK Labs & Technologies LTD. Wszelkie prawa zastrzeżone.",
+    "privacy": "Polityka prywatności",
+    "terms": "Regulamin",
+    "contact": "partners@energiemind.network"
+  },
+  "breadcrumbs": {
+    "home": "Strona główna",
+    "network": "Sieć partnerska"
+  },
+  "skipLink": "Przejdź do treści głównej",
+  "menuToggle": "Otwórz menu"
+}

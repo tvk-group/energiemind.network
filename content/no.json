@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "title": "EnergieMIND Network — Partner- og pilotinfrastrukturnettverk",
+    "description": "Bli med i EnergieMIND Network. Hoteller, gårder, solanlegg, drivhus, mining-verter og infrastrukturoperatører søker som pilotpartnere for integrerte energi- og varmeprogrammer.",
+    "keywords": "EnergieMIND, partnernettverk, pilotsteder, mining-varme, sol-mining, drivhus, gårder, datasentre, energiinfrastruktur",
+    "ogTitle": "EnergieMIND Network — Søk som pilotpartner",
+    "ogDescription": "Koble stedet ditt til EnergieMINDs partner- og pilotøkosystem. Infrastrukturoperatører over hele verden er velkommen.",
+    "twitterTitle": "EnergieMIND Network — Partner- og pilotprogram",
+    "twitterDescription": "Hoteller, gårder, sol, drivhus og datasentre — bli med i EnergieMINDs infrastrukturnettverk."
+  },
+  "brand": "EnergieMIND Network",
+  "tagline": "Partner / Pilot / Infrastrukturnettverk",
+  "nav": {
+    "partnerNetwork": "Partnernettverk",
+    "pilotSites": "Pilotsteder",
+    "miningHeat": "Mining-varme",
+    "solarMining": "Solar + Mining",
+    "commercial": "Næringsbygg",
+    "greenhouses": "Drivhus",
+    "farms": "Gårder",
+    "dataCenters": "Datasentre",
+    "application": "Partnersøknad",
+    "faq": "FAQ",
+    "apply": "Søk som pilotpartner",
+    "language": "Språk"
+  },
+  "hero": {
+    "badge": "Infrastrukturpartnerprogram",
+    "title": "Driv fremtidens distribuerte energiinfrastruktur",
+    "subtitle": "Hoteller, gårder, solanlegg, drivhusoperatører, mining-verter og energipartnere blir med i EnergieMIND Network for å implementere pilotprogrammer som omdanner beregningsvarme til nytteverdi.",
+    "cta": "Søk som pilotpartner",
+    "secondary": "Utforsk pilotsteder",
+    "stats": [
+      { "value": "25+", "label": "Partnerkategorier" },
+      { "value": "Global", "label": "Pilotdekning" },
+      { "value": "Heat-First", "label": "Nyttedesign" }
+    ]
+  },
+  "sections": {
+    "partnerNetwork": {
+      "id": "partner-network",
+      "title": "Partnernettverk",
+      "subtitle": "Et koordinert økosystem for infrastrukturoperatører",
+      "intro": "EnergieMIND Partnernettverk kobler stedseiere, energipartnere og infrastrukturoperatører som ønsker å implementere pilotprogrammer i praksis. Medlemmer får teknisk veiledning, integrasjonsrammeverk og tilgang til det bredere EnergieMIND-økosystemet.",
+      "items": [
+        { "title": "Stedsoperatører", "text": "Hoteller, næringsbygg, gårder og drivhus med tilgjengelig termisk eller elektrisk kapasitet.", "link": "#commercial-buildings" },
+        { "title": "Energipartnere", "text": "Solutviklere, nettoperatører og forvaltere av fornybare eiendeler som søker compute-integrert last.", "link": "#solar-mining" },
+        { "title": "Infrastrukturverter", "text": "Mining-verter, datasenteroperatører og colocation-leverandører med potensial for varmegjenvinning.", "link": "#data-centers" },
+        { "title": "Pilotkoordinatorer", "text": "Regionale partnere som håndterer onboarding, etterlevelse og lokal nytteintegrasjon.", "link": "#pilot-sites" }
+      ],
+      "cta": "Start partnersøknaden din"
+    },
+    "pilotSites": {
+      "id": "pilot-sites",
+      "title": "Pilotsteder",
+      "subtitle": "Virkelige utrullinger, målbare resultater",
+      "intro": "Pilotsteder validerer EnergieMIND-integrasjonsmodeller før bredere utrulling. Hver pilot dokumenterer energistrømmer, varmegjenvinningsytelse og operasjonell økonomi for partnerkategorien.",
+      "items": [
+        { "title": "Stedsvurdering", "text": "Termisk lastprofilering, gjennomgang av elektrisk kapasitet og gjennomførbarhetsstudie for integrasjon." },
+        { "title": "Utrullingsplan", "text": "Faset maskinvareplassering, overvåkingsinstrumentering og sikkerhetsetterlevelse." },
+        { "title": "Ytelsesrapportering", "text": "Månedlige energi-, varme- og oppetidsmålinger deles med nettverkspartnere." },
+        { "title": "Skaleringsvei", "text": "Vellykkede piloter går videre til fullt nettverksmedlemskap med utvidet kapasitet." }
+      ],
+      "cta": "Søk om pilotstedsstatus"
+    },
+    "miningHeat": {
+      "id": "mining-heat",
+      "title": "Mining-varme",
+      "subtitle": "Omdann spillvarme fra beregning til brukbar termisk energi",
+      "intro": "Mining-varmeprogrammer fanger opp overskuddsvarme fra beregningsinfrastruktur og leder den til bygnings- eller fjernvarmesystemer. Hoteller, drivhus og landbruksanlegg drar nytte av lavkostnadsvarme samtidig som de hoster effektive beregningslaster.",
+      "items": [
+        { "title": "Varmefangst", "text": "Væske- eller luftkjølte gjenvinningssystemer integrert med eksisterende HVAC." },
+        { "title": "Termisk routing", "text": "Buffertanker, varmevekslere og distribusjon til drivhus, bassenger eller bygningssløyfer." },
+        { "title": "Lastbalansering", "text": "Beregningssplanlegging tilpasset termiske etterspørselskurver for maksimal nytte." },
+        { "title": "Overvåking", "text": "Sanntidsdashboards for temperatur, strømningshastighet og energibesparelser." }
+      ],
+      "cta": "Utforsk varmeintegrasjon"
+    },
+    "solarMining": {
+      "id": "solar-mining",
+      "title": "Solar + Mining",
+      "subtitle": "Tilpass fornybar produksjon til fleksible beregningslaster",
+      "intro": "Solar + Mining-integrasjoner matcher intermittent solcelleproduksjon med styrbar beregningsetterspørsel. Overskuddsproduksjon om dagen driver mining- eller AI-arbeidslaster mens varme gjenvinnes for lokal bruk.",
+      "items": [
+        { "title": "Redusert begrensning", "text": "Bruk overskuddssol i stedet for nettexport i perioder med negative priser." },
+        { "title": "Hybrid dimensjonering", "text": "Riktig dimensjonere solcelleanlegg og beregningskapasitet for lokale forbruksmønstre." },
+        { "title": "Lagringssamordning", "text": "Batteribuffere jevner ut overganger mellom soltopper og grunnlast." },
+        { "title": "Inntektsstabling", "text": "Kombiner energibesparelser, varmenytte og beregningsavkastning." }
+      ],
+      "cta": "Koble til solanlegget ditt"
+    },
+    "commercial": {
+      "id": "commercial-buildings",
+      "title": "Næringsbygg",
+      "subtitle": "Hoteller, kontorer og eiendommer med blandet bruk",
+      "intro": "Næringsbygg med jevn etterspørsel etter varmtvann og romoppvarming er ideelle pilotverter. Beregningsmoduler på tak eller i kjeller leverer varme til bygningssløyfer og reduserer konvensjonell kjelekjøring.",
+      "items": [
+        { "title": "Hoteller & hospitality", "text": "Bassengoppvarming, tappevann og termiske sløyfer for vaskeri." },
+        { "title": "Kontorkomplekser", "text": "Sesongbasert supplerende romoppvarming og forvarming av tappevann." },
+        { "title": "Blandet bruk", "text": "Kombinerte bolig- og handelstermiske soner med delt gjenvinning." },
+        { "title": "Retrofit-klar", "text": "Modulær integrasjon uten større strukturelle endringer." }
+      ],
+      "cta": "Registrer bygningen din"
+    },
+    "greenhouses": {
+      "id": "greenhouses",
+      "title": "Drivhus",
+      "subtitle": "Helårsdyrking med gjenvunnet beregningsvarme",
+      "intro": "Drivhusoperatører reduserer propan- og naturgasskostnader ved å integrere mining-varmegjenvinning i klimasystemer. Stabile rot- og omgivelsestemperaturer forbedrer avkastningskonsistens.",
+      "items": [
+        { "title": "Klimakontroll", "text": "Supplerende oppvarming i kalde perioder og nattlige temperaturfall." },
+        { "title": "CO₂-anrikning", "text": "Valgfrie integrasjonsveier for kontrollert atmosfærehåndtering." },
+        { "title": "Sesongforlengelse", "text": "Tidligere planting og lengre høstevinduer i tempererte regioner." },
+        { "title": "Kostnadsreduksjon", "text": "Lavere brenselregninger samtidig som inntektsgenererende beregning hostes." }
+      ],
+      "cta": "Bli med som drivhuspartner"
+    },
+    "farms": {
+      "id": "farms",
+      "title": "Gårder",
+      "subtitle": "Landbrukssteder med termisk og elektrisk kapasitet",
+      "intro": "Gårder med låveoppvarming, tørkeoperasjoner eller lokal fornybar produksjon kan hoste EnergieMIND-pilotmoduler. Landbrukspartnere drar nytte av diversifiserte inntekter og reduserte energikostnader.",
+      "items": [
+        { "title": "Låve & dyreoppvarming", "text": "Gjenvunnet varme for dyrehold og fôrbearbeidingsområder." },
+        { "title": "Avlingstørking", "text": "Lavtemperaturvarme for korn- og produkttørking." },
+        { "title": "Sol på stedet", "text": "Koble eksisterende solcellekapasitet med fleksibel beregning for egenforbruk." },
+        { "title": "Støtte til landdistriktsnett", "text": "Bidra med fleksibel last for å stabilisere lokale distribusjonsnett." }
+      ],
+      "cta": "Søk som gårdspartner"
+    },
+    "dataCenters": {
+      "id": "data-centers",
+      "title": "Datasentre",
+      "subtitle": "Colocation-, edge- og mining-vertanlegg",
+      "intro": "Datasenter- og mining-vertoperatører med varmegjenvinningsinfrastruktur kan bli med i nettverket som tilbudssidepartnere. Anlegg leverer beregningskapasitet og eksporterer termisk energi til tilstøtende partnere.",
+      "items": [
+        { "title": "Colocation-verter", "text": "Tilby varme som tjeneste til nærliggende nærings- eller landbrukssteder." },
+        { "title": "Edge-noder", "text": "Kompakte utrullinger på partnersteder med direkte termisk kobling." },
+        { "title": "Mining-anlegg", "text": "Eksisterende ASIC- eller GPU-gårder med væskekjølingsinfrastruktur." },
+        { "title": "PUE-optimalisering", "text": "Effektiv PUE-forbedring når spillvarme brukes produktivt." }
+      ],
+      "cta": "Registrer anlegget ditt"
+    }
+  },
+  "enm": {
+    "title": "Fremtidig økosystemnytte",
+    "text": "ENM er planlagt som en fremtidig økosystemnyttetoken for nettverkssamordning, partnerinsentiver og styring innen EnergieMIND-økosystemet. Det finnes ingen token-forhåndssalg. Partnerprogrammer fokuserer på infrastrukturutrulling og målbare energiresultater."
+  },
+  "faq": {
+    "title": "Ofte stilte spørsmål",
+    "subtitle": "Detaljer om partnernettverk og pilotprogram",
+    "items": [
+      {
+        "q": "Hvem kan søke som pilotpartner?",
+        "a": "Hoteller, gårder, solanlegg, drivhusoperatører, mining-verter, eiere av næringsbygg, datasenteroperatører og energiinfrastrukturpartnere med egnet elektrisk eller termisk kapasitet kan søke."
+      },
+      {
+        "q": "Hva inkluderer pilotprogrammet?",
+        "a": "Pilotpartnere får stedsvurdering, integrasjonsplanlegging, utrullingsstøtte, overvåkingsdashboards og tilgang til EnergieMIND-partnernettverket for kunnskapsdeling og skaleringsplanlegging."
+      },
+      {
+        "q": "Koster det å bli med i nettverket?",
+        "a": "Søknaden er gratis. Pilotvilkår varierer etter stedstype og integrasjonsomfang. Hvert partnerskap struktureres rundt delte energibesparelser, beregningsinntekter og operative resultater."
+      },
+      {
+        "q": "Hvordan fungerer mining-varme?",
+        "a": "Beregningsmaskinvare genererer varme under drift. Gjenvinningssystemer fanger opp denne termiske energien og leder den til bygningsoppvarming, drivhusklima, bassengsystemer eller industrielle prosesser."
+      },
+      {
+        "q": "Kan jeg bli med hvis jeg bare har solproduksjon?",
+        "a": "Ja. Eiere av solanlegg kan integrere fleksible beregningslaster for å forbedre egenforbruk og eventuelt legge til varmegjenvinning hvis en termisk mottaker er tilgjengelig i nærheten."
+      },
+      {
+        "q": "Hvilken rolle har ENM i nettverket?",
+        "a": "ENM er tenkt som en fremtidig økosystemnytte for nettverkssamordning og partnerinsentiver. Det nåværende fokuset er på pilotutrullinger og infrastrukturpartnerskap, ikke tokensalg."
+      },
+      {
+        "q": "Hvilke regioner støttes?",
+        "a": "EnergieMIND Network tar imot søknader globalt. Regionale pilotkoordinatorer hjelper med lokal etterlevelse, nettilkobling og krav til nytteintegrasjon."
+      },
+      {
+        "q": "Hvor lang tid tar søknadsprosessen?",
+        "a": "Innledende vurdering skjer vanligvis innen to uker. Tidslinjer for stedsvurdering og pilotplanlegging avhenger av prosjektomfang og lokale tillatelseskrav."
+      }
+    ]
+  },
+  "form": {
+    "title": "Partnersøknad",
+    "subtitle": "Søk som pilotpartner i EnergieMIND Network",
+    "fields": {
+      "name": "Fullt navn",
+      "namePlaceholder": "Ditt fulle navn",
+      "organization": "Organisasjon",
+      "organizationPlaceholder": "Firma- eller stedsnavn",
+      "email": "E-postadresse",
+      "emailPlaceholder": "you@organization.com",
+      "phone": "Telefonnummer",
+      "phonePlaceholder": "+47 000 00 000",
+      "country": "Land / Region",
+      "countryPlaceholder": "Land der stedet er lokalisert",
+      "siteType": "Stedstype",
+      "siteTypeOptions": [
+        "Hotell / Hospitality",
+        "Næringsbygg",
+        "Gård / Landbruk",
+        "Drivhus",
+        "Solanlegg",
+        "Mining-vert / Datasenter",
+        "Energipartner",
+        "Annen infrastruktur"
+      ],
+      "capacity": "Tilgjengelig kapasitet",
+      "capacityPlaceholder": "f.eks. 500 kW elektrisk, 200 kW termisk",
+      "message": "Prosjektbeskrivelse",
+      "messagePlaceholder": "Beskriv stedet ditt, mål og integrasjonsinteresse"
+    },
+    "submit": "Send partnersøknad",
+    "disclaimer": "Ved å sende inn dette skjemaet godtar du å bli kontaktet angående EnergieMIND-partnerprogrammet. Dataene dine behandles i samsvar med gjeldende personvernregler.",
+    "success": "Takk. Partnersøknaden din er mottatt. Teamet vårt kontakter deg snart."
+  },
+  "footer": {
+    "about": "EnergieMIND Network kobler infrastrukturoperatører over hele verden for pilotutrullinger innen energiintegrert beregning og varmegjenvinning.",
+    "links": {
+      "network": "Partnernettverk",
+      "pilots": "Pilotsteder",
+      "apply": "Søk nå",
+      "faq": "FAQ"
+    },
+    "legal": "© 2026 TVK Labs & Technologies LTD. Alle rettigheter forbeholdt.",
+    "privacy": "Personvernerklæring",
+    "terms": "Vilkår for bruk",
+    "contact": "partners@energiemind.network"
+  },
+  "breadcrumbs": {
+    "home": "Hjem",
+    "network": "Partnernettverk"
+  },
+  "skipLink": "Hopp til hovedinnhold",
+  "menuToggle": "Åpne meny"
+}

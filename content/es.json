@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "title": "EnergieMIND Network — Red de infraestructura de socios y pilotos",
+    "description": "Únase al EnergieMIND Network. Hoteles, granjas, sitios solares, invernaderos, anfitriones de minería y operadores de infraestructura pueden solicitar ser socios piloto para programas integrados de energía y aprovechamiento térmico.",
+    "keywords": "EnergieMIND, red de socios, sitios piloto, aprovechamiento térmico minero, solar mining, invernaderos, granjas, centros de datos, infraestructura energética",
+    "ogTitle": "EnergieMIND Network — Solicitar como socio piloto",
+    "ogDescription": "Conecte su sitio al ecosistema de socios y pilotos EnergieMIND. Operadores de infraestructura de todo el mundo bienvenidos.",
+    "twitterTitle": "EnergieMIND Network — Programa de socios y pilotos",
+    "twitterDescription": "Hoteles, granjas, solar, invernaderos y centros de datos — únase a la red de infraestructura EnergieMIND."
+  },
+  "brand": "EnergieMIND Network",
+  "tagline": "Socio / Piloto / Red de infraestructura",
+  "nav": {
+    "partnerNetwork": "Red de socios",
+    "pilotSites": "Sitios piloto",
+    "miningHeat": "Aprovechamiento térmico minero",
+    "solarMining": "Solar + Minería",
+    "commercial": "Edificios comerciales",
+    "greenhouses": "Invernaderos",
+    "farms": "Granjas",
+    "dataCenters": "Centros de datos",
+    "application": "Solicitud de socio",
+    "faq": "FAQ",
+    "apply": "Solicitar como socio piloto",
+    "language": "Idioma"
+  },
+  "hero": {
+    "badge": "Programa de socios de infraestructura",
+    "title": "Impulse el futuro de la infraestructura energética distribuida",
+    "subtitle": "Hoteles, granjas, sitios solares, operadores de invernaderos, anfitriones de minería y socios energéticos se unen al EnergieMIND Network para desplegar programas piloto que convierten el calor de cómputo en valor utilitario.",
+    "cta": "Solicitar como socio piloto",
+    "secondary": "Explorar sitios piloto",
+    "stats": [
+      { "value": "25+", "label": "Categorías de socios" },
+      { "value": "Global", "label": "Cobertura piloto" },
+      { "value": "Calor primero", "label": "Diseño utilitario" }
+    ]
+  },
+  "sections": {
+    "partnerNetwork": {
+      "id": "partner-network",
+      "title": "Red de socios",
+      "subtitle": "Un ecosistema coordinado para operadores de infraestructura",
+      "intro": "La Red de Socios EnergieMIND conecta propietarios de sitios, socios energéticos y operadores de infraestructura que desean desplegar programas piloto reales. Los miembros reciben orientación técnica, marcos de integración y acceso al ecosistema EnergieMIND ampliado.",
+      "items": [
+        { "title": "Operadores de sitios", "text": "Hoteles, edificios comerciales, granjas e invernaderos con capacidad térmica o eléctrica disponible.", "link": "#commercial-buildings" },
+        { "title": "Socios energéticos", "text": "Desarrolladores solares, operadores de red y gestores de activos renovables que buscan carga integrada al cómputo.", "link": "#solar-mining" },
+        { "title": "Anfitriones de infraestructura", "text": "Anfitriones de minería, operadores de centros de datos y proveedores de colocation con potencial de recuperación térmica.", "link": "#data-centers" },
+        { "title": "Coordinadores piloto", "text": "Socios regionales que gestionan la incorporación, el cumplimiento normativo y la integración con servicios locales.", "link": "#pilot-sites" }
+      ],
+      "cta": "Inicie su solicitud de socio"
+    },
+    "pilotSites": {
+      "id": "pilot-sites",
+      "title": "Sitios piloto",
+      "subtitle": "Despliegues reales, resultados medibles",
+      "intro": "Los sitios piloto validan los modelos de integración EnergieMIND antes de un despliegue más amplio. Cada piloto documenta flujos energéticos, rendimiento de recuperación térmica y economía operativa para la categoría de socio.",
+      "items": [
+        { "title": "Evaluación del sitio", "text": "Perfilado de carga térmica, revisión de capacidad eléctrica y estudio de viabilidad de integración." },
+        { "title": "Plan de despliegue", "text": "Instalación de hardware por fases, instrumentación de monitorización y cumplimiento de seguridad." },
+        { "title": "Informes de rendimiento", "text": "Métricas mensuales de energía, calor y tiempo de actividad compartidas con los socios de la red." },
+        { "title": "Vía de escalado", "text": "Los pilotos exitosos acceden a la membresía completa de la red con capacidad ampliada." }
+      ],
+      "cta": "Solicitar estatus de sitio piloto"
+    },
+    "miningHeat": {
+      "id": "mining-heat",
+      "title": "Aprovechamiento térmico minero",
+      "subtitle": "Convierta el calor residual del cómputo en energía térmica utilizable",
+      "intro": "Los programas de aprovechamiento térmico minero capturan el exceso de calor de la infraestructura de cómputo y lo dirigen a sistemas de calefacción en sitio o de distrito. Hoteles, invernaderos e instalaciones agrícolas se benefician de aporte térmico de bajo coste mientras alojan cargas de cómputo eficientes.",
+      "items": [
+        { "title": "Captura térmica", "text": "Sistemas de recuperación por refrigeración líquida o aire integrados con HVAC existente." },
+        { "title": "Enrutamiento térmico", "text": "Tanques de acumulación, intercambiadores de calor y distribución a invernaderos, piscinas o circuitos de edificio." },
+        { "title": "Equilibrio de carga", "text": "Planificación del cómputo alineada con curvas de demanda térmica para máxima utilidad." },
+        { "title": "Monitorización", "text": "Paneles en tiempo real de temperatura, caudal y ahorro energético." }
+      ],
+      "cta": "Explorar integración de aprovechamiento térmico"
+    },
+    "solarMining": {
+      "id": "solar-mining",
+      "title": "Solar + Minería",
+      "subtitle": "Alinee la generación renovable con cargas de cómputo flexibles",
+      "intro": "Las integraciones Solar + Minería combinan la producción fotovoltaica intermitente con demanda de cómputo despachable. El excedente diurno alimenta cargas de minería o IA mientras el calor se recupera para uso en sitio.",
+      "items": [
+        { "title": "Reducción de curtailment", "text": "Utilice el excedente solar en lugar de exportar a la red en periodos de precios negativos." },
+        { "title": "Dimensionamiento híbrido", "text": "Dimensione arrays PV y capacidad de cómputo según patrones de consumo local." },
+        { "title": "Coordinación de almacenamiento", "text": "Baterías de amortiguación suavizan transiciones entre picos solares y carga base." },
+        { "title": "Apilamiento de ingresos", "text": "Combine ahorros energéticos, valor térmico utilitario y rendimiento del cómputo." }
+      ],
+      "cta": "Conecte su sitio solar"
+    },
+    "commercial": {
+      "id": "commercial-buildings",
+      "title": "Edificios comerciales",
+      "subtitle": "Hoteles, oficinas y propiedades de uso mixto",
+      "intro": "Los edificios comerciales con demanda constante de agua caliente y calefacción son anfitriones piloto ideales. Módulos de cómputo en azotea o sótano suministran calor a circuitos de edificio mientras reducen el funcionamiento de calderas convencionales.",
+      "items": [
+        { "title": "Hoteles y hostelería", "text": "Calefacción de piscina, agua caliente sanitaria y circuitos térmicos de lavandería." },
+        { "title": "Complejos de oficinas", "text": "Complemento de calefacción estacional y precalentamiento de agua caliente sanitaria." },
+        { "title": "Uso mixto", "text": "Zonas térmicas residenciales y comerciales combinadas con recuperación compartida." },
+        { "title": "Listo para retrofit", "text": "Integración modular sin cambios estructurales mayores." }
+      ],
+      "cta": "Registre su edificio"
+    },
+    "greenhouses": {
+      "id": "greenhouses",
+      "title": "Invernaderos",
+      "subtitle": "Cultivo todo el año con calor de cómputo recuperado",
+      "intro": "Los operadores de invernaderos reducen costes de propano y gas natural integrando la recuperación térmica minera en sistemas de control climático. Temperaturas estables en zona radicular y ambiente mejoran la consistencia del rendimiento.",
+      "items": [
+        { "title": "Control climático", "text": "Calefacción complementaria en periodos fríos y caídas de temperatura nocturnas." },
+        { "title": "Enriquecimiento CO₂", "text": "Vías de integración opcionales para gestión de atmósfera controlada." },
+        { "title": "Extensión de temporada", "text": "Siembra más temprana y ventanas de cosecha más largas en regiones templadas." },
+        { "title": "Reducción de costes", "text": "Facturas de combustible más bajas mientras se aloja cómputo generador de ingresos." }
+      ],
+      "cta": "Unirse como socio invernadero"
+    },
+    "farms": {
+      "id": "farms",
+      "title": "Granjas",
+      "subtitle": "Sitios agrícolas con capacidad térmica y eléctrica",
+      "intro": "Granjas con calefacción de establos, operaciones de secado o generación renovable en sitio pueden alojar módulos piloto EnergieMIND. Los socios agrícolas se benefician de ingresos diversificados y menores gastos energéticos.",
+      "items": [
+        { "title": "Calefacción de establos y ganado", "text": "Calor recuperado para alojamiento animal y zonas de procesamiento de piensos." },
+        { "title": "Secado de cultivos", "text": "Aporte térmico de baja temperatura para secado de cereales y productos." },
+        { "title": "Solar en sitio", "text": "Empareje PV existente con cómputo flexible para autoconsumo." },
+        { "title": "Apoyo a red rural", "text": "Contribuya carga flexible para estabilizar redes de distribución locales." }
+      ],
+      "cta": "Solicitar como socio agrícola"
+    },
+    "dataCenters": {
+      "id": "data-centers",
+      "title": "Centros de datos",
+      "subtitle": "Instalaciones de colocation, edge y hosting minero",
+      "intro": "Operadores de centros de datos y hosting minero con infraestructura de recuperación térmica pueden unirse a la red como socios del lado de la oferta. Las instalaciones proporcionan capacidad de cómputo mientras exportan energía térmica a socios adyacentes.",
+      "items": [
+        { "title": "Anfitriones colocation", "text": "Ofrecer calor como servicio a sitios comerciales o agrícolas vecinos." },
+        { "title": "Nodos edge", "text": "Despliegues compactos en ubicaciones de socios con acoplamiento térmico directo." },
+        { "title": "Instalaciones mineras", "text": "Granjas ASIC o GPU existentes con infraestructura de refrigeración líquida." },
+        { "title": "Optimización PUE", "text": "Mejora efectiva del PUE cuando el calor residual se utiliza productivamente." }
+      ],
+      "cta": "Registre su instalación"
+    }
+  },
+  "enm": {
+    "title": "Utilidad de ecosistema futura",
+    "text": "ENM está planificado como futuro token utilitario de ecosistema para coordinación de red, incentivos a socios y gobernanza dentro del ecosistema EnergieMIND. No hay preventa de token. Los programas de socios se centran en el despliegue de infraestructura y resultados energéticos medibles."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "subtitle": "Detalles de la red de socios y el programa piloto",
+    "items": [
+      {
+        "q": "¿Quién puede solicitar ser socio piloto?",
+        "a": "Hoteles, granjas, sitios solares, operadores de invernaderos, anfitriones de minería, propietarios de edificios comerciales, operadores de centros de datos y socios de infraestructura energética con capacidad eléctrica o térmica adecuada pueden solicitar."
+      },
+      {
+        "q": "¿Qué incluye el programa piloto?",
+        "a": "Los socios piloto reciben evaluación de sitio, planificación de integración, soporte de despliegue, paneles de monitorización y acceso a la red de socios EnergieMIND para intercambio de conocimiento y planificación de escalado."
+      },
+      {
+        "q": "¿Hay coste para unirse a la red?",
+        "a": "La solicitud es gratuita. Los términos piloto varían según el tipo de sitio y el alcance de integración. Cada asociación se estructura en torno a ahorros energéticos compartidos, ingresos de cómputo y resultados operativos."
+      },
+      {
+        "q": "¿Cómo funciona el aprovechamiento térmico minero?",
+        "a": "El hardware de cómputo genera calor durante la operación. Los sistemas de recuperación capturan esta energía térmica y la dirigen a calefacción de edificios, control climático de invernaderos, sistemas de piscina o procesos industriales."
+      },
+      {
+        "q": "¿Puedo unirme si solo tengo generación solar?",
+        "a": "Sí. Los propietarios de sitios solares pueden integrar cargas de cómputo flexibles para mejorar el autoconsumo y añadir opcionalmente recuperación térmica si hay un receptor térmico disponible cerca."
+      },
+      {
+        "q": "¿Cuál es el papel de ENM en la red?",
+        "a": "ENM está previsto como futura utilidad de ecosistema para coordinación de red e incentivos a socios. El enfoque actual está en despliegues piloto y asociaciones de infraestructura, no en venta de tokens."
+      },
+      {
+        "q": "¿Qué regiones están soportadas?",
+        "a": "El EnergieMIND Network acepta solicitudes a nivel global. Los coordinadores piloto regionales asisten con cumplimiento local, conexión a red y requisitos de integración de servicios."
+      },
+      {
+        "q": "¿Cuánto tarda el proceso de solicitud?",
+        "a": "La revisión inicial suele realizarse en un plazo de dos semanas. Los plazos de evaluación de sitio y planificación piloto dependen del alcance del proyecto y los requisitos de permisos locales."
+      }
+    ]
+  },
+  "form": {
+    "title": "Solicitud de socio",
+    "subtitle": "Solicitar como socio piloto en el EnergieMIND Network",
+    "fields": {
+      "name": "Nombre completo",
+      "namePlaceholder": "Su nombre completo",
+      "organization": "Organización",
+      "organizationPlaceholder": "Nombre de empresa o sitio",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "usted@organizacion.com",
+      "phone": "Número de teléfono",
+      "phonePlaceholder": "+34 000 000 000",
+      "country": "País / Región",
+      "countryPlaceholder": "País donde se ubica el sitio",
+      "siteType": "Tipo de sitio",
+      "siteTypeOptions": [
+        "Hotel / Hostelería",
+        "Edificio comercial",
+        "Granja / Agrícola",
+        "Invernadero",
+        "Sitio solar",
+        "Anfitrión minero / Centro de datos",
+        "Socio energético",
+        "Otra infraestructura"
+      ],
+      "capacity": "Capacidad disponible",
+      "capacityPlaceholder": "ej. 500 kW eléctrico, 200 kW térmico",
+      "message": "Descripción del proyecto",
+      "messagePlaceholder": "Describa su sitio, objetivos e interés de integración"
+    },
+    "submit": "Enviar solicitud de socio",
+    "disclaimer": "Al enviar este formulario acepta ser contactado respecto al programa de socios EnergieMIND. Sus datos se procesan conforme a las normativas de privacidad aplicables.",
+    "success": "Gracias. Su solicitud de socio ha sido recibida. Nuestro equipo se pondrá en contacto con usted en breve."
+  },
+  "footer": {
+    "about": "EnergieMIND Network conecta operadores de infraestructura de todo el mundo para despliegues piloto en cómputo integrado a la energía y recuperación térmica.",
+    "links": {
+      "network": "Red de socios",
+      "pilots": "Sitios piloto",
+      "apply": "Solicitar ahora",
+      "faq": "FAQ"
+    },
+    "legal": "© 2026 TVK Labs & Technologies LTD. Todos los derechos reservados.",
+    "privacy": "Política de privacidad",
+    "terms": "Términos de servicio",
+    "contact": "partners@energiemind.network"
+  },
+  "breadcrumbs": {
+    "home": "Inicio",
+    "network": "Red de socios"
+  },
+  "skipLink": "Ir al contenido principal",
+  "menuToggle": "Abrir menú"
+}

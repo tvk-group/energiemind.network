@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "title": "EnergieMIND Network — Partner & Pilot Infrastructure Network",
+    "description": "Join the EnergieMIND Network. Hotels, farms, solar sites, greenhouses, mining hosts and infrastructure operators apply as pilot partners for integrated energy and heat utility programs.",
+    "keywords": "EnergieMIND, partner network, pilot sites, mining heat utility, solar mining, greenhouses, farms, data centers, energy infrastructure",
+    "ogTitle": "EnergieMIND Network — Apply as Pilot Partner",
+    "ogDescription": "Connect your site to the EnergieMIND partner and pilot ecosystem. Infrastructure operators worldwide welcome.",
+    "twitterTitle": "EnergieMIND Network — Partner & Pilot Program",
+    "twitterDescription": "Hotels, farms, solar, greenhouses and data centers — join the EnergieMIND infrastructure network."
+  },
+  "brand": "EnergieMIND Network",
+  "tagline": "Partner / Pilot / Infrastructure Network",
+  "nav": {
+    "partnerNetwork": "Partner Network",
+    "pilotSites": "Pilot Sites",
+    "miningHeat": "Mining Heat Utility",
+    "solarMining": "Solar + Mining",
+    "commercial": "Commercial Buildings",
+    "greenhouses": "Greenhouses",
+    "farms": "Farms",
+    "dataCenters": "Data Centers",
+    "application": "Partner Application",
+    "faq": "FAQ",
+    "apply": "Apply as Pilot Partner",
+    "language": "Language"
+  },
+  "hero": {
+    "badge": "Infrastructure Partner Program",
+    "title": "Power the Future of Distributed Energy Infrastructure",
+    "subtitle": "Hotels, farms, solar sites, greenhouse operators, mining hosts and energy partners join the EnergieMIND Network to deploy pilot programs that convert compute heat into utility value.",
+    "cta": "Apply as Pilot Partner",
+    "secondary": "Explore Pilot Sites",
+    "stats": [
+      { "value": "25+", "label": "Partner Categories" },
+      { "value": "Global", "label": "Pilot Coverage" },
+      { "value": "Heat-First", "label": "Utility Design" }
+    ]
+  },
+  "sections": {
+    "partnerNetwork": {
+      "id": "partner-network",
+      "title": "Partner Network",
+      "subtitle": "A coordinated ecosystem for infrastructure operators",
+      "intro": "The EnergieMIND Partner Network connects site owners, energy partners and infrastructure operators who want to deploy real-world pilot programs. Members receive technical guidance, integration frameworks and access to the broader EnergieMIND ecosystem.",
+      "items": [
+        { "title": "Site Operators", "text": "Hotels, commercial buildings, farms and greenhouses with available thermal or electrical capacity.", "link": "#commercial-buildings" },
+        { "title": "Energy Partners", "text": "Solar developers, grid operators and renewable asset managers seeking compute-integrated load.", "link": "#solar-mining" },
+        { "title": "Infrastructure Hosts", "text": "Mining hosts, data center operators and colocation providers with heat recovery potential.", "link": "#data-centers" },
+        { "title": "Pilot Coordinators", "text": "Regional partners who manage onboarding, compliance and local utility integration.", "link": "#pilot-sites" }
+      ],
+      "cta": "Start your partner application"
+    },
+    "pilotSites": {
+      "id": "pilot-sites",
+      "title": "Pilot Sites",
+      "subtitle": "Real deployments, measurable outcomes",
+      "intro": "Pilot sites validate EnergieMIND integration models before wider rollout. Each pilot documents energy flows, heat recovery performance and operational economics for the partner category.",
+      "items": [
+        { "title": "Site Assessment", "text": "Thermal load profiling, electrical capacity review and integration feasibility study." },
+        { "title": "Deployment Plan", "text": "Phased hardware placement, monitoring instrumentation and safety compliance." },
+        { "title": "Performance Reporting", "text": "Monthly energy, heat and uptime metrics shared with network partners." },
+        { "title": "Scale Pathway", "text": "Successful pilots graduate to full network membership with expanded capacity." }
+      ],
+      "cta": "Apply for pilot site status"
+    },
+    "miningHeat": {
+      "id": "mining-heat",
+      "title": "Mining Heat Utility",
+      "subtitle": "Convert compute waste heat into usable thermal energy",
+      "intro": "Mining Heat Utility programs capture excess heat from compute infrastructure and route it to on-site or district heating systems. Hotels, greenhouses and agricultural facilities benefit from low-cost thermal input while hosting efficient compute loads.",
+      "items": [
+        { "title": "Heat Capture", "text": "Liquid-cooled or air-cooled recovery systems integrated with existing HVAC." },
+        { "title": "Thermal Routing", "text": "Buffer tanks, heat exchangers and distribution to greenhouses, pools or building loops." },
+        { "title": "Load Balancing", "text": "Compute scheduling aligned with thermal demand curves for maximum utility." },
+        { "title": "Monitoring", "text": "Real-time dashboards for temperature, flow rate and energy savings." }
+      ],
+      "cta": "Explore heat utility integration"
+    },
+    "solarMining": {
+      "id": "solar-mining",
+      "title": "Solar + Mining",
+      "subtitle": "Align renewable generation with flexible compute loads",
+      "intro": "Solar + Mining integrations match intermittent photovoltaic output with dispatchable compute demand. Excess daytime generation powers mining or AI workloads while heat is recovered for on-site use.",
+      "items": [
+        { "title": "Curtailment Reduction", "text": "Use surplus solar instead of grid export at negative pricing periods." },
+        { "title": "Hybrid Sizing", "text": "Right-size PV arrays and compute capacity for local consumption patterns." },
+        { "title": "Storage Coordination", "text": "Battery buffers smooth transitions between solar peaks and base load." },
+        { "title": "Revenue Stacking", "text": "Combine energy savings, heat utility value and compute yield." }
+      ],
+      "cta": "Connect your solar site"
+    },
+    "commercial": {
+      "id": "commercial-buildings",
+      "title": "Commercial Buildings",
+      "subtitle": "Hotels, offices and mixed-use properties",
+      "intro": "Commercial buildings with steady hot water and space heating demand are ideal pilot hosts. Rooftop or basement compute modules supply heat to building loops while reducing conventional boiler runtime.",
+      "items": [
+        { "title": "Hotels & Hospitality", "text": "Pool heating, domestic hot water and laundry thermal loops." },
+        { "title": "Office Complexes", "text": "Seasonal space heating supplement and domestic hot water pre-heat." },
+        { "title": "Mixed-Use", "text": "Combined residential and retail thermal zones with shared recovery." },
+        { "title": "Retrofit Ready", "text": "Modular integration without major structural changes." }
+      ],
+      "cta": "Register your building"
+    },
+    "greenhouses": {
+      "id": "greenhouses",
+      "title": "Greenhouses",
+      "subtitle": "Year-round growing with recovered compute heat",
+      "intro": "Greenhouse operators reduce propane and natural gas costs by integrating mining heat recovery into climate control systems. Stable root-zone and ambient temperatures improve yield consistency.",
+      "items": [
+        { "title": "Climate Control", "text": "Supplemental heating during cold periods and overnight temperature drops." },
+        { "title": "CO₂ Enrichment", "text": "Optional integration paths for controlled atmosphere management." },
+        { "title": "Season Extension", "text": "Earlier planting and longer harvest windows in temperate regions." },
+        { "title": "Cost Reduction", "text": "Lower fuel bills while hosting revenue-generating compute." }
+      ],
+      "cta": "Join as greenhouse partner"
+    },
+    "farms": {
+      "id": "farms",
+      "title": "Farms",
+      "subtitle": "Agricultural sites with thermal and electrical capacity",
+      "intro": "Farms with barn heating, drying operations or on-site renewable generation can host EnergieMIND pilot modules. Agricultural partners benefit from diversified revenue and reduced energy expenditures.",
+      "items": [
+        { "title": "Barn & Livestock Heating", "text": "Recovered heat for animal housing and feed processing areas." },
+        { "title": "Crop Drying", "text": "Low-grade thermal input for grain and produce drying operations." },
+        { "title": "On-Site Solar", "text": "Pair existing PV with flexible compute for self-consumption." },
+        { "title": "Rural Grid Support", "text": "Contribute flexible load to stabilize local distribution networks." }
+      ],
+      "cta": "Apply as farm partner"
+    },
+    "dataCenters": {
+      "id": "data-centers",
+      "title": "Data Centers",
+      "subtitle": "Colocation, edge and mining host facilities",
+      "intro": "Data center and mining host operators with heat recovery infrastructure can join the network as supply-side partners. Facilities provide compute capacity while exporting thermal energy to adjacent partners.",
+      "items": [
+        { "title": "Colocation Hosts", "text": "Offer heat-as-a-service to neighboring commercial or agricultural sites." },
+        { "title": "Edge Nodes", "text": "Compact deployments at partner locations with direct thermal coupling." },
+        { "title": "Mining Facilities", "text": "Existing ASIC or GPU farms with liquid cooling infrastructure." },
+        { "title": "PUE Optimization", "text": "Effective PUE improvement when waste heat is productively used." }
+      ],
+      "cta": "Register your facility"
+    }
+  },
+  "enm": {
+    "title": "Future Ecosystem Utility",
+    "text": "ENM is planned as a future ecosystem utility token for network coordination, partner incentives and governance within the EnergieMIND ecosystem. There is no token presale. Partner programs focus on infrastructure deployment and measurable energy outcomes."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Partner network and pilot program details",
+    "items": [
+      {
+        "q": "Who can apply as a pilot partner?",
+        "a": "Hotels, farms, solar sites, greenhouse operators, mining hosts, commercial building owners, data center operators and energy infrastructure partners with suitable electrical or thermal capacity may apply."
+      },
+      {
+        "q": "What does the pilot program include?",
+        "a": "Pilot partners receive site assessment, integration planning, deployment support, monitoring dashboards and access to the EnergieMIND partner network for knowledge sharing and scale planning."
+      },
+      {
+        "q": "Is there a cost to join the network?",
+        "a": "Application is free. Pilot terms vary by site type and integration scope. Each partnership is structured around shared energy savings, compute revenue and operational outcomes."
+      },
+      {
+        "q": "How does mining heat utility work?",
+        "a": "Compute hardware generates heat during operation. Recovery systems capture this thermal energy and route it to building heating, greenhouse climate control, pool systems or industrial processes."
+      },
+      {
+        "q": "Can I join if I only have solar generation?",
+        "a": "Yes. Solar site owners can integrate flexible compute loads to improve self-consumption and optionally add heat recovery if a thermal offtaker is available nearby."
+      },
+      {
+        "q": "What is ENM's role in the network?",
+        "a": "ENM is envisioned as a future ecosystem utility for network coordination and partner incentives. The current focus is on pilot deployments and infrastructure partnerships, not token sales."
+      },
+      {
+        "q": "Which regions are supported?",
+        "a": "The EnergieMIND Network accepts applications globally. Regional pilot coordinators assist with local compliance, grid connection and utility integration requirements."
+      },
+      {
+        "q": "How long does the application process take?",
+        "a": "Initial review typically occurs within two weeks. Site assessment and pilot planning timelines depend on project scope and local permitting requirements."
+      }
+    ]
+  },
+  "form": {
+    "title": "Partner Application",
+    "subtitle": "Apply as a pilot partner in the EnergieMIND Network",
+    "fields": {
+      "name": "Full Name",
+      "namePlaceholder": "Your full name",
+      "organization": "Organization",
+      "organizationPlaceholder": "Company or site name",
+      "email": "Email Address",
+      "emailPlaceholder": "you@organization.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+1 000 000 0000",
+      "country": "Country / Region",
+      "countryPlaceholder": "Country where site is located",
+      "siteType": "Site Type",
+      "siteTypeOptions": [
+        "Hotel / Hospitality",
+        "Commercial Building",
+        "Farm / Agricultural",
+        "Greenhouse",
+        "Solar Site",
+        "Mining Host / Data Center",
+        "Energy Partner",
+        "Other Infrastructure"
+      ],
+      "capacity": "Available Capacity",
+      "capacityPlaceholder": "e.g. 500 kW electrical, 200 kW thermal",
+      "message": "Project Description",
+      "messagePlaceholder": "Describe your site, goals and integration interest"
+    },
+    "submit": "Submit Partner Application",
+    "disclaimer": "By submitting this form you agree to be contacted regarding the EnergieMIND partner program. Your data is processed in accordance with applicable privacy regulations.",
+    "success": "Thank you. Your partner application has been received. Our team will contact you shortly."
+  },
+  "footer": {
+    "about": "EnergieMIND Network connects infrastructure operators worldwide for pilot deployments in energy-integrated compute and heat recovery.",
+    "links": {
+      "network": "Partner Network",
+      "pilots": "Pilot Sites",
+      "apply": "Apply Now",
+      "faq": "FAQ"
+    },
+    "legal": "© 2026 TVK Labs & Technologies LTD. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "contact": "partners@energiemind.network"
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "network": "Partner Network"
+  },
+  "skipLink": "Skip to main content",
+  "menuToggle": "Open menu"
+}
