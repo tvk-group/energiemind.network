@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 80" role="img" aria-label="EnergieMIND Network">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00c896"/>
+      <stop offset="100%" stop-color="#3d9eff"/>
+    </linearGradient>
+  </defs>
+  <circle cx="36" cy="40" r="28" fill="none" stroke="url(#g)" stroke-width="4"/>
+  <path d="M20 40 L36 24 L52 40 L36 56 Z" fill="url(#g)" opacity="0.9"/>
+  <text x="78" y="48" font-family="system-ui,sans-serif" font-size="28" font-weight="700" fill="#e8eef4">EnergieMIND</text>
+  <text x="78" y="68" font-family="system-ui,sans-serif" font-size="14" fill="#8fa3b8" letter-spacing="2">NETWORK</text>
+</svg>

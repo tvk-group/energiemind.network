@@ -1,0 +1,199 @@
+{
+  "meta": {
+    "title": "EnergieMIND Network — Partner- und Pilot-Infrastrukturnetzwerk",
+    "description": "Treten Sie dem EnergieMIND Network bei. Hotels, Farmen, Solarstandorte, Gewächshäuser, Mining-Hosts und Infrastrukturbetreiber können sich als Pilotpartner für integrierte Energie- und Wärmenutzungsprogramme bewerben.",
+    "keywords": "EnergieMIND, Partnernetzwerk, Pilotstandorte, Mining-Wärmenutzung, Solar-Mining, Gewächshäuser, Farmen, Rechenzentren, Energieinfrastruktur",
+    "ogTitle": "EnergieMIND Network — Als Pilotpartner bewerben",
+    "ogDescription": "Verbinden Sie Ihren Standort mit dem EnergieMIND Partner- und Pilot-Ökosystem. Infrastrukturbetreiber weltweit willkommen.",
+    "twitterTitle": "EnergieMIND Network — Partner- und Pilotprogramm",
+    "twitterDescription": "Hotels, Farmen, Solar, Gewächshäuser und Rechenzentren — dem EnergieMIND-Infrastrukturnetzwerk beitreten."
+  },
+  "brand": "EnergieMIND Network",
+  "tagline": "Partner / Pilot / Infrastrukturnetzwerk",
+  "nav": {
+    "partnerNetwork": "Partnernetzwerk",
+    "pilotSites": "Pilotstandorte",
+    "miningHeat": "Mining-Wärmenutzung",
+    "solarMining": "Solar + Mining",
+    "commercial": "Gewerbegebäude",
+    "greenhouses": "Gewächshäuser",
+    "farms": "Farmen",
+    "dataCenters": "Rechenzentren",
+    "application": "Partnerbewerbung",
+    "faq": "FAQ",
+    "apply": "Als Pilotpartner bewerben",
+    "language": "Sprache"
+  },
+  "hero": {
+    "badge": "Infrastruktur-Partnerprogramm",
+    "title": "Gestalten Sie die Zukunft verteilter Energieinfrastruktur",
+    "subtitle": "Hotels, Farmen, Solarstandorte, Gewächshäuser, Mining-Hosts und Energiepartner treten dem EnergieMIND Network bei, um Pilotprogramme zu implementieren, die Rechenwärme in Nutzwert umwandeln.",
+    "cta": "Als Pilotpartner bewerben",
+    "secondary": "Pilotstandorte entdecken",
+    "stats": [
+      { "value": "25+", "label": "Partnerkategorien" },
+      { "value": "Global", "label": "Pilotabdeckung" },
+      { "value": "Wärme zuerst", "label": "Versorgungsdesign" }
+    ]
+  },
+  "sections": {
+    "partnerNetwork": {
+      "id": "partner-network",
+      "title": "Partnernetzwerk",
+      "subtitle": "Ein koordiniertes Ökosystem für Infrastrukturbetreiber",
+      "intro": "Das EnergieMIND Partnernetzwerk verbindet Standortbetreiber, Energiepartner und Infrastrukturbetreiber, die reale Pilotprogramme einsetzen möchten. Mitglieder erhalten technische Beratung, Integrationsrahmen und Zugang zum breiteren EnergieMIND-Ökosystem.",
+      "items": [
+        { "title": "Standortbetreiber", "text": "Hotels, Gewerbegebäude, Farmen und Gewächshäuser mit verfügbarer thermischer oder elektrischer Kapazität.", "link": "#commercial-buildings" },
+        { "title": "Energiepartner", "text": "Solar-Entwickler, Netzbetreiber und Erneuerbare-Asset-Manager mit Bedarf an compute-integrierter Last.", "link": "#solar-mining" },
+        { "title": "Infrastruktur-Hosts", "text": "Mining-Hosts, Rechenzentrumsbetreiber und Colocation-Anbieter mit Wärmerückgewinnungspotenzial.", "link": "#data-centers" },
+        { "title": "Pilotkoordinatoren", "text": "Regionale Partner, die Onboarding, Compliance und lokale Versorgungsintegration verwalten.", "link": "#pilot-sites" }
+      ],
+      "cta": "Partnerbewerbung starten"
+    },
+    "pilotSites": {
+      "id": "pilot-sites",
+      "title": "Pilotstandorte",
+      "subtitle": "Reale Einsätze, messbare Ergebnisse",
+      "intro": "Pilotstandorte validieren EnergieMIND-Integrationsmodelle vor breiterer Einführung. Jeder Pilot dokumentiert Energieflüsse, Wärmerückgewinnungsleistung und betriebswirtschaftliche Kennzahlen für die Partnerkategorie.",
+      "items": [
+        { "title": "Standortbewertung", "text": "Thermische Lastprofilierung, Überprüfung der elektrischen Kapazität und Machbarkeitsstudie." },
+        { "title": "Einsatzplan", "text": "Phasenweise Hardwareplatzierung, Monitoring-Instrumentierung und Sicherheitscompliance." },
+        { "title": "Leistungsberichterstattung", "text": "Monatliche Energie-, Wärme- und Verfügbarkeitskennzahlen für Netzwerkpartner." },
+        { "title": "Skalierungspfad", "text": "Erfolgreiche Piloten werden zu Vollmitgliedern mit erweiterter Kapazität." }
+      ],
+      "cta": "Pilotstandort-Status beantragen"
+    },
+    "miningHeat": {
+      "id": "mining-heat",
+      "title": "Mining-Wärmenutzung",
+      "subtitle": "Rechenabwärme in nutzbare thermische Energie umwandeln",
+      "intro": "Mining-Wärmenutzungsprogramme erfassen überschüssige Wärme aus Recheninfrastruktur und leiten sie an Gebäude- oder Fernwärmenetze. Hotels, Gewächshäuser und landwirtschaftliche Betriebe profitieren von kostengünstiger Wärme bei effizienten Rechenlasten.",
+      "items": [
+        { "title": "Wärmerückgewinnung", "text": "Flüssigkeits- oder luftgekühlte Systeme integriert in bestehende HVAC-Anlagen." },
+        { "title": "Thermische Verteilung", "text": "Pufferspeicher, Wärmetauscher und Verteilung an Gewächshäuser, Pools oder Gebäudekreisläufe." },
+        { "title": "Lastausgleich", "text": "Rechenplanung abgestimmt auf thermische Bedarfskurven für maximalen Nutzen." },
+        { "title": "Monitoring", "text": "Echtzeit-Dashboards für Temperatur, Durchfluss und Energieeinsparungen." }
+      ],
+      "cta": "Wärmenutzungsintegration erkunden"
+    },
+    "solarMining": {
+      "id": "solar-mining",
+      "title": "Solar + Mining",
+      "subtitle": "Erneuerbare Erzeugung mit flexiblen Rechenlasten abstimmen",
+      "intro": "Solar-Mining-Integrationen verbinden intermittierende Photovoltaik-Erzeugung mit steuerbarer Rechennachfrage. Überschüssige Tageserzeugung speist Mining- oder KI-Workloads, während Wärme vor Ort genutzt wird.",
+      "items": [
+        { "title": "Reduzierung von Abregelung", "text": "Überschüssige Solarenergie statt Netzeinspeisung zu negativen Preisen nutzen." },
+        { "title": "Hybride Dimensionierung", "text": "PV-Anlagen und Rechenkapazität passend zu lokalen Verbrauchsmustern dimensionieren." },
+        { "title": "Speicherkonzeption", "text": "Batteriepuffer glätten Übergänge zwischen Solarspitzen und Grundlast." },
+        { "title": "Ertragsstapelung", "text": "Energieeinsparungen, Wärmenutzen und Rechenertrag kombinieren." }
+      ],
+      "cta": "Solarstandort anbinden"
+    },
+    "commercial": {
+      "id": "commercial-buildings",
+      "title": "Gewerbegebäude",
+      "subtitle": "Hotels, Büros und gemischt genutzte Immobilien",
+      "intro": "Gewerbegebäude mit gleichmäßigem Warmwasser- und Heizbedarf sind ideale Pilotstandorte. Dach- oder Keller-Rechenmodule liefern Wärme an Gebäudekreisläufe und reduzieren den Kesselbetrieb.",
+      "items": [
+        { "title": "Hotels & Gastgewerbe", "text": "Poolheizung, Trinkwarmwasser und Wäscherei-Wärmekreisläufe." },
+        { "title": "Bürokomplexe", "text": "Saisonale Raumheizung und Trinkwarmwasser-Vorwärmung." },
+        { "title": "Gemischte Nutzung", "text": "Kombinierte Wohn- und Gewerbe-Wärmezonen mit gemeinsamer Rückgewinnung." },
+        { "title": "Retrofit-fähig", "text": "Modulare Integration ohne größere bauliche Änderungen." }
+      ],
+      "cta": "Gebäude registrieren"
+    },
+    "greenhouses": {
+      "id": "greenhouses",
+      "title": "Gewächshäuser",
+      "subtitle": "Ganzjähriger Anbau mit rückgewonnener Rechenwärme",
+      "intro": "Gewächshausbetreiber senken Propangas- und Erdgaskosten durch Mining-Wärmerückgewinnung in Klimasystemen. Stabile Wurzel- und Umgebungstemperaturen verbessern die Ertragskonsistenz.",
+      "items": [
+        { "title": "Klimasteuerung", "text": "Zusatzheizung in kalten Perioden und bei nächtlichen Temperaturabfällen." },
+        { "title": "CO₂-Anreicherung", "text": "Optionale Integrationswege für kontrollierte Atmosphärenführung." },
+        { "title": "Saisonverlängerung", "text": "Frühere Aussaat und längere Erntezeiten in gemäßigten Regionen." },
+        { "title": "Kostensenkung", "text": "Geringere Brennstoffkosten bei ertragsgenerierendem Compute." }
+      ],
+      "cta": "Als Gewächshauspartner beitreten"
+    },
+    "farms": {
+      "id": "farms",
+      "title": "Farmen",
+      "subtitle": "Landwirtschaftliche Standorte mit thermischer und elektrischer Kapazität",
+      "intro": "Farmen mit Stallheizung, Trocknungsbetrieb oder eigener Erzeugung können EnergieMIND-Pilotmodule beherbergen. Landwirtschaftliche Partner profitieren von diversifizierten Einnahmen und geringeren Energiekosten.",
+      "items": [
+        { "title": "Stall- & Tierheizung", "text": "Rückgewonnene Wärme für Tierhaltung und Futterverarbeitung." },
+        { "title": "Erntetrocknung", "text": "Niedertemperatur-Wärme für Getreide- und Produkttrocknung." },
+        { "title": "Solar vor Ort", "text": "Bestehende PV mit flexiblem Compute für Eigenverbrauch koppeln." },
+        { "title": "Ländliche Netzstützung", "text": "Flexible Last zur Stabilisierung lokaler Verteilnetze beitragen." }
+      ],
+      "cta": "Als Farmpartner bewerben"
+    },
+    "dataCenters": {
+      "id": "data-centers",
+      "title": "Rechenzentren",
+      "subtitle": "Colocation-, Edge- und Mining-Host-Anlagen",
+      "intro": "Rechenzentrums- und Mining-Host-Betreiber mit Wärmerückgewinnung können dem Netzwerk als Angebotsseite beitreten. Anlagen liefern Rechenkapazität und exportieren thermische Energie an angrenzende Partner.",
+      "items": [
+        { "title": "Colocation-Hosts", "text": "Wärme-as-a-Service für benachbarte Gewerbe- oder Landwirtschaftsstandorte." },
+        { "title": "Edge-Knoten", "text": "Kompakte Einsätze an Partnerstandorten mit direkter thermischer Kopplung." },
+        { "title": "Mining-Anlagen", "text": "Bestehende ASIC- oder GPU-Farmen mit Flüssigkühlung." },
+        { "title": "PUE-Optimierung", "text": "Effektive PUE-Verbesserung bei produktiver Abwärmenutzung." }
+      ],
+      "cta": "Anlage registrieren"
+    }
+  },
+  "enm": {
+    "title": "Zukünftige Ökosystem-Utility",
+    "text": "ENM ist als zukünftiger Ökosystem-Utility-Token für Netzwerkkordination, Partneranreize und Governance im EnergieMIND-Ökosystem geplant. Es gibt keinen Token-Presale. Partnerprogramme konzentrieren sich auf Infrastruktureinsatz und messbare Energieergebnisse."
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Details zum Partnernetzwerk und Pilotprogramm",
+    "items": [
+      { "q": "Wer kann sich als Pilotpartner bewerben?", "a": "Hotels, Farmen, Solarstandorte, Gewächshäuser, Mining-Hosts, Gewerbeimmobilienbesitzer, Rechenzentrumsbetreiber und Energieinfrastrukturpartner mit geeigneter Kapazität." },
+      { "q": "Was umfasst das Pilotprogramm?", "a": "Pilotpartner erhalten Standortbewertung, Integrationsplanung, Einsatzunterstützung, Monitoring-Dashboards und Zugang zum EnergieMIND-Partnernetzwerk." },
+      { "q": "Fallen Kosten für den Netzwerkbeitritt an?", "a": "Die Bewerbung ist kostenlos. Pilotbedingungen variieren je nach Standorttyp. Partnerschaften basieren auf geteilten Energieeinsparungen, Rechenerträgen und Betriebsergebnissen." },
+      { "q": "Wie funktioniert Mining-Wärmenutzung?", "a": "Rechenhardware erzeugt bei Betrieb Wärme. Rückgewinnungssysteme erfassen diese thermische Energie und leiten sie an Gebäudeheizung, Gewächshausklima, Pools oder Industrieprozesse." },
+      { "q": "Kann ich teilnehmen, wenn ich nur Solar habe?", "a": "Ja. Solarstandortbesitzer können flexible Rechenlasten integrieren, um den Eigenverbrauch zu verbessern und optional Wärmerückgewinnung hinzufügen." },
+      { "q": "Welche Rolle spielt ENM im Netzwerk?", "a": "ENM ist als zukünftige Ökosystem-Utility für Netzwerkkordination und Partneranreize vorgesehen. Der Fokus liegt auf Piloten und Partnerschaften, nicht auf Tokenverkäufen." },
+      { "q": "Welche Regionen werden unterstützt?", "a": "Das EnergieMIND Network nimmt weltweit Bewerbungen an. Regionale Pilotkoordinatoren unterstützen bei lokaler Compliance und Netzanschluss." },
+      { "q": "Wie lange dauert der Bewerbungsprozess?", "a": "Die Erstprüfung erfolgt typischerweise innerhalb von zwei Wochen. Bewertung und Planung hängen vom Projektumfang und lokalen Genehmigungen ab." }
+    ]
+  },
+  "form": {
+    "title": "Partnerbewerbung",
+    "subtitle": "Als Pilotpartner im EnergieMIND Network bewerben",
+    "fields": {
+      "name": "Vollständiger Name",
+      "namePlaceholder": "Ihr vollständiger Name",
+      "organization": "Organisation",
+      "organizationPlaceholder": "Firma oder Standortname",
+      "email": "E-Mail-Adresse",
+      "emailPlaceholder": "sie@organisation.de",
+      "phone": "Telefonnummer",
+      "phonePlaceholder": "+49 000 0000000",
+      "country": "Land / Region",
+      "countryPlaceholder": "Land des Standorts",
+      "siteType": "Standorttyp",
+      "siteTypeOptions": ["Hotel / Gastgewerbe", "Gewerbegebäude", "Farm / Landwirtschaft", "Gewächshaus", "Solarstandort", "Mining-Host / Rechenzentrum", "Energiepartner", "Sonstige Infrastruktur"],
+      "capacity": "Verfügbare Kapazität",
+      "capacityPlaceholder": "z.B. 500 kW elektrisch, 200 kW thermisch",
+      "message": "Projektbeschreibung",
+      "messagePlaceholder": "Beschreiben Sie Standort, Ziele und Integrationsinteresse"
+    },
+    "submit": "Partnerbewerbung absenden",
+    "disclaimer": "Mit dem Absenden stimmen Sie der Kontaktaufnahme zum EnergieMIND-Partnerprogramm zu. Ihre Daten werden gemäß geltenden Datenschutzvorschriften verarbeitet.",
+    "success": "Vielen Dank. Ihre Partnerbewerbung wurde empfangen. Unser Team wird Sie in Kürze kontaktieren."
+  },
+  "footer": {
+    "about": "EnergieMIND Network verbindet Infrastrukturbetreiber weltweit für Piloten in energieintegriertem Compute und Wärmerückgewinnung.",
+    "links": { "network": "Partnernetzwerk", "pilots": "Pilotstandorte", "apply": "Jetzt bewerben", "faq": "FAQ" },
+    "legal": "© 2026 TVK Labs & Technologies LTD. Alle Rechte vorbehalten.",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "contact": "partners@energiemind.network"
+  },
+  "breadcrumbs": { "home": "Startseite", "network": "Partnernetzwerk" },
+  "skipLink": "Zum Hauptinhalt springen",
+  "menuToggle": "Menü öffnen"
+}

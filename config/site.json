@@ -1,0 +1,15 @@
+{
+  "domain": "https://energiemind.network",
+  "organization": {
+    "name": "EnergieMIND Network",
+    "legalName": "TVK Labs & Technologies LTD",
+    "url": "https://energiemind.network",
+    "logo": "https://energiemind.network/assets/images/logo.svg",
+    "email": "partners@energiemind.network",
+    "foundingDate": "2024",
+    "sameAs": [
+      "https://energiemind.com",
+      "https://github.com/tvkgroup"
+    ]
+  }
+}

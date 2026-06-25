@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "title": "EnergieMIND Network — Ortak ve Pilot Altyapı Ağı",
+    "description": "EnergieMIND Network'e katılın. Oteller, çiftlikler, solar tesisler, seralar, madencilik barındırıcıları ve altyapı operatörleri entegre enerji ve ısı kullanım programları için pilot ortak olarak başvurabilir.",
+    "keywords": "EnergieMIND, ortak ağı, pilot tesisler, madencilik ısı kullanımı, solar madencilik, seralar, çiftlikler, veri merkezleri, enerji altyapısı",
+    "ogTitle": "EnergieMIND Network — Pilot Ortak Olarak Başvurun",
+    "ogDescription": "Tesisinizi EnergieMIND ortak ve pilot ekosistemine bağlayın. Dünya genelinde altyapı operatörleri davetlidir.",
+    "twitterTitle": "EnergieMIND Network — Ortak ve Pilot Programı",
+    "twitterDescription": "Oteller, çiftlikler, solar, seralar ve veri merkezleri — EnergieMIND altyapı ağına katılın."
+  },
+  "brand": "EnergieMIND Network",
+  "tagline": "Ortak / Pilot / Altyapı Ağı",
+  "nav": {
+    "partnerNetwork": "Ortak Ağı",
+    "pilotSites": "Pilot Tesisler",
+    "miningHeat": "Madencilik Isı Kullanımı",
+    "solarMining": "Solar + Madencilik",
+    "commercial": "Ticari Binalar",
+    "greenhouses": "Seralar",
+    "farms": "Çiftlikler",
+    "dataCenters": "Veri Merkezleri",
+    "application": "Ortak Başvurusu",
+    "faq": "SSS",
+    "apply": "Pilot Ortak Olarak Başvur",
+    "language": "Dil"
+  },
+  "hero": {
+    "badge": "Altyapı Ortak Programı",
+    "title": "Dağıtık Enerji Altyapısının Geleceğine Güç Verin",
+    "subtitle": "Oteller, çiftlikler, solar tesisler, sera işletmecileri, madencilik barındırıcıları ve enerji ortakları; hesaplama ısısını kullanım değerine dönüştüren pilot programlar dağıtmak için EnergieMIND Network'e katılır.",
+    "cta": "Pilot Ortak Olarak Başvur",
+    "secondary": "Pilot Tesisleri Keşfedin",
+    "stats": [
+      { "value": "25+", "label": "Ortak Kategorisi" },
+      { "value": "Küresel", "label": "Pilot Kapsamı" },
+      { "value": "Isı Öncelikli", "label": "Kullanım Tasarımı" }
+    ]
+  },
+  "sections": {
+    "partnerNetwork": {
+      "id": "partner-network",
+      "title": "Ortak Ağı",
+      "subtitle": "Altyapı operatörleri için koordineli bir ekosistem",
+      "intro": "EnergieMIND Ortak Ağı; gerçek dünya pilot programları dağıtmak isteyen tesis sahiplerini, enerji ortaklarını ve altyapı operatörlerini bir araya getirir. Üyeler teknik rehberlik, entegrasyon çerçeveleri ve daha geniş EnergieMIND ekosistemine erişim elde eder.",
+      "items": [
+        { "title": "Tesis Operatörleri", "text": "Mevcut termal veya elektrik kapasitesine sahip oteller, ticari binalar, çiftlikler ve seralar.", "link": "#commercial-buildings" },
+        { "title": "Enerji Ortakları", "text": "Hesaplama entegreli yük arayan solar geliştiriciler, şebeke operatörleri ve yenilenebilir varlık yöneticileri.", "link": "#solar-mining" },
+        { "title": "Altyapı Barındırıcıları", "text": "Isı geri kazanım potansiyeline sahip madencilik barındırıcıları, veri merkezi operatörleri ve colocation sağlayıcıları.", "link": "#data-centers" },
+        { "title": "Pilot Koordinatörleri", "text": "Yerel entegrasyon, uyumluluk ve bölgesel kullanım altyapısını yöneten bölgesel ortaklar.", "link": "#pilot-sites" }
+      ],
+      "cta": "Ortak başvurunuzu başlatın"
+    },
+    "pilotSites": {
+      "id": "pilot-sites",
+      "title": "Pilot Tesisler",
+      "subtitle": "Gerçek kurulumlar, ölçülebilir sonuçlar",
+      "intro": "Pilot tesisler, EnergieMIND entegrasyon modellerini daha geniş yaygınlaştırmadan önce doğrular. Her pilot; enerji akışlarını, ısı geri kazanım performansını ve ortak kategorisi için operasyonel ekonomiyi belgeler.",
+      "items": [
+        { "title": "Tesis Değerlendirmesi", "text": "Termal yük profilleme, elektrik kapasitesi incelemesi ve entegrasyon fizibilite çalışması." },
+        { "title": "Kurulum Planı", "text": "Aşamalı donanım yerleşimi, izleme enstrümantasyonu ve güvenlik uyumluluğu." },
+        { "title": "Performans Raporlaması", "text": "Ağ ortaklarıyla paylaşılan aylık enerji, ısı ve çalışma süresi metrikleri." },
+        { "title": "Ölçeklendirme Yolu", "text": "Başarılı pilotlar, genişletilmiş kapasiteyle tam ağ üyeliğine geçer." }
+      ],
+      "cta": "Pilot tesis statüsü için başvurun"
+    },
+    "miningHeat": {
+      "id": "mining-heat",
+      "title": "Madencilik Isı Kullanımı",
+      "subtitle": "Hesaplama atık ısısını kullanılabilir termal enerjiye dönüştürün",
+      "intro": "Madencilik Isı Kullanımı programları, hesaplama altyapısından fazla ısıyı yakalar ve tesis içi veya bölgesel ısıtma sistemlerine yönlendirir. Oteller, seralar ve tarımsal tesisler; verimli hesaplama yüklerini barındırırken düşük maliyetli termal girdi elde eder.",
+      "items": [
+        { "title": "Isı Yakalama", "text": "Mevcut HVAC ile entegre sıvı soğutmalı veya hava soğutmalı geri kazanım sistemleri." },
+        { "title": "Termal Yönlendirme", "text": "Tampon tanklar, ısı eşanjörleri ve seralara, havuzlara veya bina devrelerine dağıtım." },
+        { "title": "Yük Dengeleme", "text": "Maksimum fayda için termal talep eğrileriyle uyumlu hesaplama planlaması." },
+        { "title": "İzleme", "text": "Sıcaklık, debi ve enerji tasarrufu için gerçek zamanlı panolar." }
+      ],
+      "cta": "Isı kullanımı entegrasyonunu keşfedin"
+    },
+    "solarMining": {
+      "id": "solar-mining",
+      "title": "Solar + Madencilik",
+      "subtitle": "Yenilenebilir üretimi esnek hesaplama yükleriyle hizalayın",
+      "intro": "Solar + Madencilik entegrasyonları, kesintili fotovoltaik üretimi sevk edilebilir hesaplama talebiyle eşleştirir. Gündüz fazlası üretim madencilik veya yapay zeka iş yüklerini beslerken ısı tesis içi kullanım için geri kazanılır.",
+      "items": [
+        { "title": "Kısıtlama Azaltma", "text": "Negatif fiyatlandırma dönemlerinde şebekeye ihracat yerine fazla soları kullanın." },
+        { "title": "Hibrit Boyutlandırma", "text": "Yerel tüketim kalıplarına göre PV dizileri ve hesaplama kapasitesini doğru boyutlandırın." },
+        { "title": "Depolama Koordinasyonu", "text": "Batarya tamponları solar tepe noktaları ile taban yük arasındaki geçişleri yumuşatır." },
+        { "title": "Gelir Birleştirme", "text": "Enerji tasarrufları, ısı kullanım değeri ve hesaplama getirisini birleştirin." }
+      ],
+      "cta": "Solar tesisinizi bağlayın"
+    },
+    "commercial": {
+      "id": "commercial-buildings",
+      "title": "Ticari Binalar",
+      "subtitle": "Oteller, ofisler ve karma kullanımlı mülkler",
+      "intro": "Sabit sıcak su ve mekân ısıtma talebine sahip ticari binalar ideal pilot barındırıcılardır. Çatı veya bodrum hesaplama modülleri bina devrelerine ısı sağlarken geleneksel kazan çalışma süresini azaltır.",
+      "items": [
+        { "title": "Oteller ve Konaklama", "text": "Havuz ısıtma, banyo sıcak suyu ve çamaşırhane termal devreleri." },
+        { "title": "Ofis Kompleksleri", "text": "Mevsimsel mekân ısıtma desteği ve banyo sıcak suyu ön ısıtması." },
+        { "title": "Karma Kullanım", "text": "Ortak geri kazanımla birleşik konut ve perakende termal bölgeleri." },
+        { "title": "Retrofit Hazır", "text": "Büyük yapısal değişiklikler olmadan modüler entegrasyon." }
+      ],
+      "cta": "Binanızı kaydedin"
+    },
+    "greenhouses": {
+      "id": "greenhouses",
+      "title": "Seralar",
+      "subtitle": "Geri kazanılan hesaplama ısısıyla yıl boyu yetiştiricilik",
+      "intro": "Sera işletmecileri, madencilik ısı geri kazanımını iklim kontrol sistemlerine entegre ederek propan ve doğalgaz maliyetlerini düşürür. Kararlı kök bölgesi ve ortam sıcaklıkları verim tutarlılığını artırır.",
+      "items": [
+        { "title": "İklim Kontrolü", "text": "Soğuk dönemlerde ve gece sıcaklık düşüşlerinde destekleyici ısıtma." },
+        { "title": "CO₂ Zenginleştirme", "text": "Kontrollü atmosfer yönetimi için isteğe bağlı entegrasyon yolları." },
+        { "title": "Sezon Uzatma", "text": "Ilıman bölgelerde daha erken ekim ve daha uzun hasat pencereleri." },
+        { "title": "Maliyet Azaltma", "text": "Gelir getiren hesaplama barındırırken daha düşük yakıt faturaları." }
+      ],
+      "cta": "Sera ortağı olarak katılın"
+    },
+    "farms": {
+      "id": "farms",
+      "title": "Çiftlikler",
+      "subtitle": "Termal ve elektrik kapasitesine sahip tarımsal tesisler",
+      "intro": "Ahır ısıtması, kurutma operasyonları veya tesis içi yenilenebilir üretime sahip çiftlikler EnergieMIND pilot modüllerini barındırabilir. Tarımsal ortaklar çeşitlendirilmiş gelir ve azaltılmış enerji harcamalarından yararlanır.",
+      "items": [
+        { "title": "Ahır ve Hayvan Isıtması", "text": "Hayvan barınakları ve yem işleme alanları için geri kazanılan ısı." },
+        { "title": "Ürün Kurutma", "text": "Tahıl ve ürün kurutma operasyonları için düşük dereceli termal girdi." },
+        { "title": "Tesis İçi Solar", "text": "Mevcut PV'yi öz tüketim için esnek hesaplamayla eşleştirin." },
+        { "title": "Kırsal Şebeke Desteği", "text": "Yerel dağıtım ağlarını stabilize etmek için esnek yük katkısı." }
+      ],
+      "cta": "Çiftlik ortağı olarak başvurun"
+    },
+    "dataCenters": {
+      "id": "data-centers",
+      "title": "Veri Merkezleri",
+      "subtitle": "Colocation, edge ve madencilik barındırma tesisleri",
+      "intro": "Isı geri kazanım altyapısına sahip veri merkezi ve madencilik barındırıcı operatörleri ağa arz tarafı ortakları olarak katılabilir. Tesisler hesaplama kapasitesi sağlarken termal enerjiyi komşu ortaklara aktarır.",
+      "items": [
+        { "title": "Colocation Barındırıcıları", "text": "Komşu ticari veya tarımsal tesislere ısı-hizmet-olarak sunumu." },
+        { "title": "Edge Düğümleri", "text": "Doğrudan termal bağlantıyla ortak konumlarda kompakt kurulumlar." },
+        { "title": "Madencilik Tesisleri", "text": "Sıvı soğutma altyapısına sahip mevcut ASIC veya GPU çiftlikleri." },
+        { "title": "PUE Optimizasyonu", "text": "Atık ısı verimli kullanıldığında etkin PUE iyileştirmesi." }
+      ],
+      "cta": "Tesisinizi kaydedin"
+    }
+  },
+  "enm": {
+    "title": "Gelecek Ekosistem Utility'si",
+    "text": "ENM, EnergieMIND ekosisteminde ağ koordinasyonu, ortak teşvikleri ve yönetişim için planlanan gelecekteki bir ekosistem utility token'ıdır. Token ön satışı yoktur. Ortak programları altyapı kurulumu ve ölçülebilir enerji sonuçlarına odaklanır."
+  },
+  "faq": {
+    "title": "Sıkça Sorulan Sorular",
+    "subtitle": "Ortak ağı ve pilot program detayları",
+    "items": [
+      {
+        "q": "Kimler pilot ortak olarak başvurabilir?",
+        "a": "Uygun elektrik veya termal kapasiteye sahip oteller, çiftlikler, solar tesisler, sera işletmecileri, madencilik barındırıcıları, ticari bina sahipleri, veri merkezi operatörleri ve enerji altyapısı ortakları başvurabilir."
+      },
+      {
+        "q": "Pilot program neleri kapsar?",
+        "a": "Pilot ortaklar tesis değerlendirmesi, entegrasyon planlaması, kurulum desteği, izleme panoları ve bilgi paylaşımı ile ölçeklendirme planlaması için EnergieMIND ortak ağına erişim elde eder."
+      },
+      {
+        "q": "Ağa katılmak için ücret var mı?",
+        "a": "Başvuru ücretsizdir. Pilot koşulları tesis türüne ve entegrasyon kapsamına göre değişir. Her ortaklık paylaşılan enerji tasarrufları, hesaplama geliri ve operasyonel sonuçlar etrafında yapılandırılır."
+      },
+      {
+        "q": "Madencilik ısı kullanımı nasıl çalışır?",
+        "a": "Hesaplama donanımı çalışma sırasında ısı üretir. Geri kazanım sistemleri bu termal enerjiyi yakalar ve bina ısıtması, sera iklim kontrolü, havuz sistemleri veya endüstriyel süreçlere yönlendirir."
+      },
+      {
+        "q": "Yalnızca solar üretimim varsa katılabilir miyim?",
+        "a": "Evet. Solar tesis sahipleri öz tüketimi artırmak için esnek hesaplama yüklerini entegre edebilir ve yakında termal alıcı varsa isteğe bağlı olarak ısı geri kazanımı ekleyebilir."
+      },
+      {
+        "q": "ENM'nin ağdaki rolü nedir?",
+        "a": "ENM, ağ koordinasyonu ve ortak teşvikleri için gelecekteki bir ekosistem utility'si olarak tasarlanmıştır. Mevcut odak noktası pilot kurulumlar ve altyapı ortaklıklarıdır; token satışları değil."
+      },
+      {
+        "q": "Hangi bölgeler destekleniyor?",
+        "a": "EnergieMIND Network dünya genelinde başvuru kabul eder. Bölgesel pilot koordinatörleri yerel uyumluluk, şebeke bağlantısı ve kullanım entegrasyonu gereksinimlerinde yardımcı olur."
+      },
+      {
+        "q": "Başvuru süreci ne kadar sürer?",
+        "a": "İlk inceleme genellikle iki hafta içinde gerçekleşir. Tesis değerlendirmesi ve pilot planlama zaman çizelgeleri proje kapsamına ve yerel izin gereksinimlerine bağlıdır."
+      }
+    ]
+  },
+  "form": {
+    "title": "Ortak Başvurusu",
+    "subtitle": "EnergieMIND Network'te pilot ortak olarak başvurun",
+    "fields": {
+      "name": "Ad Soyad",
+      "namePlaceholder": "Adınız ve soyadınız",
+      "organization": "Kuruluş",
+      "organizationPlaceholder": "Şirket veya tesis adı",
+      "email": "E-posta Adresi",
+      "emailPlaceholder": "siz@kurulus.com",
+      "phone": "Telefon Numarası",
+      "phonePlaceholder": "+90 000 000 0000",
+      "country": "Ülke / Bölge",
+      "countryPlaceholder": "Tesisin bulunduğu ülke",
+      "siteType": "Tesis Türü",
+      "siteTypeOptions": [
+        "Otel / Konaklama",
+        "Ticari Bina",
+        "Çiftlik / Tarım",
+        "Sera",
+        "Solar Tesis",
+        "Madencilik Barındırıcı / Veri Merkezi",
+        "Enerji Ortağı",
+        "Diğer Altyapı"
+      ],
+      "capacity": "Mevcut Kapasite",
+      "capacityPlaceholder": "ör. 500 kW elektrik, 200 kW termal",
+      "message": "Proje Açıklaması",
+      "messagePlaceholder": "Tesisinizi, hedeflerinizi ve entegrasyon ilginizi açıklayın"
+    },
+    "submit": "Ortak Başvurusunu Gönder",
+    "disclaimer": "Bu formu göndererek EnergieMIND ortak programı hakkında iletişime geçilmesini kabul edersiniz. Verileriniz geçerli gizlilik düzenlemelerine uygun olarak işlenir.",
+    "success": "Teşekkür ederiz. Ortak başvurunuz alındı. Ekibimiz kısa süre içinde sizinle iletişime geçecektir."
+  },
+  "footer": {
+    "about": "EnergieMIND Network, enerji entegreli hesaplama ve ısı geri kazanımında pilot kurulumlar için dünya genelinde altyapı operatörlerini bir araya getirir.",
+    "links": {
+      "network": "Ortak Ağı",
+      "pilots": "Pilot Tesisler",
+      "apply": "Hemen Başvur",
+      "faq": "SSS"
+    },
+    "legal": "© 2026 TVK Labs & Technologies LTD. Tüm hakları saklıdır.",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Hizmet Şartları",
+    "contact": "partners@energiemind.network"
+  },
+  "breadcrumbs": {
+    "home": "Ana Sayfa",
+    "network": "Ortak Ağı"
+  },
+  "skipLink": "Ana içeriğe geç",
+  "menuToggle": "Menüyü aç"
+}

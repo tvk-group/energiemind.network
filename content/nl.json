@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "title": "EnergieMIND Network — Partner- en pilotinfrastructuurnetwerk",
+    "description": "Sluit u aan bij EnergieMIND Network. Hotels, boerderijen, zonne-installaties, kassen, mining-hosts en infrastructuuroperators kunnen zich aanmelden als pilotpartners voor geïntegreerde energie- en warmteprogramma's.",
+    "keywords": "EnergieMIND, partnernetwerk, pilotlocaties, mining warmteprogramma, solar mining, kassen, boerderijen, datacenters, energie-infrastructuur",
+    "ogTitle": "EnergieMIND Network — Aanmelden als pilotpartner",
+    "ogDescription": "Verbind uw locatie met het EnergieMIND partner- en pilot-ecosysteem. Infrastructuuroperators wereldwijd zijn welkom.",
+    "twitterTitle": "EnergieMIND Network — Partner- en pilotprogramma",
+    "twitterDescription": "Hotels, boerderijen, solar, kassen en datacenters — sluit u aan bij het EnergieMIND-infrastructuurnetwerk."
+  },
+  "brand": "EnergieMIND Network",
+  "tagline": "Partner / Pilot / Infrastructuurnetwerk",
+  "nav": {
+    "partnerNetwork": "Partnernetwerk",
+    "pilotSites": "Pilotlocaties",
+    "miningHeat": "Mining warmteprogramma",
+    "solarMining": "Solar + Mining",
+    "commercial": "Commerciële gebouwen",
+    "greenhouses": "Kassen",
+    "farms": "Boerderijen",
+    "dataCenters": "Datacenters",
+    "application": "Partneraanmelding",
+    "faq": "FAQ",
+    "apply": "Aanmelden als pilotpartner",
+    "language": "Taal"
+  },
+  "hero": {
+    "badge": "Infrastructuurpartnerprogramma",
+    "title": "Geef vorm aan de toekomst van gedistribueerde energie-infrastructuur",
+    "subtitle": "Hotels, boerderijen, zonne-installaties, kasexploitanten, mining-hosts en energiepartners sluiten zich aan bij EnergieMIND Network om pilotprogramma's te implementeren die rekenwarmte omzetten in nutswaarde.",
+    "cta": "Aanmelden als pilotpartner",
+    "secondary": "Pilotlocaties verkennen",
+    "stats": [
+      { "value": "25+", "label": "Partnercategorieën" },
+      { "value": "Global", "label": "Pilotdekking" },
+      { "value": "Heat-First", "label": "Nutsvormgeving" }
+    ]
+  },
+  "sections": {
+    "partnerNetwork": {
+      "id": "partner-network",
+      "title": "Partnernetwerk",
+      "subtitle": "Een gecoördineerd ecosysteem voor infrastructuuroperators",
+      "intro": "Het EnergieMIND-partnernetwerk verbindt locatie-eigenaren, energiepartners en infrastructuuroperators die echte pilotprogramma's willen implementeren. Leden ontvangen technische begeleiding, integratiekaders en toegang tot het bredere EnergieMIND-ecosysteem.",
+      "items": [
+        { "title": "Locatie-exploitanten", "text": "Hotels, commerciële gebouwen, boerderijen en kassen met beschikbare thermische of elektrische capaciteit.", "link": "#commercial-buildings" },
+        { "title": "Energiepartners", "text": "Zonne-ontwikkelaars, netbeheerders en beheerders van hernieuwbare assets die compute-geïntegreerde belasting zoeken.", "link": "#solar-mining" },
+        { "title": "Infrastructuurhosts", "text": "Mining-hosts, datacenteroperators en colocation-aanbieders met potentieel voor warmteterugwinning.", "link": "#data-centers" },
+        { "title": "Pilotcoördinatoren", "text": "Regionale partners die onboarding, compliance en lokale nutsintegratie beheren.", "link": "#pilot-sites" }
+      ],
+      "cta": "Start uw partneraanmelding"
+    },
+    "pilotSites": {
+      "id": "pilot-sites",
+      "title": "Pilotlocaties",
+      "subtitle": "Echte implementaties, meetbare resultaten",
+      "intro": "Pilotlocaties valideren EnergieMIND-integratiemodellen vóór bredere uitrol. Elke pilot documenteert energiestromen, prestaties van warmteterugwinning en operationele economie voor de partnercategorie.",
+      "items": [
+        { "title": "Locatiebeoordeling", "text": "Thermische belastingsprofilering, beoordeling van elektrische capaciteit en haalbaarheidsstudie voor integratie." },
+        { "title": "Implementatieplan", "text": "Gefaseerde hardwareplaatsing, monitoringsinstrumentatie en veiligheidscompliance." },
+        { "title": "Prestatierapportage", "text": "Maandelijkse energie-, warmte- en uptime-statistieken gedeeld met netwerkpartners." },
+        { "title": "Opschalingspad", "text": "Succesvolle piloten gaan over naar volledig netwerklidmaatschap met uitgebreide capaciteit." }
+      ],
+      "cta": "Aanmelden voor pilotlocatiestatus"
+    },
+    "miningHeat": {
+      "id": "mining-heat",
+      "title": "Mining warmteprogramma",
+      "subtitle": "Zet restwarmte van compute om in bruikbare thermische energie",
+      "intro": "Mining warmteprogramma's vangen overtollige warmte van compute-infrastructuur op en leiden deze naar lokale verwarmingssystemen of stadsverwarming. Hotels, kassen en agrarische faciliteiten profiteren van goedkope thermische input terwijl ze efficiënte rekenbelasting hosten.",
+      "items": [
+        { "title": "Warmteopvang", "text": "Vloeistof- of luchtgekoelde terugwinningssystemen geïntegreerd met bestaande HVAC." },
+        { "title": "Thermische routing", "text": "Buffertanks, warmtewisselaars en distributie naar kassen, zwembaden of gebouwcircuits." },
+        { "title": "Load balancing", "text": "Computeschema's afgestemd op thermische vraagcurves voor maximale nutswaarde." },
+        { "title": "Monitoring", "text": "Real-time dashboards voor temperatuur, debiet en energiebesparing." }
+      ],
+      "cta": "Warmteprogramma-integratie verkennen"
+    },
+    "solarMining": {
+      "id": "solar-mining",
+      "title": "Solar + Mining",
+      "subtitle": "Stem hernieuwbare opwekking af op flexibele rekenbelasting",
+      "intro": "Solar + Mining-integraties koppelen intermitterende fotovoltaïsche opwekking aan inzetbare computevraag. Overtollige dagopwekking voedt mining- of AI-workloads terwijl warmte wordt teruggewonnen voor lokaal gebruik.",
+      "items": [
+        { "title": "Curtailmentreductie", "text": "Gebruik zonne-overschot in plaats van netexport tijdens perioden met negatieve prijzen." },
+        { "title": "Hybride dimensionering", "text": "Dimensioneer PV-arrays en computecapaciteit passend bij lokale verbruikspatronen." },
+        { "title": "Opslagcoördinatie", "text": "Accubuffers verzachten overgangen tussen zonnepieken en basisbelasting." },
+        { "title": "Revenue stacking", "text": "Combineer energiebesparing, warmtenutswaarde en computerendement." }
+      ],
+      "cta": "Verbind uw zonne-installatie"
+    },
+    "commercial": {
+      "id": "commercial-buildings",
+      "title": "Commerciële gebouwen",
+      "subtitle": "Hotels, kantoren en mixed-use panden",
+      "intro": "Commerciële gebouwen met stabiele vraag naar warm water en ruimteverwarming zijn ideale pilothosts. Compute-modules op het dak of in de kelder leveren warmte aan gebouwcircuits en verminderen de draaitijd van conventionele ketels.",
+      "items": [
+        { "title": "Hotels & hospitality", "text": "Zwembadverwarming, warm tapwater en thermische lus voor wasgoed." },
+        { "title": "Kantoorcomplexen", "text": "Seizoensgebonden ruimteverwarming en voorverwarming van warm tapwater." },
+        { "title": "Mixed-use", "text": "Gecombineerde residentiële en commerciële thermische zones met gedeelde terugwinning." },
+        { "title": "Retrofit-ready", "text": "Modulaire integratie zonder grote structurele wijzigingen." }
+      ],
+      "cta": "Registreer uw gebouw"
+    },
+    "greenhouses": {
+      "id": "greenhouses",
+      "title": "Kassen",
+      "subtitle": "Jaarrond telen met teruggewonnen rekenwarmte",
+      "intro": "Kasexploitanten verlagen propaan- en aardgaskosten door mining-warmteterugwinning te integreren in klimaatbeheersystemen. Stabiele wortelzone- en omgevingstemperaturen verbeteren de opbrengstconsistentie.",
+      "items": [
+        { "title": "Klimaatbeheersing", "text": "Aanvullende verwarming tijdens koude perioden en nachtelijke temperatuurdalingen." },
+        { "title": "CO₂-verrijking", "text": "Optionele integratiepaden voor gecontroleerd atmosfeerbeheer." },
+        { "title": "Seizoenverlenging", "text": "Vroegere planting en langere oogstperiodes in gematigde regio's." },
+        { "title": "Kostenreductie", "text": "Lagere brandstofrekeningen terwijl u inkomsten genererende compute host." }
+      ],
+      "cta": "Aanmelden als kaspartner"
+    },
+    "farms": {
+      "id": "farms",
+      "title": "Boerderijen",
+      "subtitle": "Agrarische locaties met thermische en elektrische capaciteit",
+      "intro": "Boerderijen met stalverwarming, droogoperaties of lokale hernieuwbare opwekking kunnen EnergieMIND-pilotmodules hosten. Agrarische partners profiteren van gediversifieerde inkomsten en lagere energiekosten.",
+      "items": [
+        { "title": "Stal- & veeverwarming", "text": "Teruggewonnen warmte voor dierenverblijven en voederverwerkingsruimtes." },
+        { "title": "Gewasdroging", "text": "Lage-temperatuur thermische input voor graan- en productdroging." },
+        { "title": "Lokale solar", "text": "Koppel bestaande PV aan flexibele compute voor eigen verbruik." },
+        { "title": "Landelijke netondersteuning", "text": "Draag bij met flexibele belasting om lokale distributienetten te stabiliseren." }
+      ],
+      "cta": "Aanmelden als boerderijpartner"
+    },
+    "dataCenters": {
+      "id": "data-centers",
+      "title": "Datacenters",
+      "subtitle": "Colocation, edge en mining-hostfaciliteiten",
+      "intro": "Datacenter- en mining-hostoperators met warmteterugwinningsinfrastructuur kunnen zich als aanbodzijde-partners bij het netwerk aansluiten. Faciliteiten leveren computecapaciteit terwijl ze thermische energie exporteren naar aangrenzende partners.",
+      "items": [
+        { "title": "Colocation-hosts", "text": "Bied warmte-as-a-service aan nabijgelegen commerciële of agrarische locaties." },
+        { "title": "Edge-nodes", "text": "Compacte implementaties op partnerlocaties met directe thermische koppeling." },
+        { "title": "Miningfaciliteiten", "text": "Bestaande ASIC- of GPU-farms met vloeistofkoelingsinfrastructuur." },
+        { "title": "PUE-optimalisatie", "text": "Effectieve PUE-verbetering wanneer restwarmte productief wordt benut." }
+      ],
+      "cta": "Registreer uw faciliteit"
+    }
+  },
+  "enm": {
+    "title": "Toekomstige ecosysteemutility",
+    "text": "ENM is gepland als toekomstige ecosysteemutility-token voor netwerkcoördinatie, partnerincentives en governance binnen het EnergieMIND-ecosysteem. Er is geen token-presale. Partnerprogramma's richten zich op infrastructuurimplementatie en meetbare energieresultaten."
+  },
+  "faq": {
+    "title": "Veelgestelde vragen",
+    "subtitle": "Details over partnernetwerk en pilotprogramma",
+    "items": [
+      {
+        "q": "Wie kan zich aanmelden als pilotpartner?",
+        "a": "Hotels, boerderijen, zonne-installaties, kasexploitanten, mining-hosts, eigenaren van commerciële gebouwen, datacenteroperators en energie-infrastructuurpartners met geschikte elektrische of thermische capaciteit kunnen zich aanmelden."
+      },
+      {
+        "q": "Wat omvat het pilotprogramma?",
+        "a": "Pilotpartners ontvangen locatiebeoordeling, integratieplanning, implementatieondersteuning, monitoringdashboards en toegang tot het EnergieMIND-partnernetwerk voor kennisdeling en opschalingsplanning."
+      },
+      {
+        "q": "Zijn er kosten verbonden aan deelname aan het netwerk?",
+        "a": "Aanmelding is gratis. Pilotvoorwaarden variëren per locatietype en integratieomvang. Elk partnerschap is gestructureerd rond gedeelde energiebesparing, computerendement en operationele resultaten."
+      },
+      {
+        "q": "Hoe werkt het mining warmteprogramma?",
+        "a": "Compute-hardware genereert warmte tijdens bedrijf. Terugwinningssystemen vangen deze thermische energie op en leiden deze naar gebouwverwarming, kas-klimaatbeheersing, zwembadsystemen of industriële processen."
+      },
+      {
+        "q": "Kan ik deelnemen als ik alleen zonne-opwekking heb?",
+        "a": "Ja. Eigenaren van zonne-installaties kunnen flexibele rekenbelasting integreren om eigen verbruik te verbeteren en optioneel warmteterugwinning toevoegen als er een thermische afnemer in de buurt beschikbaar is."
+      },
+      {
+        "q": "Wat is de rol van ENM in het netwerk?",
+        "a": "ENM is bedoeld als toekomstige ecosysteemutility voor netwerkcoördinatie en partnerincentives. De huidige focus ligt op pilotimplementaties en infrastructuurpartnerschappen, niet op tokenverkoop."
+      },
+      {
+        "q": "Welke regio's worden ondersteund?",
+        "a": "EnergieMIND Network accepteert wereldwijd aanmeldingen. Regionale pilotcoördinatoren helpen bij lokale compliance, netaansluiting en integratievereisten met nutsbedrijven."
+      },
+      {
+        "q": "Hoe lang duurt het aanmeldingsproces?",
+        "a": "Eerste beoordeling vindt doorgaans binnen twee weken plaats. Tijdlijnen voor locatiebeoordeling en pilotplanning hangen af van projectomvang en lokale vergunningseisen."
+      }
+    ]
+  },
+  "form": {
+    "title": "Partneraanmelding",
+    "subtitle": "Aanmelden als pilotpartner in EnergieMIND Network",
+    "fields": {
+      "name": "Volledige naam",
+      "namePlaceholder": "Uw volledige naam",
+      "organization": "Organisatie",
+      "organizationPlaceholder": "Bedrijfs- of locatienaam",
+      "email": "E-mailadres",
+      "emailPlaceholder": "you@organization.com",
+      "phone": "Telefoonnummer",
+      "phonePlaceholder": "+1 000 000 0000",
+      "country": "Land / Regio",
+      "countryPlaceholder": "Land waar de locatie zich bevindt",
+      "siteType": "Locatietype",
+      "siteTypeOptions": [
+        "Hotel / Hospitality",
+        "Commercieel gebouw",
+        "Boerderij / Agrarisch",
+        "Kas",
+        "Zonne-installatie",
+        "Mining-host / Datacenter",
+        "Energiepartner",
+        "Overige infrastructuur"
+      ],
+      "capacity": "Beschikbare capaciteit",
+      "capacityPlaceholder": "bijv. 500 kW elektrisch, 200 kW thermisch",
+      "message": "Projectbeschrijving",
+      "messagePlaceholder": "Beschrijf uw locatie, doelen en integratie-interesse"
+    },
+    "submit": "Partneraanmelding verzenden",
+    "disclaimer": "Door dit formulier in te dienen stemt u ermee in te worden gecontacteerd over het EnergieMIND-partnerprogramma. Uw gegevens worden verwerkt in overeenstemming met toepasselijke privacyregelgeving.",
+    "success": "Bedankt. Uw partneraanmelding is ontvangen. Ons team neemt binnenkort contact met u op."
+  },
+  "footer": {
+    "about": "EnergieMIND Network verbindt infrastructuuroperators wereldwijd voor pilotimplementaties in energie-geïntegreerde compute en warmteterugwinning.",
+    "links": {
+      "network": "Partnernetwerk",
+      "pilots": "Pilotlocaties",
+      "apply": "Nu aanmelden",
+      "faq": "FAQ"
+    },
+    "legal": "© 2026 TVK Labs & Technologies LTD. Alle rechten voorbehouden.",
+    "privacy": "Privacybeleid",
+    "terms": "Servicevoorwaarden",
+    "contact": "partners@energiemind.network"
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "network": "Partnernetwerk"
+  },
+  "skipLink": "Ga naar hoofdinhoud",
+  "menuToggle": "Menu openen"
+}

@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "title": "EnergieMIND Network — Rete di partner e infrastrutture pilota",
+    "description": "Unisciti a EnergieMIND Network. Hotel, aziende agricole, siti solari, serre, host di mining e operatori di infrastrutture possono candidarsi come partner pilota per programmi integrati di energia e utilizzo del calore.",
+    "keywords": "EnergieMIND, rete di partner, siti pilota, utilizzo del calore da mining, solar mining, serre, aziende agricole, data center, infrastruttura energetica",
+    "ogTitle": "EnergieMIND Network — Candidati come partner pilota",
+    "ogDescription": "Collega il tuo sito all'ecosistema partner e pilota di EnergieMIND. Operatori di infrastrutture di tutto il mondo sono i benvenuti.",
+    "twitterTitle": "EnergieMIND Network — Programma partner e pilota",
+    "twitterDescription": "Hotel, aziende agricole, solare, serre e data center — unisciti alla rete infrastrutturale EnergieMIND."
+  },
+  "brand": "EnergieMIND Network",
+  "tagline": "Rete partner / pilota / infrastrutturale",
+  "nav": {
+    "partnerNetwork": "Rete di partner",
+    "pilotSites": "Siti pilota",
+    "miningHeat": "Utilizzo del calore da mining",
+    "solarMining": "Solare + Mining",
+    "commercial": "Edifici commerciali",
+    "greenhouses": "Serre",
+    "farms": "Aziende agricole",
+    "dataCenters": "Data center",
+    "application": "Candidatura partner",
+    "faq": "FAQ",
+    "apply": "Candidati come partner pilota",
+    "language": "Lingua"
+  },
+  "hero": {
+    "badge": "Programma partner infrastrutturale",
+    "title": "Alimenta il futuro dell'infrastruttura energetica distribuita",
+    "subtitle": "Hotel, aziende agricole, siti solari, operatori di serre, host di mining e partner energetici si uniscono a EnergieMIND Network per implementare programmi pilota che convertono il calore del calcolo in valore di servizio.",
+    "cta": "Candidati come partner pilota",
+    "secondary": "Esplora i siti pilota",
+    "stats": [
+      { "value": "25+", "label": "Categorie di partner" },
+      { "value": "Global", "label": "Copertura pilota" },
+      { "value": "Heat-First", "label": "Progettazione di servizio" }
+    ]
+  },
+  "sections": {
+    "partnerNetwork": {
+      "id": "partner-network",
+      "title": "Rete di partner",
+      "subtitle": "Un ecosistema coordinato per operatori di infrastrutture",
+      "intro": "La rete di partner EnergieMIND collega proprietari di siti, partner energetici e operatori di infrastrutture che desiderano implementare programmi pilota reali. I membri ricevono supporto tecnico, framework di integrazione e accesso al più ampio ecosistema EnergieMIND.",
+      "items": [
+        { "title": "Operatori di siti", "text": "Hotel, edifici commerciali, aziende agricole e serre con capacità termica o elettrica disponibile.", "link": "#commercial-buildings" },
+        { "title": "Partner energetici", "text": "Sviluppatori solari, gestori di rete e asset manager di rinnovabili alla ricerca di carichi integrati con il calcolo.", "link": "#solar-mining" },
+        { "title": "Host infrastrutturali", "text": "Host di mining, operatori di data center e provider di colocation con potenziale di recupero del calore.", "link": "#data-centers" },
+        { "title": "Coordinatori pilota", "text": "Partner regionali che gestiscono onboarding, conformità e integrazione con le utility locali.", "link": "#pilot-sites" }
+      ],
+      "cta": "Avvia la candidatura partner"
+    },
+    "pilotSites": {
+      "id": "pilot-sites",
+      "title": "Siti pilota",
+      "subtitle": "Implementazioni reali, risultati misurabili",
+      "intro": "I siti pilota convalidano i modelli di integrazione EnergieMIND prima del rollout su larga scala. Ogni pilota documenta i flussi energetici, le prestazioni del recupero del calore e l'economia operativa per la categoria di partner.",
+      "items": [
+        { "title": "Valutazione del sito", "text": "Profilazione del carico termico, revisione della capacità elettrica e studio di fattibilità dell'integrazione." },
+        { "title": "Piano di implementazione", "text": "Posizionamento hardware graduale, strumentazione di monitoraggio e conformità alla sicurezza." },
+        { "title": "Report sulle prestazioni", "text": "Metriche mensili su energia, calore e uptime condivise con i partner della rete." },
+        { "title": "Percorso di scalabilità", "text": "I piloti di successo passano all'appartenenza completa alla rete con capacità ampliate." }
+      ],
+      "cta": "Candidati per lo status di sito pilota"
+    },
+    "miningHeat": {
+      "id": "mining-heat",
+      "title": "Utilizzo del calore da mining",
+      "subtitle": "Converti il calore di scarto del calcolo in energia termica utilizzabile",
+      "intro": "I programmi di utilizzo del calore da mining catturano il calore in eccesso dell'infrastruttura di calcolo e lo indirizzano verso sistemi di riscaldamento in loco o di teleriscaldamento. Hotel, serre e strutture agricole beneficiano di un apporto termico a basso costo ospitando carichi di calcolo efficienti.",
+      "items": [
+        { "title": "Cattura del calore", "text": "Sistemi di recupero a liquido o ad aria integrati con l'HVAC esistente." },
+        { "title": "Instradamento termico", "text": "Serbatoi tampone, scambiatori di calore e distribuzione verso serre, piscine o circuiti dell'edificio." },
+        { "title": "Bilanciamento del carico", "text": "Pianificazione del calcolo allineata alle curve di domanda termica per la massima utilità." },
+        { "title": "Monitoraggio", "text": "Dashboard in tempo reale per temperatura, portata e risparmio energetico." }
+      ],
+      "cta": "Esplora l'integrazione del calore di servizio"
+    },
+    "solarMining": {
+      "id": "solar-mining",
+      "title": "Solare + Mining",
+      "subtitle": "Allinea la generazione rinnovabile a carichi di calcolo flessibili",
+      "intro": "Le integrazioni Solare + Mining abbinano la produzione fotovoltaica intermittente a una domanda di calcolo programmabile. L'eccedenza di generazione diurna alimenta carichi di mining o AI mentre il calore viene recuperato per uso in loco.",
+      "items": [
+        { "title": "Riduzione del curtailment", "text": "Utilizza l'eccedenza solare invece dell'esportazione in rete nei periodi di prezzi negativi." },
+        { "title": "Dimensionamento ibrido", "text": "Dimensiona correttamente array fotovoltaici e capacità di calcolo per i modelli di consumo locale." },
+        { "title": "Coordinamento dello storage", "text": "Buffer a batteria attenuano le transizioni tra picchi solari e carico base." },
+        { "title": "Stacking dei ricavi", "text": "Combina risparmi energetici, valore del calore di servizio e rendimento del calcolo." }
+      ],
+      "cta": "Collega il tuo sito solare"
+    },
+    "commercial": {
+      "id": "commercial-buildings",
+      "title": "Edifici commerciali",
+      "subtitle": "Hotel, uffici e immobili ad uso misto",
+      "intro": "Gli edifici commerciali con domanda costante di acqua calda sanitaria e riscaldamento sono host pilota ideali. Moduli di calcolo su tetto o in cantina forniscono calore ai circuiti dell'edificio riducendo il funzionamento delle caldaie convenzionali.",
+      "items": [
+        { "title": "Hotel e ospitalità", "text": "Riscaldamento piscine, acqua calda sanitaria e circuiti termici per lavanderia." },
+        { "title": "Complessi per uffici", "text": "Integrazione al riscaldamento stagionale e preriscaldamento dell'acqua calda sanitaria." },
+        { "title": "Uso misto", "text": "Zone termiche residenziali e commerciali combinate con recupero condiviso." },
+        { "title": "Pronto per retrofit", "text": "Integrazione modulare senza modifiche strutturali importanti." }
+      ],
+      "cta": "Registra il tuo edificio"
+    },
+    "greenhouses": {
+      "id": "greenhouses",
+      "title": "Serre",
+      "subtitle": "Coltivazione tutto l'anno con calore recuperato dal calcolo",
+      "intro": "Gli operatori di serre riducono i costi di propano e gas naturale integrando il recupero del calore da mining nei sistemi di controllo climatico. Temperature stabili nella zona radicale e nell'ambiente migliorano la costanza della resa.",
+      "items": [
+        { "title": "Controllo climatico", "text": "Riscaldamento integrativo durante i periodi freddi e i cali notturni di temperatura." },
+        { "title": "Arricchimento CO₂", "text": "Percorsi di integrazione opzionali per la gestione dell'atmosfera controllata." },
+        { "title": "Estensione della stagione", "text": "Semine anticipate e finestre di raccolta più lunghe nelle regioni temperate." },
+        { "title": "Riduzione dei costi", "text": "Bollette del combustibile più basse ospitando calcolo generatore di ricavi." }
+      ],
+      "cta": "Unisciti come partner serra"
+    },
+    "farms": {
+      "id": "farms",
+      "title": "Aziende agricole",
+      "subtitle": "Siti agricoli con capacità termica ed elettrica",
+      "intro": "Le aziende agricole con riscaldamento di stalle, operazioni di essiccazione o generazione rinnovabile in loco possono ospitare moduli pilota EnergieMIND. I partner agricoli beneficiano di ricavi diversificati e di spese energetiche ridotte.",
+      "items": [
+        { "title": "Riscaldamento stalle e bestiame", "text": "Calore recuperato per alloggiamento degli animali e aree di lavorazione del mangime." },
+        { "title": "Essiccazione colture", "text": "Apporto termico a bassa temperatura per operazioni di essiccazione di cereali e prodotti." },
+        { "title": "Solare in loco", "text": "Abbina il fotovoltaico esistente a calcolo flessibile per l'autoconsumo." },
+        { "title": "Supporto alla rete rurale", "text": "Contribuisci con carichi flessibili a stabilizzare le reti di distribuzione locali." }
+      ],
+      "cta": "Candidati come partner agricolo"
+    },
+    "dataCenters": {
+      "id": "data-centers",
+      "title": "Data center",
+      "subtitle": "Colocation, edge e strutture host di mining",
+      "intro": "Operatori di data center e host di mining con infrastruttura di recupero del calore possono unirsi alla rete come partner lato offerta. Le strutture forniscono capacità di calcolo esportando energia termica ai partner adiacenti.",
+      "items": [
+        { "title": "Host di colocation", "text": "Offri calore come servizio a siti commerciali o agricoli vicini." },
+        { "title": "Nodi edge", "text": "Implementazioni compatte presso i partner con accoppiamento termico diretto." },
+        { "title": "Strutture di mining", "text": "Farm ASIC o GPU esistenti con infrastruttura di raffreddamento a liquido." },
+        { "title": "Ottimizzazione PUE", "text": "Miglioramento effettivo del PUE quando il calore di scarto viene utilizzato produttivamente." }
+      ],
+      "cta": "Registra la tua struttura"
+    }
+  },
+  "enm": {
+    "title": "Utility futura dell'ecosistema",
+    "text": "ENM è previsto come futuro token di utility dell'ecosistema per la coordinazione della rete, gli incentivi ai partner e la governance all'interno dell'ecosistema EnergieMIND. Non esiste alcuna prevendita del token. I programmi partner si concentrano sull'implementazione dell'infrastruttura e su risultati energetici misurabili."
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "subtitle": "Dettagli sulla rete di partner e sul programma pilota",
+    "items": [
+      {
+        "q": "Chi può candidarsi come partner pilota?",
+        "a": "Hotel, aziende agricole, siti solari, operatori di serre, host di mining, proprietari di edifici commerciali, operatori di data center e partner di infrastrutture energetiche con adeguata capacità elettrica o termica possono candidarsi."
+      },
+      {
+        "q": "Cosa include il programma pilota?",
+        "a": "I partner pilota ricevono valutazione del sito, pianificazione dell'integrazione, supporto all'implementazione, dashboard di monitoraggio e accesso alla rete di partner EnergieMIND per condivisione delle conoscenze e pianificazione della scalabilità."
+      },
+      {
+        "q": "C'è un costo per unirsi alla rete?",
+        "a": "La candidatura è gratuita. I termini pilota variano in base al tipo di sito e all'ambito dell'integrazione. Ogni partnership è strutturata attorno a risparmi energetici condivisi, ricavi dal calcolo e risultati operativi."
+      },
+      {
+        "q": "Come funziona l'utilizzo del calore da mining?",
+        "a": "L'hardware di calcolo genera calore durante il funzionamento. I sistemi di recupero catturano questa energia termica e la indirizzano verso riscaldamento degli edifici, controllo climatico delle serre, sistemi per piscine o processi industriali."
+      },
+      {
+        "q": "Posso unirmi se ho solo generazione solare?",
+        "a": "Sì. I proprietari di siti solari possono integrare carichi di calcolo flessibili per migliorare l'autoconsumo e, opzionalmente, aggiungere il recupero del calore se un utilizzatore termico è disponibile nelle vicinanze."
+      },
+      {
+        "q": "Qual è il ruolo di ENM nella rete?",
+        "a": "ENM è concepito come futura utility dell'ecosistema per la coordinazione della rete e gli incentivi ai partner. L'attenzione attuale è sulle implementazioni pilota e sulle partnership infrastrutturali, non sulla vendita di token."
+      },
+      {
+        "q": "Quali regioni sono supportate?",
+        "a": "EnergieMIND Network accetta candidature a livello globale. I coordinatori pilota regionali assistono con conformità locale, connessione alla rete e requisiti di integrazione con le utility."
+      },
+      {
+        "q": "Quanto tempo richiede il processo di candidatura?",
+        "a": "La revisione iniziale avviene tipicamente entro due settimane. I tempi di valutazione del sito e pianificazione pilota dipendono dall'ambito del progetto e dai requisiti di autorizzazione locali."
+      }
+    ]
+  },
+  "form": {
+    "title": "Candidatura partner",
+    "subtitle": "Candidati come partner pilota in EnergieMIND Network",
+    "fields": {
+      "name": "Nome completo",
+      "namePlaceholder": "Il tuo nome completo",
+      "organization": "Organizzazione",
+      "organizationPlaceholder": "Nome dell'azienda o del sito",
+      "email": "Indirizzo email",
+      "emailPlaceholder": "you@organization.com",
+      "phone": "Numero di telefono",
+      "phonePlaceholder": "+1 000 000 0000",
+      "country": "Paese / Regione",
+      "countryPlaceholder": "Paese in cui si trova il sito",
+      "siteType": "Tipo di sito",
+      "siteTypeOptions": [
+        "Hotel / Ospitalità",
+        "Edificio commerciale",
+        "Azienda agricola",
+        "Serra",
+        "Sito solare",
+        "Host mining / Data center",
+        "Partner energetico",
+        "Altra infrastruttura"
+      ],
+      "capacity": "Capacità disponibile",
+      "capacityPlaceholder": "es. 500 kW elettrici, 200 kW termici",
+      "message": "Descrizione del progetto",
+      "messagePlaceholder": "Descrivi il tuo sito, gli obiettivi e l'interesse all'integrazione"
+    },
+    "submit": "Invia candidatura partner",
+    "disclaimer": "Inviando questo modulo accetti di essere contattato in merito al programma partner EnergieMIND. I tuoi dati sono trattati in conformità alle normative sulla privacy applicabili.",
+    "success": "Grazie. La tua candidatura partner è stata ricevuta. Il nostro team ti contatterà a breve."
+  },
+  "footer": {
+    "about": "EnergieMIND Network collega operatori di infrastrutture in tutto il mondo per implementazioni pilota di calcolo integrato con l'energia e recupero del calore.",
+    "links": {
+      "network": "Rete di partner",
+      "pilots": "Siti pilota",
+      "apply": "Candidati ora",
+      "faq": "FAQ"
+    },
+    "legal": "© 2026 TVK Labs & Technologies LTD. Tutti i diritti riservati.",
+    "privacy": "Informativa sulla privacy",
+    "terms": "Termini di servizio",
+    "contact": "partners@energiemind.network"
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "network": "Rete di partner"
+  },
+  "skipLink": "Salta al contenuto principale",
+  "menuToggle": "Apri menu"
+}

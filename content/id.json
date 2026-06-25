@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "title": "EnergieMIND Network — Jaringan Mitra & Infrastruktur Pilot",
+    "description": "Bergabunglah dengan EnergieMIND Network. Hotel, pertanian, lokasi solar, rumah kaca, host mining, dan operator infrastruktur dapat mendaftar sebagai mitra pilot untuk program energi dan panas terintegrasi.",
+    "keywords": "EnergieMIND, jaringan mitra, lokasi pilot, utilitas panas mining, solar mining, rumah kaca, pertanian, pusat data, infrastruktur energi",
+    "ogTitle": "EnergieMIND Network — Daftar sebagai Mitra Pilot",
+    "ogDescription": "Hubungkan lokasi Anda ke ekosistem mitra dan pilot EnergieMIND. Operator infrastruktur di seluruh dunia dipersilakan.",
+    "twitterTitle": "EnergieMIND Network — Program Mitra & Pilot",
+    "twitterDescription": "Hotel, pertanian, solar, rumah kaca, dan pusat data — bergabung dengan jaringan infrastruktur EnergieMIND."
+  },
+  "brand": "EnergieMIND Network",
+  "tagline": "Mitra / Pilot / Jaringan Infrastruktur",
+  "nav": {
+    "partnerNetwork": "Jaringan Mitra",
+    "pilotSites": "Lokasi Pilot",
+    "miningHeat": "Utilitas Panas Mining",
+    "solarMining": "Solar + Mining",
+    "commercial": "Gedung Komersial",
+    "greenhouses": "Rumah Kaca",
+    "farms": "Pertanian",
+    "dataCenters": "Pusat Data",
+    "application": "Pendaftaran Mitra",
+    "faq": "FAQ",
+    "apply": "Daftar sebagai Mitra Pilot",
+    "language": "Bahasa"
+  },
+  "hero": {
+    "badge": "Program Mitra Infrastruktur",
+    "title": "Gerakkan Masa Depan Infrastruktur Energi Terdistribusi",
+    "subtitle": "Hotel, pertanian, lokasi solar, operator rumah kaca, host mining, dan mitra energi bergabung dengan EnergieMIND Network untuk menerapkan program pilot yang mengubah panas komputasi menjadi nilai utilitas.",
+    "cta": "Daftar sebagai Mitra Pilot",
+    "secondary": "Jelajahi Lokasi Pilot",
+    "stats": [
+      { "value": "25+", "label": "Kategori Mitra" },
+      { "value": "Global", "label": "Cakupan Pilot" },
+      { "value": "Panas-Utama", "label": "Desain Utilitas" }
+    ]
+  },
+  "sections": {
+    "partnerNetwork": {
+      "id": "partner-network",
+      "title": "Jaringan Mitra",
+      "subtitle": "Ekosistem terkoordinasi untuk operator infrastruktur",
+      "intro": "Jaringan Mitra EnergieMIND menghubungkan pemilik lokasi, mitra energi, dan operator infrastruktur yang ingin menerapkan program pilot di dunia nyata. Anggota menerima panduan teknis, kerangka integrasi, dan akses ke ekosistem EnergieMIND yang lebih luas.",
+      "items": [
+        { "title": "Operator Lokasi", "text": "Hotel, gedung komersial, pertanian, dan rumah kaca dengan kapasitas termal atau listrik yang tersedia.", "link": "#commercial-buildings" },
+        { "title": "Mitra Energi", "text": "Pengembang solar, operator jaringan, dan pengelola aset energi terbarukan yang mencari beban terintegrasi komputasi.", "link": "#solar-mining" },
+        { "title": "Host Infrastruktur", "text": "Host mining, operator pusat data, dan penyedia colocation dengan potensi pemulihan panas.", "link": "#data-centers" },
+        { "title": "Koordinator Pilot", "text": "Mitra regional yang mengelola onboarding, kepatuhan, dan integrasi utilitas lokal.", "link": "#pilot-sites" }
+      ],
+      "cta": "Mulai pendaftaran mitra Anda"
+    },
+    "pilotSites": {
+      "id": "pilot-sites",
+      "title": "Lokasi Pilot",
+      "subtitle": "Implementasi nyata, hasil terukur",
+      "intro": "Lokasi pilot memvalidasi model integrasi EnergieMIND sebelum peluncuran lebih luas. Setiap pilot mendokumentasikan aliran energi, kinerja pemulihan panas, dan ekonomi operasional untuk kategori mitra.",
+      "items": [
+        { "title": "Penilaian Lokasi", "text": "Profil beban termal, tinjauan kapasitas listrik, dan studi kelayakan integrasi." },
+        { "title": "Rencana Implementasi", "text": "Penempatan perangkat keras bertahap, instrumen pemantauan, dan kepatuhan keselamatan." },
+        { "title": "Pelaporan Kinerja", "text": "Metrik energi, panas, dan uptime bulanan dibagikan dengan mitra jaringan." },
+        { "title": "Jalur Skala", "text": "Pilot yang berhasil naik ke keanggotaan jaringan penuh dengan kapasitas diperluas." }
+      ],
+      "cta": "Daftar status lokasi pilot"
+    },
+    "miningHeat": {
+      "id": "mining-heat",
+      "title": "Utilitas Panas Mining",
+      "subtitle": "Ubah panas limbah komputasi menjadi energi termal yang dapat digunakan",
+      "intro": "Program Utilitas Panas Mining menangkap kelebihan panas dari infrastruktur komputasi dan mengalirkannya ke sistem pemanasan on-site atau district heating. Hotel, rumah kaca, dan fasilitas pertanian mendapat manfaat dari input termal berbiaya rendah sambil menghosting beban komputasi yang efisien.",
+      "items": [
+        { "title": "Penangkapan Panas", "text": "Sistem pemulihan berpendingin cairan atau udara terintegrasi dengan HVAC yang ada." },
+        { "title": "Perutean Termal", "text": "Tangki buffer, penukar panas, dan distribusi ke rumah kaca, kolam, atau loop gedung." },
+        { "title": "Penyeimbangan Beban", "text": "Penjadwalan komputasi selaras dengan kurva permintaan termal untuk utilitas maksimal." },
+        { "title": "Pemantauan", "text": "Dasbor real-time untuk suhu, laju aliran, dan penghematan energi." }
+      ],
+      "cta": "Jelajahi integrasi utilitas panas"
+    },
+    "solarMining": {
+      "id": "solar-mining",
+      "title": "Solar + Mining",
+      "subtitle": "Selaraskan generasi terbarukan dengan beban komputasi fleksibel",
+      "intro": "Integrasi Solar + Mining mencocokkan output fotovoltaik yang intermiten dengan permintaan komputasi yang dapat diatur. Kelebihan generasi siang hari menggerakkan beban mining atau AI sementara panas dipulihkan untuk penggunaan on-site.",
+      "items": [
+        { "title": "Pengurangan Curtailment", "text": "Gunakan kelebihan solar alih-alih ekspor ke jaringan pada periode harga negatif." },
+        { "title": "Penentuan Ukuran Hibrida", "text": "Ukuran array PV dan kapasitas komputasi yang tepat untuk pola konsumsi lokal." },
+        { "title": "Koordinasi Penyimpanan", "text": "Buffer baterai meratakan transisi antara puncak solar dan beban dasar." },
+        { "title": "Penumpukan Pendapatan", "text": "Gabungkan penghematan energi, nilai utilitas panas, dan hasil komputasi." }
+      ],
+      "cta": "Hubungkan lokasi solar Anda"
+    },
+    "commercial": {
+      "id": "commercial-buildings",
+      "title": "Gedung Komersial",
+      "subtitle": "Hotel, kantor, dan properti mixed-use",
+      "intro": "Gedung komersial dengan permintaan air panas dan pemanasan ruangan yang stabil adalah host pilot yang ideal. Modul komputasi di atap atau basement menyediakan panas ke loop gedung sambil mengurangi waktu operasi boiler konvensional.",
+      "items": [
+        { "title": "Hotel & Hospitality", "text": "Pemanasan kolam, air panas domestik, dan loop termal laundry." },
+        { "title": "Kompleks Kantor", "text": "Suplemen pemanasan ruangan musiman dan pra-pemanasan air panas domestik." },
+        { "title": "Mixed-Use", "text": "Zona termal residensial dan ritel gabungan dengan pemulihan bersama." },
+        { "title": "Siap Retrofit", "text": "Integrasi modular tanpa perubahan struktural besar." }
+      ],
+      "cta": "Daftarkan gedung Anda"
+    },
+    "greenhouses": {
+      "id": "greenhouses",
+      "title": "Rumah Kaca",
+      "subtitle": "Budidaya sepanjang tahun dengan panas komputasi yang dipulihkan",
+      "intro": "Operator rumah kaca mengurangi biaya propana dan gas alam dengan mengintegrasikan pemulihan panas mining ke sistem kontrol iklim. Suhu zona akar dan lingkungan yang stabil meningkatkan konsistensi hasil panen.",
+      "items": [
+        { "title": "Kontrol Iklim", "text": "Pemanasan tambahan selama periode dingin dan penurunan suhu malam hari." },
+        { "title": "Enrichment CO₂", "text": "Jalur integrasi opsional untuk manajemen atmosfer terkontrol." },
+        { "title": "Perpanjangan Musim", "text": "Penanaman lebih awal dan jendela panen lebih lama di wilayah beriklim sedang." },
+        { "title": "Pengurangan Biaya", "text": "Tagihan bahan bakar lebih rendah sambil menghosting komputasi yang menghasilkan pendapatan." }
+      ],
+      "cta": "Bergabung sebagai mitra rumah kaca"
+    },
+    "farms": {
+      "id": "farms",
+      "title": "Pertanian",
+      "subtitle": "Lokasi pertanian dengan kapasitas termal dan listrik",
+      "intro": "Pertanian dengan pemanasan kandang, operasi pengeringan, atau generasi terbarukan on-site dapat menghosting modul pilot EnergieMIND. Mitra pertanian mendapat manfaat dari pendapatan yang terdiversifikasi dan pengeluaran energi yang berkurang.",
+      "items": [
+        { "title": "Pemanasan Kandang & Ternak", "text": "Panas yang dipulihkan untuk perumahan hewan dan area pengolahan pakan." },
+        { "title": "Pengeringan Tanaman", "text": "Input termal grade rendah untuk operasi pengeringan biji-bijian dan produk." },
+        { "title": "Solar On-Site", "text": "Pasangkan PV yang ada dengan komputasi fleksibel untuk konsumsi mandiri." },
+        { "title": "Dukungan Jaringan Pedesaan", "text": "Kontribusikan beban fleksibel untuk menstabilkan jaringan distribusi lokal." }
+      ],
+      "cta": "Daftar sebagai mitra pertanian"
+    },
+    "dataCenters": {
+      "id": "data-centers",
+      "title": "Pusat Data",
+      "subtitle": "Fasilitas colocation, edge, dan host mining",
+      "intro": "Operator pusat data dan host mining dengan infrastruktur pemulihan panas dapat bergabung dengan jaringan sebagai mitra sisi pasokan. Fasilitas menyediakan kapasitas komputasi sambil mengekspor energi termal ke mitra terdekat.",
+      "items": [
+        { "title": "Host Colocation", "text": "Tawarkan panas sebagai layanan ke lokasi komersial atau pertanian tetangga." },
+        { "title": "Node Edge", "text": "Implementasi kompak di lokasi mitra dengan coupling termal langsung." },
+        { "title": "Fasilitas Mining", "text": "Farm ASIC atau GPU yang ada dengan infrastruktur pendinginan cairan." },
+        { "title": "Optimasi PUE", "text": "Peningkatan PUE efektif ketika panas limbah digunakan secara produktif." }
+      ],
+      "cta": "Daftarkan fasilitas Anda"
+    }
+  },
+  "enm": {
+    "title": "Utilitas Ekosistem Masa Depan",
+    "text": "ENM direncanakan sebagai token utilitas ekosistem masa depan untuk koordinasi jaringan, insentif mitra, dan tata kelola dalam ekosistem EnergieMIND. Tidak ada presale token. Program mitra fokus pada implementasi infrastruktur dan hasil energi yang terukur."
+  },
+  "faq": {
+    "title": "Pertanyaan yang Sering Diajukan",
+    "subtitle": "Detail jaringan mitra dan program pilot",
+    "items": [
+      {
+        "q": "Siapa yang dapat mendaftar sebagai mitra pilot?",
+        "a": "Hotel, pertanian, lokasi solar, operator rumah kaca, host mining, pemilik gedung komersial, operator pusat data, dan mitra infrastruktur energi dengan kapasitas listrik atau termal yang sesuai dapat mendaftar."
+      },
+      {
+        "q": "Apa saja yang termasuk dalam program pilot?",
+        "a": "Mitra pilot menerima penilaian lokasi, perencanaan integrasi, dukungan implementasi, dasbor pemantauan, dan akses ke jaringan mitra EnergieMIND untuk berbagi pengetahuan dan perencanaan skala."
+      },
+      {
+        "q": "Apakah ada biaya untuk bergabung dengan jaringan?",
+        "a": "Pendaftaran gratis. Ketentuan pilot bervariasi menurut jenis lokasi dan cakupan integrasi. Setiap kemitraan disusun berdasarkan penghematan energi bersama, pendapatan komputasi, dan hasil operasional."
+      },
+      {
+        "q": "Bagaimana utilitas panas mining bekerja?",
+        "a": "Perangkat keras komputasi menghasilkan panas selama operasi. Sistem pemulihan menangkap energi termal ini dan mengalirkannya ke pemanasan gedung, kontrol iklim rumah kaca, sistem kolam, atau proses industri."
+      },
+      {
+        "q": "Bisakah saya bergabung jika saya hanya memiliki generasi solar?",
+        "a": "Ya. Pemilik lokasi solar dapat mengintegrasikan beban komputasi fleksibel untuk meningkatkan konsumsi mandiri dan secara opsional menambahkan pemulihan panas jika offtaker termal tersedia di dekatnya."
+      },
+      {
+        "q": "Apa peran ENM dalam jaringan?",
+        "a": "ENM dirancang sebagai utilitas ekosistem masa depan untuk koordinasi jaringan dan insentif mitra. Fokus saat ini adalah pada implementasi pilot dan kemitraan infrastruktur, bukan penjualan token."
+      },
+      {
+        "q": "Wilayah mana yang didukung?",
+        "a": "EnergieMIND Network menerima pendaftaran secara global. Koordinator pilot regional membantu kepatuhan lokal, koneksi jaringan, dan persyaratan integrasi utilitas."
+      },
+      {
+        "q": "Berapa lama proses pendaftaran?",
+        "a": "Tinjauan awal biasanya dilakukan dalam dua minggu. Jadwal penilaian lokasi dan perencanaan pilot bergantung pada cakupan proyek dan persyaratan perizinan lokal."
+      }
+    ]
+  },
+  "form": {
+    "title": "Pendaftaran Mitra",
+    "subtitle": "Daftar sebagai mitra pilot di EnergieMIND Network",
+    "fields": {
+      "name": "Nama Lengkap",
+      "namePlaceholder": "Nama lengkap Anda",
+      "organization": "Organisasi",
+      "organizationPlaceholder": "Nama perusahaan atau lokasi",
+      "email": "Alamat Email",
+      "emailPlaceholder": "you@organization.com",
+      "phone": "Nomor Telepon",
+      "phonePlaceholder": "+62 000 000 0000",
+      "country": "Negara / Wilayah",
+      "countryPlaceholder": "Negara tempat lokasi berada",
+      "siteType": "Jenis Lokasi",
+      "siteTypeOptions": [
+        "Hotel / Hospitality",
+        "Gedung Komersial",
+        "Pertanian / Agrikultur",
+        "Rumah Kaca",
+        "Lokasi Solar",
+        "Host Mining / Pusat Data",
+        "Mitra Energi",
+        "Infrastruktur Lainnya"
+      ],
+      "capacity": "Kapasitas Tersedia",
+      "capacityPlaceholder": "mis. 500 kW listrik, 200 kW termal",
+      "message": "Deskripsi Proyek",
+      "messagePlaceholder": "Jelaskan lokasi, tujuan, dan minat integrasi Anda"
+    },
+    "submit": "Kirim Pendaftaran Mitra",
+    "disclaimer": "Dengan mengirimkan formulir ini, Anda setuju untuk dihubungi terkait program mitra EnergieMIND. Data Anda diproses sesuai peraturan privasi yang berlaku.",
+    "success": "Terima kasih. Pendaftaran mitra Anda telah diterima. Tim kami akan segera menghubungi Anda."
+  },
+  "footer": {
+    "about": "EnergieMIND Network menghubungkan operator infrastruktur di seluruh dunia untuk implementasi pilot dalam komputasi terintegrasi energi dan pemulihan panas.",
+    "links": {
+      "network": "Jaringan Mitra",
+      "pilots": "Lokasi Pilot",
+      "apply": "Daftar Sekarang",
+      "faq": "FAQ"
+    },
+    "legal": "© 2026 TVK Labs & Technologies LTD. All rights reserved.",
+    "privacy": "Kebijakan Privasi",
+    "terms": "Ketentuan Layanan",
+    "contact": "partners@energiemind.network"
+  },
+  "breadcrumbs": {
+    "home": "Beranda",
+    "network": "Jaringan Mitra"
+  },
+  "skipLink": "Lewati ke konten utama",
+  "menuToggle": "Buka menu"
+}
