@@ -5,6 +5,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
+const OUT = path.join(ROOT, 'public');
 const languages = JSON.parse(fs.readFileSync(path.join(ROOT, 'config/languages.json'), 'utf8'));
 const siteConfig = JSON.parse(fs.readFileSync(path.join(ROOT, 'config/site.json'), 'utf8'));
 const DOMAIN = siteConfig.domain;
@@ -464,35 +465,47 @@ function ensureDir(dir) {
   fs.mkdirSync(dir, { recursive: true });
 }
 
-function copyAssets() {
-  // assets already in place at /assets
+function copyDir(src, dest) {
+  fs.mkdirSync(dest, { recursive: true });
+  for (const entry of fs.readdirSync(src, { withFileTypes: true })) {
+    const srcPath = path.join(src, entry.name);
+    const destPath = path.join(dest, entry.name);
+    if (entry.isDirectory()) copyDir(srcPath, destPath);
+    else fs.copyFileSync(srcPath, destPath);
+  }
 }
 
 function main() {
   console.log('Building energiemind.network...');
 
+  if (fs.existsSync(OUT)) fs.rmSync(OUT, { recursive: true });
+  ensureDir(OUT);
+
+  copyDir(path.join(ROOT, 'assets'), path.join(OUT, 'assets'));
+  console.log('  ✓ /assets/');
+
   for (const lang of languages) {
     const t = loadTranslation(lang.code);
-    const outDir = path.join(ROOT, lang.code);
+    const outDir = path.join(OUT, lang.code);
     ensureDir(outDir);
     const html = buildPage(lang, t);
     fs.writeFileSync(path.join(outDir, 'index.html'), html, 'utf8');
     console.log(`  ✓ /${lang.code}/index.html`);
   }
 
-  ensureDir(path.join(ROOT, 'sitemaps'));
+  ensureDir(path.join(OUT, 'sitemaps'));
   for (const lang of languages) {
     fs.writeFileSync(
-      path.join(ROOT, 'sitemaps', `sitemap-${lang.code}.xml`),
+      path.join(OUT, 'sitemaps', `sitemap-${lang.code}.xml`),
       buildSitemap(lang.code),
       'utf8'
     );
   }
-  fs.writeFileSync(path.join(ROOT, 'sitemap-index.xml'), buildSitemapIndex(), 'utf8');
-  fs.writeFileSync(path.join(ROOT, 'robots.txt'), buildRobots(), 'utf8');
-  fs.writeFileSync(path.join(ROOT, 'index.html'), buildRootRedirect(), 'utf8');
+  fs.writeFileSync(path.join(OUT, 'sitemap-index.xml'), buildSitemapIndex(), 'utf8');
+  fs.writeFileSync(path.join(OUT, 'robots.txt'), buildRobots(), 'utf8');
+  fs.writeFileSync(path.join(OUT, 'index.html'), buildRootRedirect(), 'utf8');
 
-  console.log('  ✓ sitemaps, robots.txt, root redirect');
+  console.log('  ✓ sitemaps, robots.txt, root redirect → public/');
   console.log('Done.');
 }
 

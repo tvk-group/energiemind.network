@@ -37,12 +37,15 @@ Each language has a fully translated page — no Google Translate widgets.
 npm run build
 ```
 
-Generates:
+Generates deployable static output in `/public/`:
+
 - 25 language directories with `index.html`
 - Language-specific sitemaps in `/sitemaps/`
 - `/sitemap-index.xml`
 - `/robots.txt`
 - Root redirect to `/en/`
+
+Vercel deploys from the `public/` output directory (see `vercel.json`).
 
 ## SEO
 
