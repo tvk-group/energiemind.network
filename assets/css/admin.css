@@ -131,6 +131,9 @@ a:hover { color: var(--accent); }
   color: var(--danger);
   font-size: 0.875rem;
 }
+.login-error:not([hidden]) {
+  display: block;
+}
 .login-hint {
   margin: 1.25rem 0 0;
   text-align: center;

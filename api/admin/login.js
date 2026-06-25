@@ -1,5 +1,17 @@
 const { createToken, cors, getSecret } = require('../../lib/admin-auth');
 
+function parseBody(req) {
+  let body = req.body;
+  if (typeof body === 'string') {
+    try {
+      body = JSON.parse(body);
+    } catch {
+      body = {};
+    }
+  }
+  return body || {};
+}
+
 module.exports = async function handler(req, res) {
   cors(res);
   if (req.method === 'OPTIONS') return res.status(200).end();
@@ -9,10 +21,10 @@ module.exports = async function handler(req, res) {
     return res.status(503).json({ error: 'Admin not configured. Set ADMIN_PASSWORD in Vercel env.' });
   }
 
-  const { password } = req.body || {};
+  const { password } = parseBody(req);
   if (!password || password !== process.env.ADMIN_PASSWORD) {
     return res.status(401).json({
-      error: 'Invalid password. This must match the ADMIN_PASSWORD value in your Vercel project settings.',
+      error: 'Invalid password. Must match ADMIN_PASSWORD in Vercel project settings.',
     });
   }
 

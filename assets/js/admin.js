@@ -5,17 +5,12 @@
   var apps = [];
   var selectedId = null;
 
-  var loginScreen = document.getElementById('login-screen');
-  var dashboard = document.getElementById('dashboard');
-  var loginForm = document.getElementById('login-form');
-  var loginError = document.getElementById('login-error');
-  var appsBody = document.getElementById('apps-body');
-  var loadError = document.getElementById('load-error');
-  var filterStatus = document.getElementById('filter-status');
-  var searchInput = document.getElementById('search-input');
-  var modal = document.getElementById('detail-modal');
-  var detailBody = document.getElementById('detail-body');
-  var detailStatus = document.getElementById('detail-status');
+  var loginScreen, dashboard, loginForm, loginError, loginBtn, appsBody, loadError;
+  var filterStatus, searchInput, modal, detailBody, detailStatus;
+
+  function $(id) {
+    return document.getElementById(id);
+  }
 
   function token() {
     return sessionStorage.getItem(TOKEN_KEY);
@@ -34,13 +29,29 @@
   }
 
   function showLogin() {
-    loginScreen.hidden = false;
-    dashboard.hidden = true;
+    if (loginScreen) loginScreen.hidden = false;
+    if (dashboard) dashboard.hidden = true;
   }
 
   function showDashboard() {
-    loginScreen.hidden = true;
-    dashboard.hidden = false;
+    if (loginScreen) loginScreen.hidden = true;
+    if (dashboard) dashboard.hidden = false;
+  }
+
+  function fetchJson(url, options) {
+    return fetch(url, options).then(function (r) {
+      return r.text().then(function (text) {
+        var data = {};
+        if (text) {
+          try {
+            data = JSON.parse(text);
+          } catch (e) {
+            data = { error: text || 'Invalid server response' };
+          }
+        }
+        return { ok: r.ok, status: r.status, data: data };
+      });
+    });
   }
 
   function fmtDate(iso) {
@@ -55,11 +66,20 @@
     return '<span class="status-pill status-' + s + '">' + s + '</span>';
   }
 
+  function esc(s) {
+    if (!s) return '';
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
   function updateStats(list) {
-    document.getElementById('stat-total').textContent = list.length;
-    document.getElementById('stat-new').textContent = list.filter(function (a) { return a.status === 'new'; }).length;
-    document.getElementById('stat-review').textContent = list.filter(function (a) { return a.status === 'reviewing'; }).length;
-    document.getElementById('stat-approved').textContent = list.filter(function (a) { return a.status === 'approved'; }).length;
+    $('stat-total').textContent = list.length;
+    $('stat-new').textContent = list.filter(function (a) { return a.status === 'new'; }).length;
+    $('stat-review').textContent = list.filter(function (a) { return a.status === 'reviewing'; }).length;
+    $('stat-approved').textContent = list.filter(function (a) { return a.status === 'approved'; }).length;
   }
 
   function filteredApps() {
@@ -98,20 +118,11 @@
     });
   }
 
-  function esc(s) {
-    if (!s) return '';
-    return String(s)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;');
-  }
-
   function openDetail(id) {
     var a = apps.find(function (x) { return x.id === id; });
     if (!a) return;
     selectedId = id;
-    document.getElementById('detail-title').textContent = a.organization || a.name;
+    $('detail-title').textContent = a.organization || a.name;
     detailStatus.value = a.status || 'new';
     detailBody.innerHTML =
       row('Date', fmtDate(a.created_at)) +
@@ -132,105 +143,171 @@
   }
 
   function loadApps() {
+    if (!token()) {
+      showLogin();
+      return;
+    }
+
     loadError.hidden = true;
     appsBody.innerHTML = '<tr><td colspan="7" class="empty-row">Loading…</td></tr>';
 
-    fetch('/api/admin/applications', { headers: authHeaders() })
-      .then(function (r) {
-        if (r.status === 401) { setToken(null); showLogin(); throw new Error('Session expired'); }
-        return r.json().then(function (d) { return { ok: r.ok, data: d }; });
-      })
+    fetchJson('/api/admin/applications', { headers: authHeaders() })
       .then(function (res) {
-        if (!res.ok) throw new Error(res.data.error || 'Failed to load');
+        if (res.status === 401) {
+          setToken(null);
+          showLogin();
+          loginError.textContent = 'Session expired. Please sign in again.';
+          loginError.hidden = false;
+          return;
+        }
+        if (!res.ok) {
+          loadError.textContent = res.data.error || res.data.detail || 'Failed to load applications';
+          loadError.hidden = false;
+          appsBody.innerHTML = '<tr><td colspan="7" class="empty-row">Could not load data</td></tr>';
+          return;
+        }
         apps = res.data.applications || [];
         updateStats(apps);
         renderTable();
       })
-      .catch(function (err) {
-        loadError.textContent = err.message || 'Could not load applications';
+      .catch(function () {
+        loadError.textContent = 'Network error loading applications';
         loadError.hidden = false;
-        appsBody.innerHTML = '<tr><td colspan="7" class="empty-row">Error loading data</td></tr>';
+        appsBody.innerHTML = '<tr><td colspan="7" class="empty-row">Network error</td></tr>';
       });
   }
 
-  loginForm.addEventListener('submit', function (e) {
+  function handleLogin(e) {
     e.preventDefault();
     loginError.hidden = true;
-    var pw = document.getElementById('admin-password').value;
 
-    fetch('/api/admin/login', {
+    var pwInput = $('admin-password');
+    var pw = pwInput ? pwInput.value : '';
+    if (!pw) return;
+
+    if (loginBtn) {
+      loginBtn.disabled = true;
+      loginBtn.textContent = 'Signing in…';
+    }
+
+    fetchJson('/api/admin/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ password: pw }),
     })
-      .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, data: d }; }); })
       .then(function (res) {
         if (!res.ok) {
           if (res.status === 503) {
-            loginError.textContent = 'Admin not configured. Set ADMIN_PASSWORD in Vercel → Settings → Environment Variables, then redeploy.';
+            loginError.textContent = 'Admin not configured. Set ADMIN_PASSWORD in Vercel, then redeploy.';
           } else if (res.status === 401) {
-            loginError.textContent = res.data.error || 'Wrong password. It must match ADMIN_PASSWORD in Vercel (not your Supabase password).';
+            loginError.textContent = res.data.error || 'Wrong password.';
           } else {
-            loginError.textContent = res.data.error || 'Login failed';
+            loginError.textContent = res.data.error || 'Login failed (HTTP ' + res.status + ')';
           }
           loginError.hidden = false;
           return;
         }
+
+        if (!res.data || !res.data.token) {
+          loginError.textContent = 'Login succeeded but no session token received.';
+          loginError.hidden = false;
+          return;
+        }
+
         setToken(res.data.token);
-        loginForm.reset();
+        if (loginForm) loginForm.reset();
         showDashboard();
         loadApps();
       })
       .catch(function () {
-        loginError.textContent = 'Connection error';
+        loginError.textContent = 'Network error — could not reach login API.';
         loginError.hidden = false;
-      });
-  });
-
-  document.getElementById('logout-btn').addEventListener('click', function () {
-    setToken(null);
-    showLogin();
-  });
-
-  document.getElementById('refresh-btn').addEventListener('click', loadApps);
-  filterStatus.addEventListener('change', renderTable);
-  searchInput.addEventListener('input', renderTable);
-
-  document.getElementById('modal-close').addEventListener('click', function () {
-    modal.close();
-  });
-
-  document.getElementById('save-status').addEventListener('click', function () {
-    if (!selectedId) return;
-    var btn = document.getElementById('save-status');
-    btn.disabled = true;
-
-    fetch('/api/admin/applications', {
-      method: 'PATCH',
-      headers: authHeaders(),
-      body: JSON.stringify({ id: selectedId, status: detailStatus.value }),
-    })
-      .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, data: d }; }); })
-      .then(function (res) {
-        if (!res.ok) throw new Error(res.data.error || 'Update failed');
-        var idx = apps.findIndex(function (a) { return a.id === selectedId; });
-        if (idx >= 0) apps[idx] = res.data.application;
-        updateStats(apps);
-        renderTable();
-        modal.close();
-      })
-      .catch(function (err) {
-        alert(err.message);
       })
       .finally(function () {
-        btn.disabled = false;
+        if (loginBtn) {
+          loginBtn.disabled = false;
+          loginBtn.textContent = 'Sign in';
+        }
       });
-  });
+  }
 
-  if (token()) {
-    showDashboard();
-    loadApps();
+  function init() {
+    loginScreen = $('login-screen');
+    dashboard = $('dashboard');
+    loginForm = $('login-form');
+    loginError = $('login-error');
+    loginBtn = loginForm ? loginForm.querySelector('button[type="submit"]') : null;
+    appsBody = $('apps-body');
+    loadError = $('load-error');
+    filterStatus = $('filter-status');
+    searchInput = $('search-input');
+    modal = $('detail-modal');
+    detailBody = $('detail-body');
+    detailStatus = $('detail-status');
+
+    if (!loginForm) {
+      console.error('Admin: login form not found');
+      return;
+    }
+
+    loginForm.addEventListener('submit', handleLogin);
+
+    var logoutBtn = $('logout-btn');
+    if (logoutBtn) {
+      logoutBtn.addEventListener('click', function () {
+        setToken(null);
+        showLogin();
+      });
+    }
+
+    var refreshBtn = $('refresh-btn');
+    if (refreshBtn) refreshBtn.addEventListener('click', loadApps);
+
+    if (filterStatus) filterStatus.addEventListener('change', renderTable);
+    if (searchInput) searchInput.addEventListener('input', renderTable);
+
+    var modalClose = $('modal-close');
+    if (modalClose) modalClose.addEventListener('click', function () { modal.close(); });
+
+    var saveStatus = $('save-status');
+    if (saveStatus) {
+      saveStatus.addEventListener('click', function () {
+        if (!selectedId) return;
+        saveStatus.disabled = true;
+
+        fetchJson('/api/admin/applications', {
+          method: 'PATCH',
+          headers: authHeaders(),
+          body: JSON.stringify({ id: selectedId, status: detailStatus.value }),
+        })
+          .then(function (res) {
+            if (!res.ok) throw new Error(res.data.error || 'Update failed');
+            var idx = apps.findIndex(function (a) { return a.id === selectedId; });
+            if (idx >= 0) apps[idx] = res.data.application;
+            updateStats(apps);
+            renderTable();
+            modal.close();
+          })
+          .catch(function (err) {
+            alert(err.message);
+          })
+          .finally(function () {
+            saveStatus.disabled = false;
+          });
+      });
+    }
+
+    if (token()) {
+      showDashboard();
+      loadApps();
+    } else {
+      showLogin();
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
   } else {
-    showLogin();
+    init();
   }
 })();

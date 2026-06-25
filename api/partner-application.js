@@ -1,9 +1,23 @@
-const { createServiceClient } = require('../../lib/supabase');
+'use strict';
+
+const { getUrl, getServiceKey } = require('../../lib/supabase');
 
 function cors(res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+}
+
+function parseBody(req) {
+  let body = req.body;
+  if (typeof body === 'string') {
+    try {
+      body = JSON.parse(body);
+    } catch {
+      body = {};
+    }
+  }
+  return body || {};
 }
 
 function isValidEmail(email) {
@@ -15,14 +29,15 @@ module.exports = async function handler(req, res) {
   if (req.method === 'OPTIONS') return res.status(200).end();
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
-  const supabase = createServiceClient();
-  if (!supabase) {
+  const url = getUrl();
+  const key = getServiceKey();
+  if (!url || !key) {
     return res.status(503).json({
       error: 'Server not configured. Set SUPABASE_SERVICE_ROLE_KEY in Vercel.',
     });
   }
 
-  const body = req.body || {};
+  const body = parseBody(req);
   const name = (body.name || '').trim();
   const organization = (body.organization || '').trim();
   const email = (body.email || '').trim();
@@ -52,12 +67,29 @@ module.exports = async function handler(req, res) {
   };
 
   const table = process.env.SUPABASE_TABLE || 'partner_applications';
-  const { error } = await supabase.from(table).insert(row);
+  const root = url.replace(/\/$/, '');
 
-  if (error) {
-    console.error('Partner application insert failed:', error.message);
-    return res.status(502).json({ error: 'Could not save application', detail: error.message });
+  try {
+    const r = await fetch(`${root}/rest/v1/${table}`, {
+      method: 'POST',
+      headers: {
+        apikey: key,
+        Authorization: `Bearer ${key}`,
+        'Content-Type': 'application/json',
+        Prefer: 'return=minimal',
+      },
+      body: JSON.stringify(row),
+    });
+
+    if (!r.ok) {
+      const detail = await r.text();
+      console.error('Partner insert failed:', detail);
+      return res.status(502).json({ error: 'Could not save application', detail });
+    }
+
+    return res.status(201).json({ ok: true });
+  } catch (err) {
+    console.error('Partner application error:', err);
+    return res.status(500).json({ error: 'Server error', detail: String(err.message || err) });
   }
-
-  return res.status(201).json({ ok: true });
 };
