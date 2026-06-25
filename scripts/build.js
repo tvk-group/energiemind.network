@@ -76,7 +76,7 @@ const SECTION_ICONS = {
   'data-centers': '⬡',
 };
 
-function sectionBlock(section, reverse = false) {
+function sectionBlock(section, reverse = false, toneIndex = 0) {
   const items = section.items
     .map((item) => {
       const link = item.link
@@ -90,7 +90,7 @@ function sectionBlock(section, reverse = false) {
     })
     .join('\n          ');
 
-  return `<section id="${section.id}" class="section ${reverse ? 'section-alt' : ''}" aria-labelledby="${section.id}-title">
+  return `<section id="${section.id}" class="section section-tone-${toneIndex % 4} ${reverse ? 'section-alt' : ''}" aria-labelledby="${section.id}-title">
       <div class="container">
         <header class="section-header">
           <span class="section-icon" aria-hidden="true">${SECTION_ICONS[section.id] || '◆'}</span>
@@ -265,7 +265,7 @@ function buildPage(lang, t) {
     .join('\n          ');
 
   const sections = Object.values(t.sections);
-  const sectionHtml = sections.map((s, i) => sectionBlock(s, i % 2 === 1)).join('\n\n    ');
+  const sectionHtml = sections.map((s, i) => sectionBlock(s, i % 2 === 1, i)).join('\n\n    ');
 
   return `<!DOCTYPE html>
 <html lang="${lang.hreflang}" dir="${lang.dir}">
@@ -308,7 +308,7 @@ ${languages.filter((l) => l.code !== lang.code).map((l) => `  <meta property="og
   <header class="site-header" role="banner">
     <div class="container header-inner">
       <a href="${homeUrl}" class="logo" aria-label="${esc(t.brand)}" title="${esc(t.brand)}">
-        <img src="/assets/images/logo.svg" alt="${esc(t.brand)}" width="200" height="44" />
+        <img src="/assets/images/logo-light.svg" alt="${esc(t.brand)}" width="200" height="44" />
       </a>
       <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="${esc(t.menuToggle)}">
         <span></span><span></span><span></span>
@@ -344,7 +344,7 @@ ${languages.filter((l) => l.code !== lang.code).map((l) => `  <meta property="og
 
     ${sectionHtml}
 
-    <section id="enm-notice" class="section enm-section" aria-labelledby="enm-title">
+    <section id="enm-notice" class="section section-tone-2 enm-section" aria-labelledby="enm-title">
       <div class="container">
         <div class="enm-card">
           <h2 id="enm-title">${esc(t.enm.title)}</h2>
@@ -353,7 +353,7 @@ ${languages.filter((l) => l.code !== lang.code).map((l) => `  <meta property="og
       </div>
     </section>
 
-    <section id="application" class="section section-alt" aria-labelledby="application-title">
+    <section id="application" class="section section-tone-3 section-alt" aria-labelledby="application-title">
       <div class="container">
         <header class="section-header">
           <h2 id="application-title">${esc(t.form.title)}</h2>
@@ -363,7 +363,7 @@ ${languages.filter((l) => l.code !== lang.code).map((l) => `  <meta property="og
       </div>
     </section>
 
-    <section id="faq" class="section" aria-labelledby="faq-title" itemscope itemtype="https://schema.org/FAQPage">
+    <section id="faq" class="section section-tone-0" aria-labelledby="faq-title" itemscope itemtype="https://schema.org/FAQPage">
       <div class="container">
         <header class="section-header">
           <h2 id="faq-title">${esc(t.faq.title)}</h2>
@@ -462,6 +462,10 @@ User-agent: Baiduspider
 Allow: /
 
 Sitemap: ${DOMAIN}/sitemap-index.xml
+
+# Admin dashboard — noindex
+User-agent: *
+Disallow: /admin/
 `;
 }
 
@@ -534,6 +538,10 @@ function main() {
   fs.writeFileSync(path.join(OUT, 'sitemap-index.xml'), buildSitemapIndex(), 'utf8');
   fs.writeFileSync(path.join(OUT, 'robots.txt'), buildRobots(), 'utf8');
   fs.writeFileSync(path.join(OUT, 'index.html'), buildRootRedirect(), 'utf8');
+
+  ensureDir(path.join(OUT, 'admin'));
+  fs.copyFileSync(path.join(ROOT, 'admin', 'index.html'), path.join(OUT, 'admin', 'index.html'));
+  console.log('  ✓ /admin/index.html');
 
   console.log('  ✓ sitemaps, robots.txt, root redirect → public/');
   console.log('Done.');

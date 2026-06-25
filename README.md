@@ -58,6 +58,16 @@ To persist partner applications:
 
 Without Supabase, the form shows a success message in demo mode (no data saved).
 
+## Admin Dashboard
+
+Partner applications admin: **`/admin/`**
+
+- Password-protected (set `ADMIN_PASSWORD` in Vercel)
+- Lists all submissions from Supabase (requires `SUPABASE_SERVICE_ROLE_KEY`)
+- Filter, search, view details, update status (new → reviewing → approved → declined)
+
+See `.env.example` for required environment variables.
+
 ## SEO
 
 Every page includes:
