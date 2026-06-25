@@ -25,21 +25,18 @@
 
   function submitToSupabase(data) {
     var cfg = window.ENM_FORM_CONFIG || {};
-    if (!cfg.supabaseUrl || !cfg.supabaseAnonKey) return Promise.resolve(false);
+    if (!cfg.supabaseUrl || !cfg.supabaseKey) return Promise.resolve(false);
 
-    return fetch(cfg.supabaseUrl.replace(/\/$/, '') + '/rest/v1/' + (cfg.table || 'partner_applications'), {
-      method: 'POST',
-      headers: {
-        apikey: cfg.supabaseAnonKey,
-        Authorization: 'Bearer ' + cfg.supabaseAnonKey,
-        'Content-Type': 'application/json',
-        Prefer: 'return=minimal',
-      },
-      body: JSON.stringify(data),
-    }).then(function (res) {
-      if (!res.ok) throw new Error('Submit failed');
-      return true;
-    });
+    if (window.ENMSupabase && window.ENMSupabase.insertPartnerApplication) {
+      return window.ENMSupabase.insertPartnerApplication(
+        cfg.supabaseUrl,
+        cfg.supabaseKey,
+        cfg.table || 'partner_applications',
+        data
+      ).then(function () { return true; });
+    }
+
+    return Promise.reject(new Error('Supabase client not loaded'));
   }
 
   var form = document.getElementById('partner-form');
@@ -74,14 +71,14 @@
         source: 'energiemind.network',
       };
 
-      submitToSupabase(payload)
-        .then(function (sent) {
+      var cfg = window.ENM_FORM_CONFIG || {};
+      var hasSupabase = cfg.supabaseUrl && cfg.supabaseKey;
+
+      (hasSupabase ? submitToSupabase(payload) : Promise.resolve(false))
+        .then(function () {
           showMessage('form-success', true);
           form.reset();
           document.getElementById('form-success').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-          if (!sent && window.ENM_FORM_CONFIG && !window.ENM_FORM_CONFIG.supabaseUrl) {
-            /* offline/demo mode — still show success */
-          }
         })
         .catch(function () {
           showMessage('form-error', true);

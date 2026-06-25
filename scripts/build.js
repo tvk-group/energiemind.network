@@ -3,6 +3,10 @@
 
 const fs = require('fs');
 const path = require('path');
+const esbuild = require('esbuild');
+
+require('dotenv').config({ path: path.join(__dirname, '..', '.env.local') });
+require('dotenv').config({ path: path.join(__dirname, '..', '.env') });
 
 const ROOT = path.resolve(__dirname, '..');
 const OUT = path.join(ROOT, 'public');
@@ -407,6 +411,7 @@ ${languages.filter((l) => l.code !== lang.code).map((l) => `  <meta property="og
     </div>
   </footer>
 
+  <script src="/assets/js/supabase-client.js" defer></script>
   <script src="/assets/js/form-config.js" defer></script>
   <script src="/assets/js/main.js" defer></script>
 </body>
@@ -487,11 +492,27 @@ function buildRootRedirect() {
 
 function buildFormConfig() {
   const config = {
-    supabaseUrl: process.env.SUPABASE_URL || '',
-    supabaseAnonKey: process.env.SUPABASE_ANON_KEY || '',
+    supabaseUrl:
+      process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL || '',
+    supabaseKey:
+      process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ||
+      process.env.SUPABASE_ANON_KEY ||
+      '',
     table: process.env.SUPABASE_TABLE || 'partner_applications',
   };
   return `window.ENM_FORM_CONFIG = ${JSON.stringify(config)};\n`;
+}
+
+function bundleSupabaseClient() {
+  esbuild.buildSync({
+    entryPoints: [path.join(ROOT, 'utils/supabase/browser-entry.js')],
+    outfile: path.join(OUT, 'assets/js/supabase-client.js'),
+    bundle: true,
+    format: 'iife',
+    globalName: 'ENMSupabase',
+    platform: 'browser',
+    minify: true,
+  });
 }
 
 function ensureDir(dir) {
@@ -515,8 +536,9 @@ function main() {
   ensureDir(OUT);
 
   copyDir(path.join(ROOT, 'assets'), path.join(OUT, 'assets'));
+  bundleSupabaseClient();
   fs.writeFileSync(path.join(OUT, 'assets', 'js', 'form-config.js'), buildFormConfig(), 'utf8');
-  console.log('  ✓ /assets/');
+  console.log('  ✓ /assets/ (+ supabase-client.js)');
 
   for (const lang of languages) {
     const t = loadTranslation(lang.code);
