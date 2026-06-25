@@ -7,6 +7,6 @@
   </defs>
   <circle cx="36" cy="40" r="28" fill="none" stroke="url(#g)" stroke-width="4"/>
   <path d="M20 40 L36 24 L52 40 L36 56 Z" fill="url(#g)"/>
-  <text x="78" y="48" font-family="DM Sans, system-ui, sans-serif" font-size="28" font-weight="700" fill="#0f1c2e">EnergieMIND</text>
-  <text x="78" y="68" font-family="DM Sans, system-ui, sans-serif" font-size="13" fill="#5a7189" letter-spacing="3">NETWORK</text>
+  <text x="78" y="48" font-family="DM Sans, system-ui, sans-serif" font-size="28" font-weight="700" fill="#ffffff">EnergieMIND</text>
+  <text x="78" y="68" font-family="DM Sans, system-ui, sans-serif" font-size="13" fill="#94a3b8" letter-spacing="3">NETWORK</text>
 </svg>

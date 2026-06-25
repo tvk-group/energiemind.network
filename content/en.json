@@ -215,6 +215,8 @@
       "messagePlaceholder": "Describe your site, goals and integration interest"
     },
     "submit": "Submit Partner Application",
+    "submitting": "Submitting…",
+    "error": "Something went wrong. Please try again or email partners@energiemind.network.",
     "disclaimer": "By submitting this form you agree to be contacted regarding the EnergieMIND partner program. Your data is processed in accordance with applicable privacy regulations.",
     "success": "Thank you. Your partner application has been received. Our team will contact you shortly."
   },
