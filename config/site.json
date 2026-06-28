@@ -1,5 +1,6 @@
 {
   "domain": "https://energiemind.network",
+  "appUrl": "https://app.energiemind.network",
   "organization": {
     "name": "EnergieMIND Network",
     "legalName": "TVK Labs & Technologies LTD",

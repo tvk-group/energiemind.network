@@ -30,6 +30,7 @@
     "subtitle": "Hotels, farms, solar sites, greenhouse operators, mining hosts and energy partners join the EnergieMIND Network to deploy pilot programs that convert compute heat into utility value.",
     "cta": "Apply as Pilot Partner",
     "secondary": "Explore Pilot Sites",
+    "appCta": "Get the App · app.energiemind.network",
     "stats": [
       { "value": "25+", "label": "Partner Categories" },
       { "value": "Global", "label": "Pilot Coverage" },
@@ -142,6 +143,30 @@
       "cta": "Register your facility"
     }
   },
+  "partnerApp": {
+    "kicker": "Partner App",
+    "headline": "Get the EnergieMIND partner app at",
+    "domain": "app.energiemind.network",
+    "description": "Install the partner portal on your phone — apply as a pilot partner, explore site categories, and stay connected from a home-screen icon. Works today via Add to Home Screen; App Store listing planned for Phase 2.",
+    "ctaOpen": "Open app.energiemind.network",
+    "ctaInstall": "How to install",
+    "iosLabel": "iPhone / iPad",
+    "iosSteps": "Safari → app.energiemind.network → Share → Add to Home Screen",
+    "androidLabel": "Android",
+    "androidSteps": "Chrome → app.energiemind.network → menu → Install app or Add to Home screen",
+    "desktopLabel": "Desktop",
+    "desktopSteps": "Chrome or Edge → install icon in the address bar, or bookmark app.energiemind.network",
+    "stickyText": "Get the partner app",
+    "stickyDismiss": "Dismiss",
+    "appApplyTitle": "Apply as Pilot Partner",
+    "appApplyIntro": "Submit your site details directly from the EnergieMIND partner app.",
+    "appExploreTitle": "Explore Programs",
+    "appInstallTitle": "Install the App",
+    "tabApply": "Apply",
+    "tabExplore": "Explore",
+    "tabInstall": "Install",
+    "backToSite": "Back to energiemind.network"
+  },
   "enm": {
     "title": "Future Ecosystem Utility",
     "text": "ENM is planned as a future ecosystem utility token for network coordination, partner incentives and governance within the EnergieMIND ecosystem. There is no token presale. Partner programs focus on infrastructure deployment and measurable energy outcomes."
@@ -181,6 +206,10 @@
       {
         "q": "How long does the application process take?",
         "a": "Initial review typically occurs within two weeks. Site assessment and pilot planning timelines depend on project scope and local permitting requirements."
+      },
+      {
+        "q": "How do I get the EnergieMIND partner app?",
+        "a": "Open app.energiemind.network on your phone and add it to your home screen (Safari → Share → Add to Home Screen on iPhone; Chrome → Install app on Android). The app is the same partner portal — apply, explore programs, and stay connected — optimized for mobile."
       }
     ]
   },
@@ -226,7 +255,8 @@
       "network": "Partner Network",
       "pilots": "Pilot Sites",
       "apply": "Apply Now",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "app": "Partner App"
     },
     "legal": "© 2026 TVK Labs & Technologies LTD. All rights reserved.",
     "privacy": "Privacy Policy",

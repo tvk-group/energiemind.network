@@ -13,6 +13,20 @@ const OUT = path.join(ROOT, 'public');
 const languages = JSON.parse(fs.readFileSync(path.join(ROOT, 'config/languages.json'), 'utf8'));
 const siteConfig = JSON.parse(fs.readFileSync(path.join(ROOT, 'config/site.json'), 'utf8'));
 const DOMAIN = siteConfig.domain;
+const APP_URL = siteConfig.appUrl || 'https://app.energiemind.network';
+const EN = loadTranslation('en');
+
+function withDefaults(t) {
+  return {
+    ...t,
+    hero: { ...EN.hero, ...t.hero },
+    partnerApp: { ...EN.partnerApp, ...(t.partnerApp || {}) },
+    footer: {
+      ...t.footer,
+      links: { ...(EN.footer && EN.footer.links ? EN.footer.links : {}) , ...(t.footer && t.footer.links ? t.footer.links : {}) },
+    },
+  };
+}
 
 function loadTranslation(code) {
   const file = path.join(ROOT, 'content', `${code}.json`);
@@ -179,6 +193,162 @@ function formBlock(t) {
         </form>`;
 }
 
+function partnerAppBlock(t) {
+  const p = t.partnerApp;
+  return `<section id="partner-app" class="section section-tone-1 partner-app-section" aria-labelledby="partner-app-heading">
+      <div class="container">
+        <div class="partner-app-card">
+          <div class="partner-app-copy">
+            <div class="kicker">${esc(p.kicker)}</div>
+            <h2 id="partner-app-heading">${esc(p.headline)} <strong>${esc(p.domain)}</strong></h2>
+            <p>${esc(p.description)}</p>
+            <div class="partner-app-actions">
+              <a class="btn btn-primary" href="${APP_URL}" rel="noopener noreferrer">${esc(p.ctaOpen)} →</a>
+              <a class="btn btn-outline" href="#partner-app-install">${esc(p.ctaInstall)}</a>
+            </div>
+          </div>
+          <div class="partner-app-install" id="partner-app-install">
+            <div class="install-step">
+              <span class="install-platform">${esc(p.iosLabel)}</span>
+              <p>${esc(p.iosSteps)}</p>
+            </div>
+            <div class="install-step">
+              <span class="install-platform">${esc(p.androidLabel)}</span>
+              <p>${esc(p.androidSteps)}</p>
+            </div>
+            <div class="install-step">
+              <span class="install-platform">${esc(p.desktopLabel)}</span>
+              <p>${esc(p.desktopSteps)}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>`;
+}
+
+function appLangSwitcher(currentCode, t) {
+  const options = languages
+    .map((lang) => {
+      const selected = lang.code === currentCode ? ' selected' : '';
+      return `<option value="/app/${lang.code}/"${selected}>${esc(lang.name)}</option>`;
+    })
+    .join('\n');
+  return `<label class="sr-only" for="app-lang">${esc(t.nav.language)}</label>
+          <select id="app-lang" aria-label="${esc(t.nav.language)}">
+            ${options}
+          </select>`;
+}
+
+function appExploreLinks(langCode, t) {
+  const base = `/${langCode}/#`;
+  const links = [
+    ['partner-network', t.sections.partnerNetwork.title, t.sections.partnerNetwork.subtitle],
+    ['pilot-sites', t.sections.pilotSites.title, t.sections.pilotSites.subtitle],
+    ['mining-heat', t.sections.miningHeat.title, t.sections.miningHeat.subtitle],
+    ['solar-mining', t.sections.solarMining.title, t.sections.solarMining.subtitle],
+    ['greenhouses', t.sections.greenhouses.title, t.sections.greenhouses.subtitle],
+    ['farms', t.sections.farms.title, t.sections.farms.subtitle],
+    ['data-centers', t.sections.dataCenters.title, t.sections.dataCenters.subtitle],
+  ];
+  return links
+    .map(
+      ([id, title, subtitle]) =>
+        `<a class="quick-link" href="${base}${id}"><strong>${esc(title)}</strong><span>${esc(subtitle)}</span></a>`
+    )
+    .join('\n            ');
+}
+
+function buildAppPage(lang, t) {
+  const p = t.partnerApp;
+  const canonical = `${DOMAIN}/app/${lang.code}/`;
+  const siteHome = `/${lang.code}/`;
+
+  return `<!DOCTYPE html>
+<html lang="${lang.hreflang}" dir="${lang.dir}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="robots" content="index, follow" />
+  <title>${esc(t.brand)} — Partner App</title>
+  <meta name="description" content="${esc(p.description)}" />
+  <link rel="canonical" href="${canonical}" />
+  <meta name="theme-color" content="#141c28" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="EnergieMIND" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="manifest" href="/assets/web-app-manifest.json" />
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/app.css" />
+</head>
+<body>
+  <div class="app-root">
+    <header class="app-header">
+      <div class="app-header-inner">
+        <a class="app-logo" href="${siteHome}" aria-label="${esc(t.brand)}">
+          <img src="/assets/images/logo-light.svg" alt="${esc(t.brand)}" width="160" height="36" />
+        </a>
+        <div class="app-lang">${appLangSwitcher(lang.code, t)}</div>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <div class="app-hero">
+        <span class="kicker">${esc(p.kicker)}</span>
+        <h1>${esc(p.appApplyTitle)}</h1>
+        <p>${esc(p.appApplyIntro)}</p>
+      </div>
+
+      <section class="app-panel is-active" data-app-panel="apply" aria-label="${esc(p.tabApply)}">
+        ${formBlock(t)}
+      </section>
+
+      <section class="app-panel" data-app-panel="explore" aria-label="${esc(p.tabExplore)}">
+        <h2 style="margin:0 0 1rem;font-size:1.1rem;">${esc(p.appExploreTitle)}</h2>
+        <div class="quick-links">
+          ${appExploreLinks(lang.code, t)}
+        </div>
+      </section>
+
+      <section class="app-panel" data-app-panel="install" aria-label="${esc(p.tabInstall)}">
+        <h2 style="margin:0 0 1rem;font-size:1.1rem;">${esc(p.appInstallTitle)}</h2>
+        <div class="install-steps">
+          <div class="install-step"><span class="platform">${esc(p.iosLabel)}</span><p>${esc(p.iosSteps)}</p></div>
+          <div class="install-step"><span class="platform">${esc(p.androidLabel)}</span><p>${esc(p.androidSteps)}</p></div>
+          <div class="install-step"><span class="platform">${esc(p.desktopLabel)}</span><p>${esc(p.desktopSteps)}</p></div>
+        </div>
+        <p style="margin:1rem 0 0;color:var(--muted);font-size:0.875rem;">App Store listing planned for Phase 2.</p>
+      </section>
+
+      <p class="app-footer"><a href="${siteHome}">← ${esc(p.backToSite)}</a></p>
+    </main>
+
+    <div id="install-banner" class="install-banner" hidden>
+      <p>${esc(p.stickyText)}</p>
+      <div class="install-banner-actions">
+        <button type="button" class="btn btn-primary" id="pwa-install-btn">Install</button>
+        <button type="button" class="btn btn-outline" id="dismiss-install">${esc(p.stickyDismiss)}</button>
+      </div>
+    </div>
+
+    <nav class="app-nav" aria-label="App navigation">
+      <button type="button" class="is-active" data-app-tab="apply"><span class="icon">✎</span>${esc(p.tabApply)}</button>
+      <button type="button" data-app-tab="explore"><span class="icon">◎</span>${esc(p.tabExplore)}</button>
+      <button type="button" data-app-tab="install"><span class="icon">⬇</span>${esc(p.tabInstall)}</button>
+    </nav>
+  </div>
+
+  <script src="/assets/js/supabase-client.js" defer></script>
+  <script src="/assets/js/form-config.js" defer></script>
+  <script src="/assets/js/app.js" defer></script>
+</body>
+</html>`;
+}
+
 function jsonLd(t, lang, canonical) {
   const org = siteConfig.organization;
   const schemas = [
@@ -339,6 +509,7 @@ ${languages.filter((l) => l.code !== lang.code).map((l) => `  <meta property="og
         <div class="hero-actions">
           <a href="#application" class="btn btn-primary btn-lg">${esc(t.hero.cta)}</a>
           <a href="#pilot-sites" class="btn btn-outline btn-lg">${esc(t.hero.secondary)}</a>
+          <a href="${APP_URL}" class="btn btn-outline btn-lg" rel="noopener noreferrer">${esc(t.hero.appCta)}</a>
         </div>
         <div class="hero-stats">
           ${stats}
@@ -347,6 +518,8 @@ ${languages.filter((l) => l.code !== lang.code).map((l) => `  <meta property="og
     </section>
 
     ${sectionHtml}
+
+    ${partnerAppBlock(t)}
 
     <section id="enm-notice" class="section section-tone-2 enm-section" aria-labelledby="enm-title">
       <div class="container">
@@ -394,6 +567,7 @@ ${languages.filter((l) => l.code !== lang.code).map((l) => `  <meta property="og
           <li><a href="#partner-network">${esc(t.footer.links.network)}</a></li>
           <li><a href="#pilot-sites">${esc(t.footer.links.pilots)}</a></li>
           <li><a href="#application">${esc(t.footer.links.apply)}</a></li>
+          <li><a href="${APP_URL}" rel="noopener noreferrer">${esc(t.footer.links.app || 'Partner App')}</a></li>
           <li><a href="#faq">${esc(t.footer.links.faq)}</a></li>
           <li><a href="#mining-heat">${esc(t.nav.miningHeat)}</a></li>
           <li><a href="#solar-mining">${esc(t.nav.solarMining)}</a></li>
@@ -410,6 +584,14 @@ ${languages.filter((l) => l.code !== lang.code).map((l) => `  <meta property="og
       </div>
     </div>
   </footer>
+
+  <div id="site-app-banner" class="site-app-banner" hidden>
+    <p>${esc(t.partnerApp.stickyText)} · <strong>${esc(t.partnerApp.domain)}</strong></p>
+    <div class="site-app-banner-actions">
+      <a class="btn btn-primary btn-sm" href="${APP_URL}" rel="noopener noreferrer">${esc(t.partnerApp.ctaOpen)}</a>
+      <button type="button" class="btn btn-outline btn-sm" id="site-app-dismiss">${esc(t.partnerApp.stickyDismiss)}</button>
+    </div>
+  </div>
 
   <script src="/assets/js/supabase-client.js" defer></script>
   <script src="/assets/js/form-config.js" defer></script>
@@ -491,6 +673,37 @@ function buildRootRedirect() {
 </html>`;
 }
 
+function buildAppRedirect() {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="refresh" content="0; url=/app/en/" />
+  <link rel="canonical" href="${DOMAIN}/app/en/" />
+  <title>EnergieMIND Partner App</title>
+  <script>window.location.replace('/app/en/');</script>
+</head>
+<body>
+  <p><a href="/app/en/">EnergieMIND Partner App</a></p>
+</body>
+</html>`;
+}
+
+async function generateIcons() {
+  try {
+    const sharp = require('sharp');
+    const svgPath = path.join(ROOT, 'assets/images/apple-touch-icon.svg');
+    const outDir = path.join(OUT, 'assets/images');
+    for (const size of [180, 192, 512]) {
+      const name = size === 180 ? 'apple-touch-icon.png' : `icon-${size}.png`;
+      await sharp(svgPath).resize(size, size).png().toFile(path.join(outDir, name));
+    }
+    console.log('  ✓ PWA icons (PNG)');
+  } catch (err) {
+    console.warn('  ⚠ PWA icons skipped:', err.message);
+  }
+}
+
 function buildFormConfig() {
   const config = {
     supabaseUrl:
@@ -541,43 +754,61 @@ function main() {
   fs.writeFileSync(path.join(OUT, 'assets', 'js', 'form-config.js'), buildFormConfig(), 'utf8');
   console.log('  ✓ /assets/ (+ supabase-client.js)');
 
-  for (const lang of languages) {
-    const t = loadTranslation(lang.code);
-    const outDir = path.join(OUT, lang.code);
-    ensureDir(outDir);
-    const html = buildPage(lang, t);
-    fs.writeFileSync(path.join(outDir, 'index.html'), html, 'utf8');
-    console.log(`  ✓ /${lang.code}/index.html`);
-  }
+  return generateIcons().then(function () {
+    for (const lang of languages) {
+      const t = withDefaults(loadTranslation(lang.code));
+      const outDir = path.join(OUT, lang.code);
+      ensureDir(outDir);
+      fs.writeFileSync(path.join(outDir, 'index.html'), buildPage(lang, t), 'utf8');
+      console.log(`  ✓ /${lang.code}/index.html`);
+    }
 
-  ensureDir(path.join(OUT, 'sitemaps'));
-  for (const lang of languages) {
-    fs.writeFileSync(
-      path.join(OUT, 'sitemaps', `sitemap-${lang.code}.xml`),
-      buildSitemap(lang.code),
-      'utf8'
-    );
-  }
-  fs.writeFileSync(path.join(OUT, 'sitemap-index.xml'), buildSitemapIndex(), 'utf8');
-  fs.writeFileSync(path.join(OUT, 'robots.txt'), buildRobots(), 'utf8');
-  fs.writeFileSync(path.join(OUT, 'index.html'), buildRootRedirect(), 'utf8');
+    ensureDir(path.join(OUT, 'app'));
+    fs.writeFileSync(path.join(OUT, 'app', 'index.html'), buildAppRedirect(), 'utf8');
+    console.log('  ✓ /app/index.html (redirect)');
+    for (const lang of languages) {
+      const t = withDefaults(loadTranslation(lang.code));
+      const appDir = path.join(OUT, 'app', lang.code);
+      ensureDir(appDir);
+      fs.writeFileSync(path.join(appDir, 'index.html'), buildAppPage(lang, t), 'utf8');
+      console.log(`  ✓ /app/${lang.code}/index.html`);
+    }
 
-  ensureDir(path.join(OUT, 'admin'));
-  ensureDir(path.join(OUT, 'partner-admin'));
-  const adminSrc = path.join(ROOT, 'admin', 'index.html');
-  fs.copyFileSync(adminSrc, path.join(OUT, 'admin', 'index.html'));
-  fs.copyFileSync(adminSrc, path.join(OUT, 'partner-admin', 'index.html'));
-  console.log('  ✓ /admin/index.html');
-  console.log('  ✓ /partner-admin/index.html');
+    fs.copyFileSync(path.join(ROOT, 'sw.js'), path.join(OUT, 'sw.js'));
+    console.log('  ✓ /sw.js');
 
-  const adminBuilt = path.join(OUT, 'admin', 'index.html');
-  if (!fs.existsSync(adminBuilt)) {
-    console.error('FATAL: admin page missing from build output');
-    process.exit(1);
-  }
+    ensureDir(path.join(OUT, 'sitemaps'));
+    for (const lang of languages) {
+      fs.writeFileSync(
+        path.join(OUT, 'sitemaps', `sitemap-${lang.code}.xml`),
+        buildSitemap(lang.code),
+        'utf8'
+      );
+    }
+    fs.writeFileSync(path.join(OUT, 'sitemap-index.xml'), buildSitemapIndex(), 'utf8');
+    fs.writeFileSync(path.join(OUT, 'robots.txt'), buildRobots(), 'utf8');
+    fs.writeFileSync(path.join(OUT, 'index.html'), buildRootRedirect(), 'utf8');
 
-  console.log('  ✓ sitemaps, robots.txt, root redirect → public/');
-  console.log('Done.');
+    ensureDir(path.join(OUT, 'admin'));
+    ensureDir(path.join(OUT, 'partner-admin'));
+    const adminSrc = path.join(ROOT, 'admin', 'index.html');
+    fs.copyFileSync(adminSrc, path.join(OUT, 'admin', 'index.html'));
+    fs.copyFileSync(adminSrc, path.join(OUT, 'partner-admin', 'index.html'));
+    console.log('  ✓ /admin/index.html');
+    console.log('  ✓ /partner-admin/index.html');
+
+    const adminBuilt = path.join(OUT, 'admin', 'index.html');
+    if (!fs.existsSync(adminBuilt)) {
+      console.error('FATAL: admin page missing from build output');
+      process.exit(1);
+    }
+
+    console.log('  ✓ sitemaps, robots.txt, root redirect → public/');
+    console.log('Done.');
+  });
 }
 
-main();
+main().catch(function (err) {
+  console.error(err);
+  process.exit(1);
+});
