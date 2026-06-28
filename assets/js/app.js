@@ -1,20 +1,76 @@
 (function () {
   'use strict';
 
-  var toggle = document.querySelector('.menu-toggle');
-  var nav = document.querySelector('.main-nav');
+  var panels = document.querySelectorAll('[data-app-panel]');
+  var navButtons = document.querySelectorAll('[data-app-tab]');
+  var installBanner = document.getElementById('install-banner');
+  var installBtn = document.getElementById('pwa-install-btn');
+  var dismissInstall = document.getElementById('dismiss-install');
+  var deferredPrompt = null;
 
-  if (toggle && nav) {
-    toggle.addEventListener('click', function () {
-      var open = nav.classList.toggle('is-open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  function showPanel(name) {
+    panels.forEach(function (panel) {
+      panel.classList.toggle('is-active', panel.getAttribute('data-app-panel') === name);
     });
+    navButtons.forEach(function (btn) {
+      btn.classList.toggle('is-active', btn.getAttribute('data-app-tab') === name);
+    });
+  }
 
-    nav.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        nav.classList.remove('is-open');
-        toggle.setAttribute('aria-expanded', 'false');
+  navButtons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      showPanel(btn.getAttribute('data-app-tab'));
+    });
+  });
+
+  var hash = (window.location.hash || '').replace('#', '');
+  if (hash === 'explore' || hash === 'install') showPanel(hash);
+  else showPanel('apply');
+
+  window.addEventListener('beforeinstallprompt', function (e) {
+    e.preventDefault();
+    deferredPrompt = e;
+    if (installBanner) installBanner.hidden = false;
+  });
+
+  if (installBtn) {
+    installBtn.addEventListener('click', function () {
+      if (!deferredPrompt) {
+        showPanel('install');
+        if (installBanner) installBanner.hidden = true;
+        return;
+      }
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.finally(function () {
+        deferredPrompt = null;
+        if (installBanner) installBanner.hidden = true;
       });
+    });
+  }
+
+  if (dismissInstall) {
+    dismissInstall.addEventListener('click', function () {
+      if (installBanner) installBanner.hidden = true;
+      try { sessionStorage.setItem('enm_install_dismissed', '1'); } catch (e) {}
+    });
+  }
+
+  try {
+    if (sessionStorage.getItem('enm_install_dismissed') === '1' && installBanner) {
+      installBanner.hidden = true;
+    }
+  } catch (e) {}
+
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('/sw.js').catch(function () {});
+    });
+  }
+
+  var langSelect = document.getElementById('app-lang');
+  if (langSelect) {
+    langSelect.addEventListener('change', function () {
+      if (langSelect.value) window.location.href = langSelect.value;
     });
   }
 
@@ -39,7 +95,6 @@
   function submitViaSupabase(data) {
     var cfg = window.ENM_FORM_CONFIG || {};
     if (!cfg.supabaseUrl || !cfg.supabaseKey) return Promise.reject(new Error('No Supabase config'));
-
     if (window.ENMSupabase && window.ENMSupabase.insertPartnerApplication) {
       return window.ENMSupabase.insertPartnerApplication(
         cfg.supabaseUrl,
@@ -80,17 +135,14 @@
         capacity: form.capacity.value.trim() || null,
         message: form.message.value.trim(),
         language: document.documentElement.lang || 'en',
-        source: 'energiemind.network',
+        source: 'app.energiemind.network',
       };
 
       submitViaApi(payload)
-        .catch(function () {
-          return submitViaSupabase(payload);
-        })
+        .catch(function () { return submitViaSupabase(payload); })
         .then(function () {
           showMessage('form-success', true);
           form.reset();
-          document.getElementById('form-success').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         })
         .catch(function () {
           showMessage('form-error', true);
@@ -101,42 +153,6 @@
             btn.textContent = originalText;
           }
         });
-    });
-  }
-
-  var sections = document.querySelectorAll('section[id]');
-  if ('IntersectionObserver' in window) {
-    var observer = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            var id = entry.target.getAttribute('id');
-            document.querySelectorAll('.main-nav a').forEach(function (a) {
-              a.classList.toggle('active', a.getAttribute('href') === '#' + id);
-            });
-          }
-        });
-      },
-      { rootMargin: '-40% 0px -50% 0px' }
-    );
-    sections.forEach(function (s) { observer.observe(s); });
-  }
-
-  var siteBanner = document.getElementById('site-app-banner');
-  var siteDismiss = document.getElementById('site-app-dismiss');
-  if (siteBanner) {
-    try {
-      if (sessionStorage.getItem('enm_site_app_dismissed') !== '1') {
-        siteBanner.hidden = false;
-      }
-    } catch (e) {
-      siteBanner.hidden = false;
-    }
-  }
-  if (siteDismiss && siteBanner) {
-    siteDismiss.addEventListener('click', function () {
-      siteBanner.hidden = true;
-      try { sessionStorage.setItem('enm_site_app_dismissed', '1'); } catch (e) {}
     });
   }
 })();
